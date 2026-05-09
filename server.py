@@ -151,6 +151,8 @@ def solve(data: dict, x_api_key: Optional[str] = Header(default=None)):
     if not target:
         raise HTTPException(status_code=400, detail="Missing target")
 
+    formula_map = {}
+
     for formula in formulas:
         if "=" not in formula:
             continue
@@ -159,39 +161,82 @@ def solve(data: dict, x_api_key: Optional[str] = Header(default=None)):
         left = left.strip().lower()
         right = right.strip().lower()
 
-        if left != target:
-            continue
+        if left not in formula_map:
+            formula_map[left] = []
 
-        try:
-            result = eval(
-                right,
-                {"__builtins__": {}},
-                values
-            )
-        except NameError as e:
-            raise HTTPException(
-                status_code=400,
-                detail=f"Missing variable in formula: {str(e)}"
-            )
-        except ZeroDivisionError:
-            raise HTTPException(
-                status_code=400,
-                detail="Division by zero"
-            )
-        except Exception as e:
-            raise HTTPException(
-                status_code=400,
-                detail=f"Formula error: {str(e)}"
-            )
+        formula_map[left].append({
+            "raw": formula,
+            "right": right
+        })
 
-        return {
-            "target": target,
-            "result": result,
-            "formula_used": formula,
-            "mode": "direct"
-        }
+    logs = []
 
-    raise HTTPException(
-        status_code=404,
-        detail=f"No usable formula found for target: {target}"
-    )
+    def extract_variables(expr: str):
+        import re
+        tokens = re.findall(r"[a-zA-Z_][a-zA-Z0-9_.]*", expr)
+        return [t.lower() for t in tokens if not t.replace(".", "", 1).isdigit()]
+
+    def resolve(var_name: str, resolving=None):
+        if resolving is None:
+            resolving = set()
+
+        var_name = var_name.lower()
+
+        if var_name in values:
+            return values[var_name]
+
+        if var_name in resolving:
+            raise HTTPException(status_code=400, detail=f"Loop detected on {var_name}")
+
+        if var_name not in formula_map:
+            raise HTTPException(status_code=400, detail=f"No formula available for {var_name}")
+
+        resolving.add(var_name)
+
+        for candidate in formula_map[var_name]:
+            right = candidate["right"]
+            needed_vars = extract_variables(right)
+
+            try:
+                local_values = dict(values)
+
+                for dep in needed_vars:
+                    if dep not in local_values:
+                        local_values[dep] = resolve(dep, resolving)
+
+                result = eval(
+                    right,
+                    {"__builtins__": {}},
+                    local_values
+                )
+
+                values[var_name] = float(result)
+
+                logs.append({
+                    "variable": var_name,
+                    "formula": candidate["raw"],
+                    "dependencies": needed_vars,
+                    "result": result
+                })
+
+                resolving.remove(var_name)
+                return float(result)
+
+            except HTTPException:
+                continue
+            except ZeroDivisionError:
+                continue
+            except Exception:
+                continue
+
+        resolving.remove(var_name)
+        raise HTTPException(status_code=400, detail=f"Unable to solve {var_name}")
+
+    result = resolve(target)
+
+    return {
+        "target": target,
+        "result": result,
+        "logs": logs,
+        "values": values
+    }
