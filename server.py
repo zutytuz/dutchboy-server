@@ -1,3 +1,7 @@
+import json
+from pathlib import Path
+
+
 import os
 from typing import Optional
 
@@ -21,6 +25,14 @@ def check_api_key(provided_key: Optional[str]) -> None:
 def home():
     return {"status": "ok", "message": "DutchBoy public server is alive"}
 
+def load_formula_library():
+    path = Path(__file__).parent / "formulas.json"
+
+    if not path.exists():
+        return []
+
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
 
 @app.get("/dashboard", response_class=HTMLResponse)
 def dashboard():
@@ -148,7 +160,7 @@ def solve(data: dict, x_api_key: Optional[str] = Header(default=None)):
 
     target = data.get("target", "").strip().lower()
     values = {k.lower(): float(v) for k, v in data.get("values", {}).items()}
-    formulas = data.get("formulas", [])
+    formulas = data.get("formulas") or load_formula_library()
 
     if not target:
         raise HTTPException(status_code=400, detail="Missing target")

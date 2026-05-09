@@ -1,0 +1,22 @@
+[
+  "AI = AIE + AII",
+  "AIE = IDLT + ALLD + IC + TER + II + EDA + AAIE",
+  "PT = PC + PNC",
+  "PC = PCE + PCF + DAP",
+  "MB = CA - CDV",
+  "FNCT = COM + RED + ADM",
+  "EBE = MB - FNCT",
+  "EBE = REX + FTE.AMT",
+  "AMT = AMT.IC + AMT.II + AMT.ALLD",
+  "REX = EBE - AMT",
+  "BAVII = REX - GPHE",
+  "BAVI = BAVII - INT",
+  "RN = BAVI - TAX",
+  "TMB = MB / CA",
+  "TMN = RN / CA",
+  "CA.Q = CA / 365",
+  "CDV.Q = CDV / 365",
+  "DRC = CC.MOY / CA.Q",
+  "TRCI = CA / CI.MOY",
+  "RCI = RNE / CI.MOY"
+]
