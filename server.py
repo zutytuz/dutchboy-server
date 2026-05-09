@@ -144,6 +144,8 @@ def calculate(data: dict, x_api_key: Optional[str] = Header(default=None)):
 def solve(data: dict, x_api_key: Optional[str] = Header(default=None)):
     check_api_key(x_api_key)
 
+    import re
+
     target = data.get("target", "").strip().lower()
     values = {k.lower(): float(v) for k, v in data.get("values", {}).items()}
     formulas = data.get("formulas", [])
@@ -161,10 +163,7 @@ def solve(data: dict, x_api_key: Optional[str] = Header(default=None)):
         left = left.strip().lower()
         right = right.strip().lower()
 
-        if left not in formula_map:
-            formula_map[left] = []
-
-        formula_map[left].append({
+        formula_map.setdefault(left, []).append({
             "raw": formula,
             "right": right
         })
@@ -172,9 +171,25 @@ def solve(data: dict, x_api_key: Optional[str] = Header(default=None)):
     logs = []
 
     def extract_variables(expr: str):
-        import re
         tokens = re.findall(r"[a-zA-Z_][a-zA-Z0-9_.]*", expr)
-        return [t.lower() for t in tokens if not t.replace(".", "", 1).isdigit()]
+        return [t.lower() for t in tokens]
+
+    def formula_score(expr: str):
+        needed = extract_variables(expr)
+
+        known = 0
+        missing = 0
+
+        for v in needed:
+            if v in values:
+                known += 1
+            else:
+                missing += 1
+
+        if missing == 0:
+            return 10000 - len(needed)
+
+        return known - (missing * 10) - (len(needed) * 0.01)
 
     def resolve(var_name: str, resolving=None):
         if resolving is None:
@@ -193,7 +208,15 @@ def solve(data: dict, x_api_key: Optional[str] = Header(default=None)):
 
         resolving.add(var_name)
 
-        for candidate in formula_map[var_name]:
+        candidates = sorted(
+            formula_map[var_name],
+            key=lambda f: formula_score(f["right"]),
+            reverse=True
+        )
+
+        failed = []
+
+        for candidate in candidates:
             right = candidate["right"]
             needed_vars = extract_variables(right)
 
@@ -216,21 +239,28 @@ def solve(data: dict, x_api_key: Optional[str] = Header(default=None)):
                     "variable": var_name,
                     "formula": candidate["raw"],
                     "dependencies": needed_vars,
+                    "score": formula_score(right),
                     "result": result
                 })
 
                 resolving.remove(var_name)
                 return float(result)
 
-            except HTTPException:
-                continue
-            except ZeroDivisionError:
-                continue
-            except Exception:
+            except Exception as e:
+                failed.append({
+                    "formula": candidate["raw"],
+                    "reason": str(e)
+                })
                 continue
 
         resolving.remove(var_name)
-        raise HTTPException(status_code=400, detail=f"Unable to solve {var_name}")
+        raise HTTPException(
+            status_code=400,
+            detail={
+                "message": f"Unable to solve {var_name}",
+                "failed_formulas": failed
+            }
+        )
 
     result = resolve(target)
 
