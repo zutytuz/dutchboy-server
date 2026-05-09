@@ -2,10 +2,11 @@ import os
 from typing import Optional
 
 from fastapi import FastAPI, Header, HTTPException
+from fastapi.responses import HTMLResponse
 
 app = FastAPI()
 
-API_KEY = os.getenv("DUTCHBOY_API_KEY")
+API_KEY = os.getenv("1424Champagne1372Bavois")
 
 
 def check_api_key(provided_key: Optional[str]) -> None:
@@ -19,6 +20,103 @@ def check_api_key(provided_key: Optional[str]) -> None:
 @app.get("/")
 def home():
     return {"status": "ok", "message": "DutchBoy public server is alive"}
+
+
+@app.get("/dashboard", response_class=HTMLResponse)
+def dashboard():
+    return """
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>DutchBoy Dashboard</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background: #f4f6f8;
+                padding: 40px;
+            }
+            .card {
+                max-width: 520px;
+                margin: auto;
+                background: white;
+                padding: 30px;
+                border-radius: 16px;
+                box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+            }
+            h1 {
+                margin-top: 0;
+            }
+            input {
+                width: 100%;
+                padding: 10px;
+                margin: 8px 0 16px 0;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+            }
+            button {
+                width: 100%;
+                padding: 12px;
+                border: none;
+                border-radius: 8px;
+                background: #1f2937;
+                color: white;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            button:hover {
+                background: #374151;
+            }
+            pre {
+                background: #111827;
+                color: #e5e7eb;
+                padding: 16px;
+                border-radius: 8px;
+                overflow-x: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <h1>DutchBoy Dashboard</h1>
+            <p>Test simple du cerveau Python public.</p>
+
+            <label>API Key</label>
+            <input id="api_key" type="password" placeholder="Entre ta clé API">
+
+            <label>A</label>
+            <input id="a" type="number" value="5">
+
+            <label>B</label>
+            <input id="b" type="number" value="7">
+
+            <button onclick="calculate()">Calculate</button>
+
+            <h3>Résultat</h3>
+            <pre id="result">En attente...</pre>
+        </div>
+
+        <script>
+            async function calculate() {
+                const apiKey = document.getElementById("api_key").value;
+                const a = document.getElementById("a").value;
+                const b = document.getElementById("b").value;
+
+                const url = `/calculate_get_urlkey?a=${a}&b=${b}&api_key=${encodeURIComponent(apiKey)}`;
+
+                try {
+                    const response = await fetch(url);
+                    const data = await response.json();
+                    document.getElementById("result").textContent =
+                        JSON.stringify(data, null, 2);
+                } catch (err) {
+                    document.getElementById("result").textContent =
+                        "Erreur : " + err;
+                }
+            }
+        </script>
+    </body>
+    </html>
+    """
 
 
 @app.get("/ping")
