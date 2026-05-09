@@ -140,3 +140,58 @@ def calculate(data: dict, x_api_key: Optional[str] = Header(default=None)):
     b = float(values.get("b", 0))
 
     return {"result": a + b, "formula": "a + b"}
+@app.post("/solve")
+def solve(data: dict, x_api_key: Optional[str] = Header(default=None)):
+    check_api_key(x_api_key)
+
+    target = data.get("target", "").strip().lower()
+    values = {k.lower(): float(v) for k, v in data.get("values", {}).items()}
+    formulas = data.get("formulas", [])
+
+    if not target:
+        raise HTTPException(status_code=400, detail="Missing target")
+
+    for formula in formulas:
+        if "=" not in formula:
+            continue
+
+        left, right = formula.split("=", 1)
+        left = left.strip().lower()
+        right = right.strip().lower()
+
+        if left != target:
+            continue
+
+        try:
+            result = eval(
+                right,
+                {"__builtins__": {}},
+                values
+            )
+        except NameError as e:
+            raise HTTPException(
+                status_code=400,
+                detail=f"Missing variable in formula: {str(e)}"
+            )
+        except ZeroDivisionError:
+            raise HTTPException(
+                status_code=400,
+                detail="Division by zero"
+            )
+        except Exception as e:
+            raise HTTPException(
+                status_code=400,
+                detail=f"Formula error: {str(e)}"
+            )
+
+        return {
+            "target": target,
+            "result": result,
+            "formula_used": formula,
+            "mode": "direct"
+        }
+
+    raise HTTPException(
+        status_code=404,
+        detail=f"No usable formula found for target: {target}"
+    )
