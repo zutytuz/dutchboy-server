@@ -6,7 +6,7 @@ from fastapi.responses import HTMLResponse
 
 app = FastAPI()
 
-API_KEY = os.getenv("1424Champagne1372Bavois")
+API_KEY = os.getenv("DUTCHBOY_API_KEY")
 
 
 def check_api_key(provided_key: Optional[str]) -> None:
