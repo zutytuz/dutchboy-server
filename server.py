@@ -26,4 +26,9 @@ def calculate(data: dict):
         "result": a + b,
         "formula": "a + b"
     }
-
+@app.get("/calculate_get")
+def calculate_get(a: float = 0, b: float = 0):
+    return {
+        "result": a + b,
+        "formula": "a + b"
+    }
