@@ -201,10 +201,10 @@ def solve(data: dict, x_api_key: Optional[str] = Header(default=None)):
             return values[var_name]
 
         if var_name in resolving:
-            raise HTTPException(status_code=400, detail=f"Loop detected on {var_name}")
+            raise Exception(f"Loop detected on {var_name}")
 
         if var_name not in formula_map:
-            raise HTTPException(status_code=400, detail=f"No formula available for {var_name}")
+            raise Exception(f"No formula available for {var_name}")
 
         resolving.add(var_name)
 
@@ -247,26 +247,38 @@ def solve(data: dict, x_api_key: Optional[str] = Header(default=None)):
                 return float(result)
 
             except Exception as e:
+                missing = []
+
+                for dep in needed_vars:
+                    if dep not in values and dep not in formula_map:
+                        missing.append(dep)
+
                 failed.append({
                     "formula": candidate["raw"],
+                    "dependencies": needed_vars,
+                    "missing": missing,
                     "reason": str(e)
                 })
-                continue
 
         resolving.remove(var_name)
+
+        raise Exception({
+            "message": f"Unable to solve {var_name}",
+            "failed_formulas": failed
+        })
+
+    try:
+        result = resolve(target)
+
+        return {
+            "target": target,
+            "result": result,
+            "logs": logs,
+            "values": values
+        }
+
+    except Exception as e:
         raise HTTPException(
             status_code=400,
-            detail={
-                "message": f"Unable to solve {var_name}",
-                "failed_formulas": failed
-            }
+            detail=str(e)
         )
-
-    result = resolve(target)
-
-    return {
-        "target": target,
-        "result": result,
-        "logs": logs,
-        "values": values
-    }
