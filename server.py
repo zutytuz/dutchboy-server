@@ -67,7 +67,12 @@ def clear_formulas_urlkey(api_key: str = ""):
 def absmatch_lookup(data: dict, x_api_key: Optional[str] = Header(default=None)):
     check_api_key(x_api_key)
 
+    from rapidfuzz import fuzz
+
     query = str(data.get("query", "")).strip()
+
+    auto_threshold = float(data.get("auto_threshold", 0.95))
+    confirm_threshold = float(data.get("confirm_threshold", 0.80))
 
     if not query:
         raise HTTPException(status_code=400, detail="Missing query")
@@ -75,8 +80,30 @@ def absmatch_lookup(data: dict, x_api_key: Optional[str] = Header(default=None))
     codes = load_json_file("codes.json", {})
     synonyms = load_json_file("synonyms.json", {})
 
+    normalized_query = normalize_text(query)
     matches = []
 
+    # 1. Exact match / synonym match
+    for code, label in codes.items():
+        candidates = [code, label]
+        candidates.extend(synonyms.get(code, []))
+
+        for candidate in candidates:
+            normalized_candidate = normalize_text(candidate)
+
+            if normalized_query == normalized_candidate:
+                return {
+                    "status": "auto_match",
+                    "method": "exact_or_synonym",
+                    "query": query,
+                    "code": code,
+                    "label": label,
+                    "matched_on": candidate,
+                    "score": 1.0,
+                    "needs_confirmation": False
+                }
+
+    # 2. Fuzzy matching avec Levenshtein-like scoring
     for code, label in codes.items():
         candidates = [code, label]
         candidates.extend(synonyms.get(code, []))
@@ -85,7 +112,7 @@ def absmatch_lookup(data: dict, x_api_key: Optional[str] = Header(default=None))
         best_score = 0
 
         for candidate in candidates:
-            score = absmatch_score(query, candidate)
+            score = fuzz.ratio(normalized_query, normalize_text(candidate)) / 100
 
             if score > best_score:
                 best_score = score
@@ -99,11 +126,68 @@ def absmatch_lookup(data: dict, x_api_key: Optional[str] = Header(default=None))
         })
 
     matches = sorted(matches, key=lambda x: x["score"], reverse=True)
+    best = matches[0]
+
+    if best["score"] >= auto_threshold:
+        status = "auto_match"
+        needs_confirmation = False
+    elif best["score"] >= confirm_threshold:
+        status = "needs_confirmation"
+        needs_confirmation = True
+    else:
+        status = "no_reliable_match"
+        needs_confirmation = True
 
     return {
+        "status": status,
+        "method": "fuzzy_levenshtein",
         "query": query,
-        "best_match": matches[0],
-        "all_matches": matches
+        "best_match": best,
+        "needs_confirmation": needs_confirmation,
+        "thresholds": {
+            "auto": auto_threshold,
+            "confirm": confirm_threshold
+        },
+        "all_matches": matches[:10]
+    }
+
+@app.post("/absmatch/confirm")
+def absmatch_confirm(data: dict, x_api_key: Optional[str] = Header(default=None)):
+    check_api_key(x_api_key)
+
+    code = str(data.get("code", "")).strip().upper()
+    synonym = str(data.get("synonym", "")).strip()
+
+    if not code:
+        raise HTTPException(status_code=400, detail="Missing code")
+
+    if not synonym:
+        raise HTTPException(status_code=400, detail="Missing synonym")
+
+    codes = load_json_file("codes.json", {})
+    synonyms = load_json_file("synonyms.json", {})
+
+    if code not in codes:
+        raise HTTPException(status_code=404, detail=f"Unknown code: {code}")
+
+    if code not in synonyms:
+        synonyms[code] = []
+
+    if synonym not in synonyms[code]:
+        synonyms[code].append(synonym)
+
+    path = Path(__file__).parent / "synonyms.json"
+
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(synonyms, f, indent=2, ensure_ascii=False)
+
+    return {
+        "status": "ok",
+        "message": "Synonym learned",
+        "code": code,
+        "label": codes[code],
+        "synonym": synonym,
+        "synonym_count": len(synonyms[code])
     }
 
 @app.get("/")
