@@ -20,6 +20,15 @@ def check_api_key(provided_key: Optional[str]) -> None:
     if provided_key != API_KEY:
         raise HTTPException(status_code=401, detail="Invalid API key")
 
+@app.get("/formulas/clear_urlkey")
+def clear_formulas_urlkey(api_key: str = ""):
+    check_api_key(api_key)
+    save_formula_library([])
+    return {
+        "status": "ok",
+        "message": "Formula library cleared",
+        "count": 0
+    }
 
 @app.get("/")
 def home():
