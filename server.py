@@ -33,6 +33,63 @@ def load_formula_library():
 
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
+def save_formula_library(formulas: list[str]):
+    path = Path(__file__).parent / "formulas.json"
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(formulas, f, indent=2, ensure_ascii=False)
+@app.get("/formulas")
+def get_formulas(api_key: str = ""):
+    check_api_key(api_key)
+    formulas = load_formula_library()
+    return {"count": len(formulas), "formulas": formulas}
+
+
+@app.get("/formulas/add_urlkey")
+def add_formula_urlkey(formula: str = "", api_key: str = ""):
+    check_api_key(api_key)
+
+    formula = formula.strip()
+
+    if not formula:
+        raise HTTPException(status_code=400, detail="Missing formula")
+
+    if "=" not in formula:
+        raise HTTPException(status_code=400, detail="Formula must contain '='")
+
+    formulas = load_formula_library()
+
+    if formula not in formulas:
+        formulas.append(formula)
+        save_formula_library(formulas)
+
+    return {
+        "status": "ok",
+        "message": "Formula added",
+        "formula": formula,
+        "count": len(formulas)
+    }
+
+
+@app.post("/formulas/save")
+def save_formulas(data: dict, x_api_key: Optional[str] = Header(default=None)):
+    check_api_key(x_api_key)
+
+    formulas = data.get("formulas", [])
+
+    cleaned = []
+
+    for f in formulas:
+        f = str(f).strip()
+        if f and "=" in f:
+            cleaned.append(f)
+
+    save_formula_library(cleaned)
+
+    return {
+        "status": "ok",
+        "message": "Formula library saved",
+        "count": len(cleaned)
+    }
 
 @app.get("/dashboard", response_class=HTMLResponse)
 def dashboard():
