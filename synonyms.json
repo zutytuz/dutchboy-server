@@ -1,0 +1,94 @@
+{
+  "TRESO": [
+    "trésorerie",
+    "tresorerie",
+    "cash",
+    "liquidités",
+    "liquidites",
+    "disponibilités",
+    "disponibilites",
+    "cash and cash equivalents"
+  ],
+  "CA": [
+    "chiffre d'affaires",
+    "chiffre daffaires",
+    "revenu",
+    "revenus",
+    "revenue",
+    "revenues",
+    "sales",
+    "turnover"
+  ],
+  "CDV": [
+    "coût des ventes",
+    "cout des ventes",
+    "cost of sales",
+    "cost of goods sold",
+    "cogs"
+  ],
+  "RN": [
+    "résultat net",
+    "resultat net",
+    "net income",
+    "net profit",
+    "profit net"
+  ],
+  "EBE": [
+    "excédent brut d'exploitation",
+    "excedent brut d exploitation",
+    "ebitda",
+    "gross operating profit"
+  ],
+  "MB": [
+    "marge brute",
+    "gross margin",
+    "gross profit"
+  ],
+  "FNCT": [
+    "frais de fonctionnement",
+    "charges de fonctionnement",
+    "operating expenses",
+    "opex"
+  ],
+  "REX": [
+    "résultat d'exploitation",
+    "resultat d exploitation",
+    "operating income",
+    "operating profit",
+    "ebit"
+  ],
+  "AT": [
+    "actif total",
+    "total assets",
+    "assets"
+  ],
+  "AC": [
+    "actif courant",
+    "current assets"
+  ],
+  "AI": [
+    "actif immobilisé",
+    "actif immobilise",
+    "non current assets",
+    "fixed assets"
+  ],
+  "PT": [
+    "passif total",
+    "total liabilities and equity",
+    "total liabilities"
+  ],
+  "PC": [
+    "passif courant",
+    "current liabilities"
+  ],
+  "PNC": [
+    "passif non courant",
+    "non current liabilities",
+    "long term liabilities"
+  ],
+  "FP": [
+    "fonds propres",
+    "equity",
+    "shareholders equity"
+  ]
+}

@@ -1,3 +1,6 @@
+import unicodedata
+from difflib import SequenceMatcher
+
 import json
 from pathlib import Path
 
@@ -12,7 +15,37 @@ app = FastAPI()
 
 API_KEY = os.getenv("DUTCHBOY_API_KEY")
 
+def load_json_file(filename: str, default):
+    path = Path(__file__).parent / filename
+    if not path.exists():
+        return default
 
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def normalize_text(text: str) -> str:
+    text = str(text).lower().strip()
+    text = unicodedata.normalize("NFD", text)
+    text = "".join(c for c in text if unicodedata.category(c) != "Mn")
+    text = text.replace(".", " ")
+    text = text.replace("-", " ")
+    text = text.replace("_", " ")
+    text = " ".join(text.split())
+    return text
+
+
+def absmatch_score(a: str, b: str) -> float:
+    na = normalize_text(a)
+    nb = normalize_text(b)
+
+    if na == nb:
+        return 1.0
+
+    if na in nb or nb in na:
+        return 0.92
+
+    return SequenceMatcher(None, na, nb).ratio()
 def check_api_key(provided_key: Optional[str]) -> None:
     if API_KEY is None:
         raise HTTPException(status_code=500, detail="Server API key not configured")
@@ -28,6 +61,49 @@ def clear_formulas_urlkey(api_key: str = ""):
         "status": "ok",
         "message": "Formula library cleared",
         "count": 0
+    }
+
+@app.post("/absmatch/lookup")
+def absmatch_lookup(data: dict, x_api_key: Optional[str] = Header(default=None)):
+    check_api_key(x_api_key)
+
+    query = str(data.get("query", "")).strip()
+
+    if not query:
+        raise HTTPException(status_code=400, detail="Missing query")
+
+    codes = load_json_file("codes.json", {})
+    synonyms = load_json_file("synonyms.json", {})
+
+    matches = []
+
+    for code, label in codes.items():
+        candidates = [code, label]
+        candidates.extend(synonyms.get(code, []))
+
+        best_candidate = None
+        best_score = 0
+
+        for candidate in candidates:
+            score = absmatch_score(query, candidate)
+
+            if score > best_score:
+                best_score = score
+                best_candidate = candidate
+
+        matches.append({
+            "code": code,
+            "label": label,
+            "matched_on": best_candidate,
+            "score": round(best_score, 4)
+        })
+
+    matches = sorted(matches, key=lambda x: x["score"], reverse=True)
+
+    return {
+        "query": query,
+        "best_match": matches[0],
+        "all_matches": matches
     }
 
 @app.get("/")

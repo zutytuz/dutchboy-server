@@ -1,0 +1,21 @@
+{
+  "TRESO": "Trésorerie",
+  "CA": "Chiffre d'affaires",
+  "CDV": "Coût des ventes",
+  "RN": "Résultat net",
+  "EBE": "Excédent brut d'exploitation",
+  "MB": "Marge brute",
+  "FNCT": "Frais de fonctionnement",
+  "REX": "Résultat d'exploitation",
+  "BAVII": "Bénéfice avant intérêts et impôts",
+  "BAVI": "Bénéfice avant impôts",
+  "TAX": "Impôts",
+  "INT": "Intérêts",
+  "AT": "Actif total",
+  "AC": "Actif courant",
+  "AI": "Actif immobilisé",
+  "PT": "Passif total",
+  "PC": "Passif courant",
+  "PNC": "Passif non courant",
+  "FP": "Fonds propres"
+}
