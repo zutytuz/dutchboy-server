@@ -268,7 +268,29 @@ def solve(data: dict, x_api_key: Optional[str] = Header(default=None)):
             return 10000 - len(needed)
 
         return known - (missing * 10) - (len(needed) * 0.01)
+    def safe_name(var_name: str):
+        return (
+            var_name
+            .lower()
+            .replace(".", "__dot__")
+            .replace("β", "beta")
+        )
 
+    def safe_expr(expr: str):
+        safe = expr.lower()
+
+        all_vars = set(extract_variables(expr))
+
+        for v in sorted(all_vars, key=len, reverse=True):
+            safe = re.sub(
+                r"(?<![a-zA-Z0-9_.])" + re.escape(v) + r"(?![a-zA-Z0-9_.])",
+                safe_name(v),
+                safe
+            )
+
+        safe = safe.replace("abs(", "abs(")
+
+        return safe
     def resolve(var_name: str, resolving=None):
         if resolving is None:
             resolving = set()
@@ -305,12 +327,16 @@ def solve(data: dict, x_api_key: Optional[str] = Header(default=None)):
                     if dep not in local_values:
                         local_values[dep] = resolve(dep, resolving)
 
-                result = eval(
-                    right,
-                    {"__builtins__": {}},
-                    local_values
-                )
+                safe_values = {
+                    safe_name(k): v
+                    for k, v in local_values.items()
+                }
 
+                result = eval(
+                    safe_expr(right),
+                    {"__builtins__": {}, "abs": abs, "min": min, "max": max, "round": round},
+                    safe_values
+                )
                 values[var_name] = float(result)
 
                 logs.append({
