@@ -505,11 +505,23 @@ def solve(data: dict, x_api_key: Optional[str] = Header(default=None)):
                     for k, v in local_values.items()
                 }
 
+                def AVG_ALL(base_var):
+                    return avg_all(str(base_var), values)
+
                 result = eval(
                     safe_expr(right),
-                    {"__builtins__": {}, "abs": abs, "min": min, "max": max, "round": round},
+                    {
+                        "__builtins__": {},
+                        "abs": abs,
+                        "min": min,
+                        "max": max,
+                        "round": round,
+                        "AVG_ALL": AVG_ALL,
+                        "avg_all": AVG_ALL
+                    },
                     safe_values
                 )
+
                 values[var_name] = float(result)
 
                 logs.append({
@@ -543,7 +555,6 @@ def solve(data: dict, x_api_key: Optional[str] = Header(default=None)):
             "message": f"Unable to solve {var_name}",
             "failed_formulas": failed
         })
-
     try:
         result = resolve(target)
 
