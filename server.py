@@ -82,7 +82,20 @@ def absmatch_lookup(data: dict, x_api_key: Optional[str] = Header(default=None))
 
     normalized_query = normalize_text(query)
     matches = []
+    # 0. Direct code match
+    direct_code = query.strip().upper()
 
+    if direct_code in codes:
+        return {
+            "status": "auto_match",
+            "method": "direct_code",
+            "query": query,
+            "code": direct_code,
+            "label": codes[direct_code],
+            "matched_on": direct_code,
+            "score": 1.0,
+            "needs_confirmation": False
+        }
     # 1. Exact match / synonym match
     for code, label in codes.items():
         candidates = [code, label]
