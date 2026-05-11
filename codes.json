@@ -17,5 +17,8 @@
   "PT": "Passif total",
   "PC": "Passif courant",
   "PNC": "Passif non courant",
-  "FP": "Fonds propres"
+  "FP": "Fonds propres",
+  "CI": "Capitaux investis",
+  "RNE": "Résultat net d'exploitation",
+  "RCI": "Rendement des capitaux investis"
 }

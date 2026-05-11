@@ -17,7 +17,8 @@
     "revenue",
     "revenues",
     "sales",
-    "turnover"
+    "turnover",
+    "chiffre dafaire"
   ],
   "CDV": [
     "coût des ventes",
@@ -90,5 +91,21 @@
     "fonds propres",
     "equity",
     "shareholders equity"
-  ]
+  ],
+  "CI": [
+  "capitaux investis",
+  "capital investi",
+  "invested capital",
+  "capital employed",
+  "capital employé",
+  "capital employe"
+],
+  "RNE": [
+  "résultat net d'exploitation",
+  "resultat net d exploitation",
+  "résultat net exploitation",
+  "resultat net exploitation",
+  "nopat",
+  "net operating profit after tax"
+]
 }

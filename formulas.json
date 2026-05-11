@@ -18,5 +18,7 @@
   "CDV.Q = CDV / 365",
   "DRC = CC.MOY / CA.Q",
   "TRCI = CA / CI.MOY",
-  "RCI = RNE / CI.MOY"
+  "RCI = RNE / CI.MOY",
+  "CI.MOY = AVG_ALL('CI')"
+
 ]
