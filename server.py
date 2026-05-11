@@ -559,3 +559,21 @@ def solve(data: dict, x_api_key: Optional[str] = Header(default=None)):
             status_code=400,
             detail=str(e)
         )
+def avg_all(base_var: str, values: dict) -> float:
+    """
+    Calcule la moyenne de toutes les variables du type:
+    base_var.y1, base_var.y2, ...
+    Exemple: avg_all("ci", values)
+    """
+
+    prefix = base_var.lower() + ".y"
+    nums = []
+
+    for key, value in values.items():
+        if key.lower().startswith(prefix):
+            nums.append(float(value))
+
+    if not nums:
+        raise ValueError(f"No yearly values found for {base_var}")
+
+    return sum(nums) / len(nums)
