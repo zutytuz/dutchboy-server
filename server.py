@@ -422,9 +422,25 @@ def solve(data: dict, x_api_key: Optional[str] = Header(default=None)):
     logs = []
 
     def extract_variables(expr: str):
-        tokens = re.findall(r"[a-zA-Z_][a-zA-Z0-9_.]*", expr)
-        return [t.lower() for t in tokens]
+        import re
 
+        # Enlever les chaînes entre guillemets simples ou doubles
+        cleaned = re.sub(r"'[^']*'", "", expr)
+        cleaned = re.sub(r'"[^"]*"', "", cleaned)
+
+        tokens = re.findall(r"[a-zA-Z_][a-zA-Z0-9_.]*", cleaned)
+
+        ignored = {
+            "abs", "min", "max", "round",
+            "avg_all", "AVG_ALL",
+            "avg", "AVG"
+        }
+
+        return [
+            t.lower()
+            for t in tokens
+            if t.lower() not in {x.lower() for x in ignored}
+        ]
     def formula_score(expr: str):
         needed = extract_variables(expr)
 
@@ -588,3 +604,586 @@ def avg_all(base_var: str, values: dict) -> float:
         raise ValueError(f"No yearly values found for {base_var}")
 
     return sum(nums) / len(nums)
+@app.post("/inputs/structure_years")
+def structure_years(data: dict, x_api_key: Optional[str] = Header(default=None)):
+    check_api_key(x_api_key)
+
+    from rapidfuzz import fuzz
+
+    rows = data.get("rows", [])
+    auto_threshold = float(data.get("auto_threshold", 0.95))
+    confirm_threshold = float(data.get("confirm_threshold", 0.80))
+
+    if not rows:
+        raise HTTPException(status_code=400, detail="Missing rows")
+
+    codes = load_json_file("codes.json", {})
+    synonyms = load_json_file("synonyms.json", {})
+
+    def lookup_label(query: str):
+        query = str(query).strip()
+
+        if not query:
+            return {
+                "status": "missing_label",
+                "code": "",
+                "label": "",
+                "score": 0
+            }
+
+        direct_code = query.upper()
+
+        if direct_code in codes:
+            return {
+                "status": "auto_match",
+                "method": "direct_code",
+                "code": direct_code,
+                "label": codes[direct_code],
+                "matched_on": direct_code,
+                "score": 1.0,
+                "needs_confirmation": False
+            }
+
+        normalized_query = normalize_text(query)
+
+        for code, label in codes.items():
+            candidates = [code, label]
+            candidates.extend(synonyms.get(code, []))
+
+            for candidate in candidates:
+                if normalized_query == normalize_text(candidate):
+                    return {
+                        "status": "auto_match",
+                        "method": "exact_or_synonym",
+                        "code": code,
+                        "label": label,
+                        "matched_on": candidate,
+                        "score": 1.0,
+                        "needs_confirmation": False
+                    }
+
+        matches = []
+
+        for code, label in codes.items():
+            candidates = [code, label]
+            candidates.extend(synonyms.get(code, []))
+
+            best_candidate = None
+            best_score = 0
+
+            for candidate in candidates:
+                score = fuzz.ratio(normalized_query, normalize_text(candidate)) / 100
+
+                if score > best_score:
+                    best_score = score
+                    best_candidate = candidate
+
+            matches.append({
+                "code": code,
+                "label": label,
+                "matched_on": best_candidate,
+                "score": round(best_score, 4)
+            })
+
+        matches = sorted(matches, key=lambda x: x["score"], reverse=True)
+        best = matches[0]
+
+        if best["score"] >= auto_threshold:
+            status = "auto_match"
+            needs_confirmation = False
+        elif best["score"] >= confirm_threshold:
+            status = "needs_confirmation"
+            needs_confirmation = True
+        else:
+            status = "no_reliable_match"
+            needs_confirmation = True
+
+        return {
+            "status": status,
+            "method": "fuzzy_levenshtein",
+            "code": best["code"],
+            "label": best["label"],
+            "matched_on": best["matched_on"],
+            "score": best["score"],
+            "needs_confirmation": needs_confirmation,
+            "all_matches": matches[:5]
+        }
+
+    years = []
+
+    for row in rows:
+        year = row.get("year")
+
+        if year is None:
+            continue
+
+        try:
+            year_int = int(year)
+            years.append(year_int)
+        except Exception:
+            continue
+
+    years = sorted(list(set(years)))
+
+    if not years:
+        raise HTTPException(status_code=400, detail="No valid years found")
+
+    year_mapping = {
+        str(year): f"Y{i + 1}"
+        for i, year in enumerate(years)
+    }
+
+    values = {}
+    structured_rows = []
+    needs_confirmation = []
+
+    for row in rows:
+        label_input = str(row.get("label", "")).strip()
+        year = row.get("year")
+        value = row.get("value")
+
+        if not label_input or year is None or value is None:
+            continue
+
+        try:
+            year_int = int(year)
+            numeric_value = float(value)
+        except Exception:
+            continue
+
+        if str(year_int) not in year_mapping:
+            continue
+
+        match = lookup_label(label_input)
+
+        if match["status"] not in ["auto_match"]:
+            needs_confirmation.append({
+                "original_label": label_input,
+                "year": year_int,
+                "value": numeric_value,
+                "match": match
+            })
+            continue
+
+        code = match["code"].lower()
+        y_code = year_mapping[str(year_int)].lower()
+        final_key = f"{code}.{y_code}"
+
+        values[final_key] = numeric_value
+                    # Valeur courante = dernière année disponible
+        if year_int == years[-1]:
+            values[code] = numeric_value
+        structured_rows.append({
+            "original_label": label_input,
+            "official_code": match["code"],
+            "official_label": match["label"],
+            "match_method": match.get("method", ""),
+            "score": match.get("score", 0),
+            "year": year_int,
+            "mapped_year": year_mapping[str(year_int)],
+            "key": final_key,
+            "value": numeric_value
+        })
+
+    return {
+        "year_mapping": year_mapping,
+        "values": values,
+        "rows": structured_rows,
+        "needs_confirmation": needs_confirmation,
+        "summary": {
+            "input_rows": len(rows),
+            "structured_rows": len(structured_rows),
+            "needs_confirmation": len(needs_confirmation),
+            "years_detected": len(years)
+        }
+    }
+@app.post("/inputs/structure_and_solve")
+def structure_and_solve(data: dict, x_api_key: Optional[str] = Header(default=None)):
+    check_api_key(x_api_key)
+
+    target = str(data.get("target", "")).strip()
+    rows = data.get("rows", [])
+
+    if not target:
+        raise HTTPException(status_code=400, detail="Missing target")
+
+    if not rows:
+        raise HTTPException(status_code=400, detail="Missing rows")
+
+    # 1. Réutiliser la logique de structure_years
+    structured = structure_years(
+        {
+            "rows": rows,
+            "auto_threshold": data.get("auto_threshold", 0.95),
+            "confirm_threshold": data.get("confirm_threshold", 0.80)
+        },
+        x_api_key=x_api_key
+    )
+
+    if structured.get("needs_confirmation"):
+        return {
+            "status": "needs_confirmation",
+            "message": "Some labels need confirmation before solving",
+            "structure": structured
+        }
+
+    values = structured.get("values", {})
+
+    # 2. Normaliser aussi la target avec AbsMatch si besoin
+    codes = load_json_file("codes.json", {})
+    target_code = target.upper()
+
+    formula_targets = set()
+
+    for formula in load_formula_library():
+        if "=" in formula:
+            left, _ = formula.split("=", 1)
+            formula_targets.add(left.strip().upper())
+
+# Si la target est un code officiel OU une variable calculable, on l'accepte directement
+    if target_code not in codes and target_code not in formula_targets:
+        lookup_result = absmatch_lookup(
+            {"query": target},
+            x_api_key=x_api_key
+        )
+
+        if lookup_result.get("status") != "auto_match":
+            return {
+                "status": "target_needs_confirmation",
+                "message": "Target needs confirmation before solving",
+                "target_match": lookup_result,
+                "structure": structured
+            }
+
+        target_code = lookup_result.get("code", target).upper()
+
+    # 3. Lancer solve avec les values structurées
+    solve_result = solve(
+        {
+            "target": target_code.lower(),
+            "values": values
+        },
+        x_api_key=x_api_key
+    )
+
+    return {
+        "status": "solved",
+        "target": target_code,
+        "structure": structured,
+        "solve": solve_result
+    }
+@app.post("/inputs/auto_structure")
+def auto_structure(data: dict, x_api_key: Optional[str] = Header(default=None)):
+    check_api_key(x_api_key)
+
+    from rapidfuzz import fuzz
+
+    cells = data.get("cells", [])
+
+    if not cells:
+        raise HTTPException(status_code=400, detail="Missing cells")
+
+    codes = load_json_file("codes.json", {})
+    synonyms = load_json_file("synonyms.json", {})
+
+    def is_year(value):
+        try:
+            y = int(float(value))
+            return 1900 <= y <= 2100
+        except Exception:
+            return False
+
+    def to_year(value):
+        return int(float(value))
+
+    def lookup_label_light(query: str):
+        query = str(query).strip()
+
+        if not query:
+            return None
+
+        direct_code = query.upper()
+
+        if direct_code in codes:
+            return {
+                "code": direct_code,
+                "label": codes[direct_code],
+                "score": 1.0,
+                "method": "direct_code"
+            }
+
+        nq = normalize_text(query)
+        best = None
+
+        for code, label in codes.items():
+            candidates = [code, label]
+            candidates.extend(synonyms.get(code, []))
+
+            for candidate in candidates:
+                nc = normalize_text(candidate)
+
+                if nq == nc:
+                    return {
+                        "code": code,
+                        "label": label,
+                        "score": 1.0,
+                        "method": "exact_or_synonym"
+                    }
+
+                score = fuzz.ratio(nq, nc) / 100
+
+                if best is None or score > best["score"]:
+                    best = {
+                        "code": code,
+                        "label": label,
+                        "score": round(score, 4),
+                        "method": "fuzzy",
+                        "matched_on": candidate
+                    }
+
+        if best and best["score"] >= 0.80:
+            return best
+
+        return None
+
+    # 1. Index cells
+    grid = {}
+    rows_set = set()
+    cols_set = set()
+
+    for cell in cells:
+        try:
+            r = int(cell.get("row"))
+            c = int(cell.get("col"))
+            v = cell.get("value")
+        except Exception:
+            continue
+
+        if v is None or str(v).strip() == "":
+            continue
+
+        grid[(r, c)] = v
+        rows_set.add(r)
+        cols_set.add(c)
+
+    if not grid:
+        raise HTTPException(status_code=400, detail="No usable cells")
+
+    rows = sorted(rows_set)
+    cols = sorted(cols_set)
+
+    # 2. Detect year cells
+    year_cells = []
+
+    for (r, c), v in grid.items():
+        if is_year(v):
+            year_cells.append({
+                "row": r,
+                "col": c,
+                "year": to_year(v)
+            })
+
+    if not year_cells:
+        raise HTTPException(status_code=400, detail="No year detected")
+
+    # 3. Detect label cells with AbsMatch
+    label_cells = []
+
+    for (r, c), v in grid.items():
+        if is_year(v):
+            continue
+
+        try:
+            float(v)
+            continue
+        except Exception:
+            pass
+
+        match = lookup_label_light(str(v))
+
+        if match:
+            label_cells.append({
+                "row": r,
+                "col": c,
+                "raw": str(v),
+                "match": match
+            })
+
+    if not label_cells:
+        raise HTTPException(status_code=400, detail="No label detected")
+
+    # 4. Orientation scoring
+    # Horizontal table:
+    # years are mostly in one row, labels are mostly in one column.
+    year_rows = {}
+    year_cols = {}
+    label_rows = {}
+    label_cols = {}
+
+    for y in year_cells:
+        year_rows[y["row"]] = year_rows.get(y["row"], 0) + 1
+        year_cols[y["col"]] = year_cols.get(y["col"], 0) + 1
+
+    for l in label_cells:
+        label_rows[l["row"]] = label_rows.get(l["row"], 0) + 1
+        label_cols[l["col"]] = label_cols.get(l["col"], 0) + 1
+
+    best_year_row = max(year_rows, key=year_rows.get)
+    best_year_col = max(year_cols, key=year_cols.get)
+    best_label_row = max(label_rows, key=label_rows.get)
+    best_label_col = max(label_cols, key=label_cols.get)
+
+    horizontal_score = year_rows[best_year_row] + label_cols[best_label_col]
+    vertical_score = year_cols[best_year_col] + label_rows[best_label_row]
+
+    if horizontal_score >= vertical_score:
+        orientation = "labels_as_rows_years_as_columns"
+        header_year_row = best_year_row
+        label_col = best_label_col
+    else:
+        orientation = "labels_as_columns_years_as_rows"
+        year_col = best_year_col
+        header_label_row = best_label_row
+
+    extracted_rows = []
+
+    # 5A. Classic orientation
+    if orientation == "labels_as_rows_years_as_columns":
+
+        years_by_col = {}
+
+        for y in year_cells:
+            if y["row"] == header_year_row:
+                years_by_col[y["col"]] = y["year"]
+
+        labels_by_row = {}
+
+        for l in label_cells:
+            if l["col"] == label_col:
+                labels_by_row[l["row"]] = l
+
+        for data_row, label_data in labels_by_row.items():
+            for data_col, year in years_by_col.items():
+                value = grid.get((data_row, data_col))
+
+                if value is None:
+                    continue
+
+                try:
+                    numeric_value = float(value)
+                except Exception:
+                    continue
+
+                extracted_rows.append({
+                    "label": label_data["raw"],
+                    "detected_code": label_data["match"]["code"],
+                    "detected_label": label_data["match"]["label"],
+                    "year": year,
+                    "value": numeric_value
+                })
+
+    # 5B. Transposed orientation
+    else:
+
+        years_by_row = {}
+
+        for y in year_cells:
+            if y["col"] == year_col:
+                years_by_row[y["row"]] = y["year"]
+
+        labels_by_col = {}
+
+        for l in label_cells:
+            if l["row"] == header_label_row:
+                labels_by_col[l["col"]] = l
+
+        for data_row, year in years_by_row.items():
+            for data_col, label_data in labels_by_col.items():
+                value = grid.get((data_row, data_col))
+
+                if value is None:
+                    continue
+
+                try:
+                    numeric_value = float(value)
+                except Exception:
+                    continue
+
+                extracted_rows.append({
+                    "label": label_data["raw"],
+                    "detected_code": label_data["match"]["code"],
+                    "detected_label": label_data["match"]["label"],
+                    "year": year,
+                    "value": numeric_value
+                })
+
+    return {
+        "status": "structured",
+        "orientation": orientation,
+        "year_cells": year_cells,
+        "label_cells": label_cells,
+        "extracted_rows": extracted_rows,
+        "summary": {
+            "cells_received": len(cells),
+            "years_detected": len(year_cells),
+            "labels_detected": len(label_cells),
+            "rows_extracted": len(extracted_rows),
+            "horizontal_score": horizontal_score,
+            "vertical_score": vertical_score
+        }
+    }
+@app.post("/inputs/auto_structure_and_solve")
+def auto_structure_and_solve(data: dict, x_api_key: Optional[str] = Header(default=None)):
+    check_api_key(x_api_key)
+
+    target = str(data.get("target", "")).strip()
+    cells = data.get("cells", [])
+
+    if not target:
+        raise HTTPException(status_code=400, detail="Missing target")
+
+    if not cells:
+        raise HTTPException(status_code=400, detail="Missing cells")
+
+    # 1. Comprendre automatiquement le tableau brut
+    auto_structured = auto_structure(
+        {"cells": cells},
+        x_api_key=x_api_key
+    )
+
+    extracted_rows = auto_structured.get("extracted_rows", [])
+
+    if not extracted_rows:
+        return {
+            "status": "no_rows_extracted",
+            "message": "No usable rows could be extracted from the grid",
+            "auto_structure": auto_structured
+        }
+
+    # 2. Transformer les lignes extraites en format structure_and_solve
+    rows_for_solver = []
+
+    for row in extracted_rows:
+        rows_for_solver.append({
+            "label": row.get("detected_code") or row.get("label"),
+            "year": row.get("year"),
+            "value": row.get("value")
+        })
+
+    # 3. Structure + solve
+    solved = structure_and_solve(
+        {
+            "target": target,
+            "rows": rows_for_solver,
+            "auto_threshold": data.get("auto_threshold", 0.95),
+            "confirm_threshold": data.get("confirm_threshold", 0.80)
+        },
+        x_api_key=x_api_key
+    )
+
+    return {
+        "status": solved.get("status"),
+        "target": target,
+        "auto_structure": auto_structured,
+        "structure_and_solve": solved
+    }
