@@ -1,0 +1,2816 @@
+[
+  {
+    "code": "AT",
+    "fr": "Actifs totaux",
+    "en": "Total Assets",
+    "synonyms": [
+      "Total Assets",
+      "TA",
+      "assets",
+      "total assets",
+      "at"
+    ],
+    "formulas": [
+      "AT = AC + AI"
+    ],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "AC",
+    "fr": "Actifs circulants",
+    "en": "Current Assets",
+    "synonyms": [
+      "Current Assets",
+      "CA",
+      "current assets",
+      "ac"
+    ],
+    "formulas": [
+      "AC = TRESO + ACI + ACEX"
+    ],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "ARL",
+    "fr": "Actifs relativement liquides",
+    "en": "Quick Assets",
+    "synonyms": [
+      "Quick Assets",
+      "QA",
+      "quick assets",
+      "arl"
+    ],
+    "formulas": [
+      "ARL = TRESO + ACI + CC"
+    ],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "TRESO",
+    "fr": "Trésorerie et équivalents de trésorerie",
+    "en": "Cash and cash equivalents",
+    "synonyms": [
+      "trésorerie",
+      "tresorerie",
+      "trésorerie et équivalents de trésorerie",
+      "tresorerie et equivalents de tresorerie",
+      "cash",
+      "cash and cash equivalents",
+      "liquidités",
+      "liquidites",
+      "disponibilités",
+      "disponibilites"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "ACI",
+    "fr": "Actifs circulants d'investissement",
+    "en": "Current Investing Assets",
+    "synonyms": [
+      "Current Investing Assets",
+      "CIA",
+      "current investing assets",
+      "short-term investments",
+      "aci"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "ACEX",
+    "fr": "Actifs circulants d'exploitation",
+    "en": "Current Operating Assets",
+    "synonyms": [
+      "Current Operating Assets",
+      "COA",
+      "current operating assets",
+      "acex"
+    ],
+    "formulas": [
+      "ACEX = CC + STK + CPD + IDCT + AACEX"
+    ],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "CC",
+    "fr": "Créances clients",
+    "en": "Accounts Receivable",
+    "synonyms": [
+      "Accounts Receivable",
+      "AR",
+      "accounts receivable",
+      "trade receivables",
+      "cc"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "PCD",
+    "fr": "Provisions pour créances douteuses",
+    "en": "Allowance for Doubtful Accounts",
+    "synonyms": [
+      "Allowance for Doubtful Accounts",
+      "ADA",
+      "allowance for doubtful accounts",
+      "bad debt allowance",
+      "pcd"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "STK",
+    "fr": "Stocks",
+    "en": "Inventories",
+    "synonyms": [
+      "Inventories",
+      "INV",
+      "inventory",
+      "inventories",
+      "stk"
+    ],
+    "formulas": [
+      "STK = MARCH + PF + ECP + MP + FRNTR"
+    ],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "MARCH",
+    "fr": "Marchandises",
+    "en": "Merchandise",
+    "synonyms": [
+      "Merchandise",
+      "MERCH",
+      "merchandise",
+      "march"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "PF",
+    "fr": "Produits finis",
+    "en": "Finished Products",
+    "synonyms": [
+      "Finished Products",
+      "FP",
+      "finished products",
+      "pf"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "ECP",
+    "fr": "En-cours de production",
+    "en": "Work In Progress",
+    "synonyms": [
+      "Work In Progress",
+      "WIP",
+      "work in progress",
+      "ecp"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "MP",
+    "fr": "Matières premières",
+    "en": "Raw Materials",
+    "synonyms": [
+      "Raw Materials",
+      "RM",
+      "raw materials",
+      "mp"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "FRNTR",
+    "fr": "Fournitures",
+    "en": "Supplies",
+    "synonyms": [
+      "Supplies",
+      "SUPPL",
+      "supplies",
+      "frntr"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "CPD",
+    "fr": "Charges prépayées ou différées",
+    "en": "Prepaid or Deferred Expenses",
+    "synonyms": [
+      "Prepaid or Deferred Expenses",
+      "PDE",
+      "prepaid expenses",
+      "deferred expenses",
+      "cpd"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "IDCT",
+    "fr": "Impôts différés à court terme",
+    "en": "Current Deferred Taxes",
+    "synonyms": [
+      "Current Deferred Taxes",
+      "CDT",
+      "current deferred taxes",
+      "idct"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "AACEX",
+    "fr": "Autres actifs circulants d'exploitation",
+    "en": "Other Current Operating Assets",
+    "synonyms": [
+      "Other Current Operating Assets",
+      "OCOA",
+      "other current operating assets",
+      "aacex"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "AI",
+    "fr": "Actifs immobilisés",
+    "en": "Non-Current Assets",
+    "synonyms": [
+      "Non-Current Assets",
+      "NCA",
+      "non-current assets",
+      "fixed assets",
+      "ai"
+    ],
+    "formulas": [
+      "AI = AIE + AII"
+    ],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "AIE",
+    "fr": "Actifs immobilisés d'exploitation",
+    "en": "Non-current Operating Assets",
+    "synonyms": [
+      "Non-current Operating Assets",
+      "NCOA",
+      "non-current operating assets",
+      "aie"
+    ],
+    "formulas": [
+      "AIE = IDLT + ALLD + IC + TER + II + EDA + AAIE"
+    ],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "IDLT",
+    "fr": "Impôts différés à long terme",
+    "en": "Non-Current Deferred Taxes",
+    "synonyms": [
+      "Non-Current Deferred Taxes",
+      "NCDT",
+      "non-current deferred taxes",
+      "idlt"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "ALLD",
+    "fr": "Actifs en location longue durée",
+    "en": "Assets from Long-Term Leases",
+    "synonyms": [
+      "Assets from Long-Term Leases",
+      "ALTL",
+      "assets from long-term leases",
+      "alld"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "AA.ALLD",
+    "fr": "Amortissements accumulés sur actifs en location longue durée",
+    "en": "Accumulated Depreciation on Assets from Long-Term Leases",
+    "synonyms": [
+      "Accumulated Depreciation on Assets from Long-Term Leases",
+      "AD.ALTL",
+      "accumulated depreciation on assets from long-term leases",
+      "aa.alld"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "IC",
+    "fr": "Immobilisations corporelles",
+    "en": "Property, Plants, and Equipment",
+    "synonyms": [
+      "Property, Plants, and Equipment",
+      "PPE",
+      "property plant and equipment",
+      "ic"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "AA.IC",
+    "fr": "Amortissements accumulés sur immobilisations corporelles",
+    "en": "Accumulated Depreciation on Property, Plants, and Equipment",
+    "synonyms": [
+      "Accumulated Depreciation on Property, Plants, and Equipment",
+      "AD.PPE",
+      "accumulated depreciation on ppe",
+      "aa.ic"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "TER",
+    "fr": "Terrains",
+    "en": "Land",
+    "synonyms": [
+      "Land",
+      "LAND",
+      "land",
+      "ter"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "II",
+    "fr": "Immobilisations incorporelles",
+    "en": "Intangible Assets",
+    "synonyms": [
+      "Intangible Assets",
+      "IA",
+      "intangible assets",
+      "ii"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "AA.II",
+    "fr": "Amortissements accumulés sur immobilisations incorporelles",
+    "en": "Accumulated Depreciation on Intangible Assets",
+    "synonyms": [
+      "Accumulated Depreciation on Intangible Assets",
+      "AD.IA",
+      "accumulated depreciation on intangible assets",
+      "aa.ii"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "EDA",
+    "fr": "Écart d'acquisition",
+    "en": "Goodwill",
+    "synonyms": [
+      "Goodwill",
+      "GW",
+      "goodwill",
+      "eda"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "AAIE",
+    "fr": "Autres actifs immobilisés d'exploitation",
+    "en": "Other Non-current Operating Assets",
+    "synonyms": [
+      "Other Non-current Operating Assets",
+      "ONCOA",
+      "other non-current operating assets",
+      "aaie"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "AII",
+    "fr": "Actifs immobilisés d'investissement",
+    "en": "Non-Current Investing Assets",
+    "synonyms": [
+      "Non-Current Investing Assets",
+      "NCIA",
+      "non-current investing assets",
+      "aii"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "PT",
+    "fr": "Passifs totaux",
+    "en": "Total Liabilities",
+    "synonyms": [
+      "Total Liabilities",
+      "TL",
+      "total liabilities",
+      "pt"
+    ],
+    "formulas": [
+      "PT = PC + PNC"
+    ],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "PC",
+    "fr": "Passifs courants",
+    "en": "Current Liabilities",
+    "synonyms": [
+      "Current Liabilities",
+      "CL",
+      "current liabilities",
+      "pc"
+    ],
+    "formulas": [
+      "PC = PCE + PCF + DAP"
+    ],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "PCE",
+    "fr": "Passifs courants d'exploitation",
+    "en": "Current Operating Liabilities",
+    "synonyms": [
+      "Current Operating Liabilities",
+      "COL",
+      "current operating liabilities",
+      "pce"
+    ],
+    "formulas": [
+      "PCE = DF + SAP + PCT.PR + PDCA + ACAP + IAP + TAP + PCT.PELLD + APCE"
+    ],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "DF",
+    "fr": "Dettes fournisseurs",
+    "en": "Accounts Payable",
+    "synonyms": [
+      "Accounts Payable",
+      "AP",
+      "accounts payable",
+      "trade payables",
+      "df"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "SAP",
+    "fr": "Salaires à payer",
+    "en": "Employees Salaries Payable",
+    "synonyms": [
+      "Employees Salaries Payable",
+      "ESP",
+      "salaries payable",
+      "sap"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "CAPAC",
+    "fr": "Cotisations à verser à l'assurance-chômage",
+    "en": "Contributions to Unemployment Insurance Payable",
+    "synonyms": [
+      "Contributions to Unemployment Insurance Payable",
+      "CUIP",
+      "capac"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "CAPAM",
+    "fr": "Cotisations à verser à l'assurance maladie",
+    "en": "Contributions to Healthcare Insurance Payable",
+    "synonyms": [
+      "Contributions to Healthcare Insurance Payable",
+      "CHIP",
+      "capam"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "CAPFP",
+    "fr": "Cotisations à verser aux fonds de pension",
+    "en": "Contributions to Pension Funds Payable",
+    "synonyms": [
+      "Contributions to Pension Funds Payable",
+      "CPFP",
+      "capfp"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "PDCA",
+    "fr": "Produits différés ou constatés d'avance",
+    "en": "Unearned or Deferred Revenues",
+    "synonyms": [
+      "Unearned or Deferred Revenues",
+      "UDR",
+      "unearned revenue",
+      "deferred revenue",
+      "pdca"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "ACAP",
+    "fr": "Autres charges à payer",
+    "en": "Other Accrued Liabilities",
+    "synonyms": [
+      "Other Accrued Liabilities",
+      "OAL",
+      "other accrued liabilities",
+      "acap"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "IAP",
+    "fr": "Intérêts à payer",
+    "en": "Interest Payable",
+    "synonyms": [
+      "Interest Payable",
+      "IP",
+      "interest payable",
+      "iap"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "TAP",
+    "fr": "Impôts à payer",
+    "en": "Taxes Payable",
+    "synonyms": [
+      "Taxes Payable",
+      "TP",
+      "taxes payable",
+      "tap"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "PCT.PR",
+    "fr": "Part à court terme des plans de retraite",
+    "en": "Current Portion of Pension Liabilities",
+    "synonyms": [
+      "Current Portion of Pension Liabilities",
+      "CP.PL",
+      "current portion of pension liabilities",
+      "pct.pr"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "PCT.PELLD",
+    "fr": "Part à court terme des passifs d'exploitation de locations longue durée",
+    "en": "Current Portion of Operating Lease Liabilities",
+    "synonyms": [
+      "Current Portion of Operating Lease Liabilities",
+      "CP.OLL",
+      "pct.pelld"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "APCE",
+    "fr": "Autres passifs courants d'exploitation",
+    "en": "Other Current Operating Liabilities",
+    "synonyms": [
+      "Other Current Operating Liabilities",
+      "OCOL",
+      "apce"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "DAP",
+    "fr": "Dividendes à payer",
+    "en": "Dividends Payable",
+    "synonyms": [
+      "Dividends Payable",
+      "DP",
+      "dividends payable",
+      "dap"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "PCF",
+    "fr": "Passifs courants de financement",
+    "en": "Current Financing Liabilities",
+    "synonyms": [
+      "Current Financing Liabilities",
+      "CFL",
+      "current financing liabilities",
+      "pcf"
+    ],
+    "formulas": [
+      "PCF = DCT + PCT.PFLLD + PCT.HPTQ + PCT.DLT + PCT.OBLI + APCF"
+    ],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "DCT",
+    "fr": "Dettes et effets à payer à court terme",
+    "en": "Short-Term Debts and Current Notes Payable",
+    "synonyms": [
+      "Short-Term Debts and Current Notes Payable",
+      "STD",
+      "short-term debt",
+      "dct"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "PCT.PFLLD",
+    "fr": "Part à court terme des passifs financiers de locations longue durée",
+    "en": "Current Portion of Financial Lease Liabilities",
+    "synonyms": [
+      "Current Portion of Financial Lease Liabilities",
+      "CP.FLL",
+      "pct.pflld"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "PCT.HPTQ",
+    "fr": "Part à court terme des hypothèques",
+    "en": "Current Portion of Mortgages",
+    "synonyms": [
+      "Current Portion of Mortgages",
+      "CP.MRTG",
+      "pct.hptq"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "PCT.DLT",
+    "fr": "Part à court terme des dettes à long terme",
+    "en": "Current Portion of Long Term Debt",
+    "synonyms": [
+      "Current Portion of Long Term Debt",
+      "CP.LTD",
+      "pct.dlt"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "PCT.OBLI",
+    "fr": "Part à court terme des obligations",
+    "en": "Current Portion of Bonds",
+    "synonyms": [
+      "Current Portion of Bonds",
+      "CP.BOND",
+      "pct.obli"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "APCF",
+    "fr": "Autres passifs courants de financement",
+    "en": "Other Current Financing Liabilities",
+    "synonyms": [
+      "Other Current Financing Liabilities",
+      "OCFL",
+      "apcf"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "PNC",
+    "fr": "Passifs non-courants",
+    "en": "Non-Current Liabilities",
+    "synonyms": [
+      "Non-Current Liabilities",
+      "NCL",
+      "non-current liabilities",
+      "pnc"
+    ],
+    "formulas": [
+      "PNC = PNCF + PNCE"
+    ],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "PNCF",
+    "fr": "Passifs non-courants de financement",
+    "en": "Non-Current Financing Liabilities",
+    "synonyms": [
+      "Non-Current Financing Liabilities",
+      "NCFL",
+      "pncf"
+    ],
+    "formulas": [
+      "PNCF = PFLLD + HPTQ + DLT + OBLI + APNCF"
+    ],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "PFLLD",
+    "fr": "Passifs financiers de locations longue durée",
+    "en": "Financial Lease Liabilities",
+    "synonyms": [
+      "Financial Lease Liabilities",
+      "FLL",
+      "pflld"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "HPTQ",
+    "fr": "Hypothèques",
+    "en": "Mortgages",
+    "synonyms": [
+      "Mortgages",
+      "MRTG",
+      "hptq"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "DLT",
+    "fr": "Dettes à long terme",
+    "en": "Long Term Debt",
+    "synonyms": [
+      "Long Term Debt",
+      "LTD",
+      "dlt"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "OBLI",
+    "fr": "Obligations",
+    "en": "Bonds",
+    "synonyms": [
+      "Bonds",
+      "BOND",
+      "obli"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "APNCF",
+    "fr": "Autres passifs non-courants de financement",
+    "en": "Other Non-Current Financing Liabilities",
+    "synonyms": [
+      "Other Non-Current Financing Liabilities",
+      "ONCFL",
+      "apncf"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "PNCE",
+    "fr": "Passifs non-courants d'exploitation",
+    "en": "Non-Current Operating Liabilities",
+    "synonyms": [
+      "Non-Current Operating Liabilities",
+      "NCOL",
+      "pnce"
+    ],
+    "formulas": [
+      "PNCE = IAPLT + PR + PELLD + APNCE"
+    ],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "IAPLT",
+    "fr": "Impôts à payer à long terme",
+    "en": "Non-Current Taxes Payable",
+    "synonyms": [
+      "Non-Current Taxes Payable",
+      "NCTP",
+      "iaplt"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "PR",
+    "fr": "Plans de retraite",
+    "en": "Pension Liabilities",
+    "synonyms": [
+      "Pension Liabilities",
+      "PL",
+      "pr"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "PELLD",
+    "fr": "Passifs d'exploitation de locations longue durée",
+    "en": "Operating Lease Liabilities",
+    "synonyms": [
+      "Operating Lease Liabilities",
+      "OLL",
+      "pelld"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "APNCE",
+    "fr": "Autres passifs non-courants d'exploitation",
+    "en": "Other Non-Current Operating Liabilities",
+    "synonyms": [
+      "Other Non-Current Operating Liabilities",
+      "ONCOL",
+      "apnce"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "FP",
+    "fr": "Fonds propres",
+    "en": "Stockholders Equity",
+    "synonyms": [
+      "Stockholders Equity",
+      "SE",
+      "equity",
+      "shareholders equity",
+      "fp"
+    ],
+    "formulas": [
+      "FP = CS + BND + ARA + AUTFP + IM"
+    ],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "CS",
+    "fr": "Capital social",
+    "en": "Paid-in Capital",
+    "synonyms": [
+      "Paid-in Capital",
+      "PIC",
+      "paid-in capital",
+      "cs"
+    ],
+    "formulas": [
+      "CS = APREF + AORD + PREM + APRPR"
+    ],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "APREF",
+    "fr": "Actions préférentielles",
+    "en": "Preferred Stock",
+    "synonyms": [
+      "Preferred Stock",
+      "PRFSTK",
+      "apref"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "AORD",
+    "fr": "Actions ordinaires",
+    "en": "Common Stock",
+    "synonyms": [
+      "Common Stock",
+      "COMSTK",
+      "aord"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "PREM",
+    "fr": "Prime d'émission",
+    "en": "Additional Paid-In Capital",
+    "synonyms": [
+      "Additional Paid-In Capital",
+      "APIC",
+      "prem"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "APRPR",
+    "fr": "Actions propres",
+    "en": "Treasury Stock",
+    "synonyms": [
+      "Treasury Stock",
+      "TRSTK",
+      "aprpr"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "BND",
+    "fr": "Bénéfices non distribués",
+    "en": "Retained Earnings",
+    "synonyms": [
+      "Retained Earnings",
+      "RE",
+      "retained earnings",
+      "bnd"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "ARA",
+    "fr": "Autres résultats accumulés",
+    "en": "Other Comprehensive Income or Loss",
+    "synonyms": [
+      "Other Comprehensive Income or Loss",
+      "OCIL",
+      "ara"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "AUTFP",
+    "fr": "Autres fonds propres",
+    "en": "Other Equity",
+    "synonyms": [
+      "Other Equity",
+      "OTHEQ",
+      "autfp"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "IM",
+    "fr": "Intérêts minoritaires",
+    "en": "Non-Controlling Interests",
+    "synonyms": [
+      "Non-Controlling Interests",
+      "NCI",
+      "minority interests",
+      "im"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "ETAT.BILAN",
+    "fr": "Bilan",
+    "en": "Balance Sheet",
+    "synonyms": [
+      "Balance Sheet",
+      "STMT.BS",
+      "balance sheet",
+      "etat.bilan"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "CI",
+    "fr": "Capitaux investis",
+    "en": "Invested Capital",
+    "synonyms": [
+      "Invested Capital",
+      "IC",
+      "invested capital",
+      "ci"
+    ],
+    "formulas": [
+      "CI = DPI + RPI",
+      "CI = CE + TRESO"
+    ],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "DPI",
+    "fr": "Dettes porteuses d'intérêts",
+    "en": "Interest Bearing Debts",
+    "synonyms": [
+      "Interest Bearing Debts",
+      "IBD",
+      "dpi"
+    ],
+    "formulas": [
+      "DPI = PCF + PNCF"
+    ],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "RPI",
+    "fr": "Richesse des propriétaires investie",
+    "en": "Owners Wealth Invested",
+    "synonyms": [
+      "Owners Wealth Invested",
+      "OWI",
+      "rpi"
+    ],
+    "formulas": [
+      "RPI = FP + DAP"
+    ],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "CE",
+    "fr": "Capitaux employés",
+    "en": "Capital Employed",
+    "synonyms": [
+      "Capital Employed",
+      "CE",
+      "ce"
+    ],
+    "formulas": [
+      "CE = CI - TRESO",
+      "CE = (ACI + ACEX - PCE) + (AIE + AII - PNCE)"
+    ],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "CA",
+    "fr": "Chiffre d'affaires",
+    "en": "Revenues",
+    "synonyms": [
+      "Revenues",
+      "REV",
+      "ca"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "ESCC",
+    "fr": "Escomptes sur cartes de crédit",
+    "en": "Discounts on Credit Cards",
+    "synonyms": [
+      "Discounts on Credit Cards",
+      "DCC",
+      "escc"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "EPPA",
+    "fr": "Escomptes pour paiement anticipé",
+    "en": "Discounts For Early Payments",
+    "synonyms": [
+      "Discounts For Early Payments",
+      "DFEP",
+      "eppa"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "RER",
+    "fr": "Retours et rabais",
+    "en": "Returns and Allowances",
+    "synonyms": [
+      "Returns and Allowances",
+      "RETALL",
+      "rer"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "CDV",
+    "fr": "Coût des ventes",
+    "en": "Cost Of Sales",
+    "synonyms": [
+      "Cost Of Sales",
+      "COS",
+      "cdv"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "MB",
+    "fr": "Marge brute",
+    "en": "Gross Margin",
+    "synonyms": [
+      "Gross Margin",
+      "GM",
+      "mb"
+    ],
+    "formulas": [
+      "MB = CA - CDV"
+    ],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "FNCT",
+    "fr": "Charges fonctionnelles",
+    "en": "Selling, General and Administrative Expenses",
+    "synonyms": [
+      "Selling, General and Administrative Expenses",
+      "SGNA",
+      "operating expenses",
+      "SG&A",
+      "fnct"
+    ],
+    "formulas": [
+      "FNCT = COM + RED + ADM"
+    ],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "COM",
+    "fr": "Charges commerciales",
+    "en": "Selling and Marketing Expenses",
+    "synonyms": [
+      "Selling and Marketing Expenses",
+      "SME",
+      "selling expenses",
+      "marketing expenses",
+      "com"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "DCD",
+    "fr": "Dépréciation des créances douteuses",
+    "en": "Depreciation Of Doubtful Accounts or Bad Debt Expense",
+    "synonyms": [
+      "Depreciation Of Doubtful Accounts or Bad Debt Expense",
+      "DODA",
+      "bad debt expense",
+      "dcd"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "RED",
+    "fr": "Charges de recherche et développement",
+    "en": "Research and Development Expenses",
+    "synonyms": [
+      "Research and Development Expenses",
+      "RND",
+      "R&D",
+      "red"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "ADM",
+    "fr": "Charges administratives",
+    "en": "Administrative Expenses",
+    "synonyms": [
+      "Administrative Expenses",
+      "ADM",
+      "adm"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "ACHEXP",
+    "fr": "Autres charges d'exploitation",
+    "en": "Other Operating Expenses",
+    "synonyms": [
+      "Other Operating Expenses",
+      "OTHOPEX",
+      "achexp"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "EBE",
+    "fr": "Excédent brut d'exploitation",
+    "en": "Earnings Before Interest Taxes Depreciation and Amortization",
+    "synonyms": [
+      "Earnings Before Interest Taxes Depreciation and Amortization",
+      "EBITDA",
+      "gross operating profit",
+      "ebe"
+    ],
+    "formulas": [
+      "EBE = MB - FNCT",
+      "EBE = REX + FTE.AMT"
+    ],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "AMT",
+    "fr": "Charges d'amortissement",
+    "en": "Depreciation Expenses",
+    "synonyms": [
+      "Depreciation Expenses",
+      "DEPR",
+      "depreciation",
+      "amt"
+    ],
+    "formulas": [
+      "AMT = AMT.IC + AMT.II + AMT.ALLD"
+    ],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "AMT.IC",
+    "fr": "Amortissement des immobilisations corporelles",
+    "en": "Depreciation of Property, Plants, and Equipment",
+    "synonyms": [
+      "Depreciation of Property, Plants, and Equipment",
+      "DEPR.PPE",
+      "amt.ic"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "AMT.ALLD",
+    "fr": "Amortissement des actifs en location longue durée",
+    "en": "Depreciation of Assets from Long-Term Leases",
+    "synonyms": [
+      "Depreciation of Assets from Long-Term Leases",
+      "DEPR.ALTL",
+      "amt.alld"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "AMT.II",
+    "fr": "Amortissement des immobilisations incorporelles",
+    "en": "Amortization of Intangible Assets",
+    "synonyms": [
+      "Amortization of Intangible Assets",
+      "DEPR.IA",
+      "amt.ii"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "REX",
+    "fr": "Résultat d'exploitation",
+    "en": "Operating Income",
+    "synonyms": [
+      "Operating Income",
+      "OI",
+      "operating profit",
+      "EBIT before non-operating",
+      "rex"
+    ],
+    "formulas": [
+      "REX = EBE - AMT"
+    ],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "GPHE",
+    "fr": "Gains/pertes hors exploitation",
+    "en": "Non-Operating Gains/Losses",
+    "synonyms": [
+      "Non-Operating Gains/Losses",
+      "NOGL",
+      "gphe"
+    ],
+    "formulas": [
+      "GPHE = GPCA + DEPR + GFI + GSI + AUTGPHE"
+    ],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "GPCA",
+    "fr": "Gains/pertes sur cession d'actifs",
+    "en": "Gain/Loss on Asset Disposal",
+    "synonyms": [
+      "Gain/Loss on Asset Disposal",
+      "GLAD",
+      "gpca"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "DEPR",
+    "fr": "Dépréciations d'actifs",
+    "en": "Impairments",
+    "synonyms": [
+      "Impairments",
+      "IMPAIR",
+      "depr"
+    ],
+    "formulas": [
+      "DEPR = DEPR.IC + DEPR.TER + DEPR.II + DEPR.EDA"
+    ],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "DEPR.IC",
+    "fr": "Dépréciations d'immobilisations corporelles",
+    "en": "Impairments of Tangible Assets",
+    "synonyms": [
+      "Impairments of Tangible Assets",
+      "IMPAIR.PPE",
+      "depr.ic"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "DEPR.TER",
+    "fr": "Dépréciations de terrains",
+    "en": "Impairments of Land",
+    "synonyms": [
+      "Impairments of Land",
+      "IMPAIR.LAND",
+      "depr.ter"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "DEPR.II",
+    "fr": "Dépréciations d'immobilisations incorporelles",
+    "en": "Impairments of Intangible Assets",
+    "synonyms": [
+      "Impairments of Intangible Assets",
+      "IMPAIR.IA",
+      "depr.ii"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "DEPR.EDA",
+    "fr": "Dépréciations d'écarts d'acquisition",
+    "en": "Impairments of Goodwill",
+    "synonyms": [
+      "Impairments of Goodwill",
+      "IMPAIR.GW",
+      "depr.eda"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "GFI",
+    "fr": "Gains/pertes financières",
+    "en": "Financial Gains/Losses",
+    "synonyms": [
+      "Financial Gains/Losses",
+      "FINGAIN",
+      "gfi"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "GSI",
+    "fr": "Gains/pertes sur impôts",
+    "en": "Tax Gains/Losses",
+    "synonyms": [
+      "Tax Gains/Losses",
+      "TAXGAIN",
+      "gsi"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "AUTGPHE",
+    "fr": "Autres gains/pertes hors exploitation",
+    "en": "Other Non-Operating Gains/Losses",
+    "synonyms": [
+      "Other Non-Operating Gains/Losses",
+      "ONOGL",
+      "autgphe"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "BAVII",
+    "fr": "Bénéfice avant intérêts et impôts",
+    "en": "Earnings Before Interest and Taxes",
+    "synonyms": [
+      "Earnings Before Interest and Taxes",
+      "EBIT",
+      "bavii"
+    ],
+    "formulas": [
+      "BAVII = REX - GPHE"
+    ],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "INT",
+    "fr": "Charges d'intérêts",
+    "en": "Interest Expenses",
+    "synonyms": [
+      "Interest Expenses",
+      "interest expense",
+      "int"
+    ],
+    "formulas": [
+      "INT = INT.HPTQ + INT.DLT + INT.OBLI + INT.PFLLD"
+    ],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "INT.DCT",
+    "fr": "Intérêts sur dettes à court terme",
+    "en": "Interests on Short-Term Debts",
+    "synonyms": [
+      "Interests on Short-Term Debts",
+      "INT.STD",
+      "int.dct"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "INT.HPTQ",
+    "fr": "Intérêts sur hypothèques",
+    "en": "Interests on Mortgages",
+    "synonyms": [
+      "Interests on Mortgages",
+      "INT.MRTG",
+      "int.hptq"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "INT.DLT",
+    "fr": "Intérêts sur dettes à long terme",
+    "en": "Interests on Long Term Debt",
+    "synonyms": [
+      "Interests on Long Term Debt",
+      "INT.LTD",
+      "int.dlt"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "INT.OBLI",
+    "fr": "Intérêts sur obligations",
+    "en": "Interests on Bonds",
+    "synonyms": [
+      "Interests on Bonds",
+      "INT.BOND",
+      "int.obli"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "INT.PFLLD",
+    "fr": "Intérêts sur passifs financiers de locations longues durées",
+    "en": "Interests on Financial Leases",
+    "synonyms": [
+      "Interests on Financial Leases",
+      "INT.FLL",
+      "int.pflld"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "BAVI",
+    "fr": "Bénéfice avant impôts",
+    "en": "Earnings Before Taxes",
+    "synonyms": [
+      "Earnings Before Taxes",
+      "EBT",
+      "bavi"
+    ],
+    "formulas": [
+      "BAVI = BAVII - INT"
+    ],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "TAX",
+    "fr": "Impôt sur les sociétés",
+    "en": "Provision for Income Taxes",
+    "synonyms": [
+      "Provision for Income Taxes",
+      "income taxes",
+      "tax"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "RN",
+    "fr": "Résultat net",
+    "en": "Net Income",
+    "synonyms": [
+      "Net Income",
+      "NI",
+      "net income",
+      "rn"
+    ],
+    "formulas": [
+      "RN = BAVI - TAX"
+    ],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "SDR",
+    "fr": "Sommaire des résultats",
+    "en": "Income Summary",
+    "synonyms": [
+      "Income Summary",
+      "IS",
+      "sdr"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "ETAT.CDR",
+    "fr": "Compte de résultat",
+    "en": "Income Statement",
+    "synonyms": [
+      "Income Statement",
+      "STMT.IS",
+      "etat.cdr"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "t",
+    "fr": "Taux d'imposition sur les sociétés",
+    "en": "Tax Rate",
+    "synonyms": [
+      "Tax Rate",
+      "tax rate",
+      "t"
+    ],
+    "formulas": [
+      "t = TAX / BAVI",
+      "t = (BAVI - RN) / BAVI",
+      "t = TAX / (RN + TAX)"
+    ],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "RNE",
+    "fr": "Résultat net d'exploitation",
+    "en": "Net Operating Profit After Taxes",
+    "synonyms": [
+      "Net Operating Profit After Taxes",
+      "NOPAT",
+      "net EBIT",
+      "rne"
+    ],
+    "formulas": [
+      "RNE = BAVII * (1 - t)"
+    ],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "FTE",
+    "fr": "Flux de trésorerie d'exploitation",
+    "en": "Cash Flows from Operating Activities",
+    "synonyms": [
+      "Cash Flows from Operating Activities",
+      "CFOA",
+      "fte"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "RN.TFT",
+    "fr": "Résultat net",
+    "en": "Net Income",
+    "synonyms": [
+      "Net Income",
+      "NI.CFS",
+      "rn.tft"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "RECON.RNFTE",
+    "fr": "Ajustement pour réconcilier résultat net et flux de trésorerie d'exploitation",
+    "en": "Adjustments to Reconcile Net Income to CFOA",
+    "synonyms": [
+      "Adjustments to Reconcile Net Income to CFOA",
+      "RECON.NICFO",
+      "recon.rnfte"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "CORR.AMT",
+    "fr": "Corrige l'impact des amortissements sur le résultat net",
+    "en": "Cancel Impact of Depreciation",
+    "synonyms": [
+      "Cancel Impact of Depreciation",
+      "CNCL.DEPR",
+      "corr.amt"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "CORR.AMT.IC",
+    "fr": "Corrige l'impact des amortissements des IC",
+    "en": "Cancel Impact of Depreciation of PPE",
+    "synonyms": [
+      "Cancel Impact of Depreciation of PPE",
+      "CNCL.DEPR.PPE",
+      "corr.amt.ic"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "CORR.AMT.II",
+    "fr": "Corrige l'impact des amortissements des II",
+    "en": "Cancel Impact of Depreciation of Intangible Assets",
+    "synonyms": [
+      "Cancel Impact of Depreciation of Intangible Assets",
+      "CNCL.DEPR.IA",
+      "corr.amt.ii"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "CORR.AMT.ALLD",
+    "fr": "Corrige l'impact des amortissements des ALLD",
+    "en": "Cancel Impact of Depreciation of Long-Term Lease Assets",
+    "synonyms": [
+      "Cancel Impact of Depreciation of Long-Term Lease Assets",
+      "CNCL.DEPR.ALTL",
+      "corr.amt.alld"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "CORR.DEPR",
+    "fr": "Corrige l'impact de dépréciations d'actifs",
+    "en": "Cancel Impact of Impairments",
+    "synonyms": [
+      "Cancel Impact of Impairments",
+      "CNCL.IMPAIR",
+      "corr.depr"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "CORR.DEPR.IC",
+    "fr": "Corrige l'impact de dépréciations d'IC",
+    "en": "Cancel Impact of PPE Impairments",
+    "synonyms": [
+      "Cancel Impact of PPE Impairments",
+      "CNCL.IMPAIR.PPE",
+      "corr.depr.ic"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "CORR.DEPR.TER",
+    "fr": "Corrige l'impact de dépréciations de terrains",
+    "en": "Cancel Impact of Land Impairments",
+    "synonyms": [
+      "Cancel Impact of Land Impairments",
+      "CNCL.IMPAIR.LAND",
+      "corr.depr.ter"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "CORR.DEPR.II",
+    "fr": "Corrige l'impact de dépréciations d'II",
+    "en": "Cancel Impact of IA Impairments",
+    "synonyms": [
+      "Cancel Impact of IA Impairments",
+      "CNCL.IMPAIR.IA",
+      "corr.depr.ii"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "CORR.DEPR.EDA",
+    "fr": "Corrige l'impact de dépréciations d'EDA",
+    "en": "Cancel Impact of Goodwill Impairments",
+    "synonyms": [
+      "Cancel Impact of Goodwill Impairments",
+      "CNCL.IMPAIR.GW",
+      "corr.depr.eda"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "CORR.GPHE",
+    "fr": "Corrige l'impact de gains et pertes hors exploitation",
+    "en": "Cancel Impact of Non-Operating Gains/Losses",
+    "synonyms": [
+      "Cancel Impact of Non-Operating Gains/Losses",
+      "CNCL.NOGL",
+      "corr.gphe"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "CORR.CA",
+    "fr": "Corrige l'impact des cessions d'actifs",
+    "en": "Cancel Impact of Asset Disposals",
+    "synonyms": [
+      "Cancel Impact of Asset Disposals",
+      "CNCL.AD",
+      "corr.ca"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "CORR.GFI",
+    "fr": "Corrige l'impact des gains financiers",
+    "en": "Cancel Impact of Financial Income",
+    "synonyms": [
+      "Cancel Impact of Financial Income",
+      "CNCL.FINGAIN",
+      "corr.gfi"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "CORR.RNL",
+    "fr": "Corrige l'impact de transactions non pécuniaires",
+    "en": "Cancel Impact of Non-Cash Transactions",
+    "synonyms": [
+      "Cancel Impact of Non-Cash Transactions",
+      "CNCL.NCT",
+      "corr.rnl"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.BFR",
+    "fr": "Variation du besoin en fonds de roulement",
+    "en": "Changes in Need for Working Capital",
+    "synonyms": [
+      "Changes in Need for Working Capital",
+      "CHG.NFWC",
+      "var.bfr"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.ACEX",
+    "fr": "Variation des actifs circulants d'exploitation",
+    "en": "Changes in Current Operating Assets",
+    "synonyms": [
+      "Changes in Current Operating Assets",
+      "CHG.COA",
+      "var.acex"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.CC",
+    "fr": "Variation des créances clients",
+    "en": "Changes in Accounts Receivable",
+    "synonyms": [
+      "Changes in Accounts Receivable",
+      "CHG.AR",
+      "var.cc"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.STK",
+    "fr": "Variation des stocks",
+    "en": "Changes in Inventories",
+    "synonyms": [
+      "Changes in Inventories",
+      "CHG.INV",
+      "var.stk"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.MARCH",
+    "fr": "Variation des stocks de marchandises",
+    "en": "Changes in Inventories of Merchandise",
+    "synonyms": [
+      "Changes in Inventories of Merchandise",
+      "CHG.MERCH",
+      "var.march"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.PF",
+    "fr": "Variation des stocks de produits finis",
+    "en": "Changes in Inventories of Finished Products",
+    "synonyms": [
+      "Changes in Inventories of Finished Products",
+      "CHG.FP",
+      "var.pf"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.ECP",
+    "fr": "Variation des stocks en cours de production",
+    "en": "Changes in Work in Progress",
+    "synonyms": [
+      "Changes in Work in Progress",
+      "CHG.WIP",
+      "var.ecp"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.MP",
+    "fr": "Variation des stocks de matières premières",
+    "en": "Changes in Raw Materials",
+    "synonyms": [
+      "Changes in Raw Materials",
+      "CHG.RM",
+      "var.mp"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.FRNTR",
+    "fr": "Variation des stocks de consommables",
+    "en": "Changes in Supplies",
+    "synonyms": [
+      "Changes in Supplies",
+      "CHG.SUPPL",
+      "var.frntr"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.CPD",
+    "fr": "Variation des charges prépayées ou différées",
+    "en": "Changes in Prepaid or Deferred Expenses",
+    "synonyms": [
+      "Changes in Prepaid or Deferred Expenses",
+      "CHG.PDE",
+      "var.cpd"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.IDCT",
+    "fr": "Variation des impôts différés à court terme",
+    "en": "Changes in Current Deferred Taxes",
+    "synonyms": [
+      "Changes in Current Deferred Taxes",
+      "CHG.CDT",
+      "var.idct"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.IDLT",
+    "fr": "Variation des impôts différés à long terme",
+    "en": "Changes in Non-Current Deferred Taxes",
+    "synonyms": [
+      "Changes in Non-Current Deferred Taxes",
+      "CHG.NCDT",
+      "var.idlt"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.PCE",
+    "fr": "Variation des passifs courants d'exploitation",
+    "en": "Changes in Current Operating Liabilities",
+    "synonyms": [
+      "Changes in Current Operating Liabilities",
+      "CHG.COL",
+      "var.pce"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.DF",
+    "fr": "Variation des dettes fournisseurs",
+    "en": "Changes in Accounts Payable",
+    "synonyms": [
+      "Changes in Accounts Payable",
+      "CHG.AP",
+      "var.df"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.SAP",
+    "fr": "Variation des salaires à payer",
+    "en": "Changes in Employees Salaries Payable",
+    "synonyms": [
+      "Changes in Employees Salaries Payable",
+      "CHG.ESP",
+      "var.sap"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.PCT.PR",
+    "fr": "Variation de la part à court terme des plans de retraite",
+    "en": "Changes in Current Portion of Pension Liabilities",
+    "synonyms": [
+      "Changes in Current Portion of Pension Liabilities",
+      "CHG.CP.PL",
+      "var.pct.pr"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.PDCA",
+    "fr": "Variation des produits différés ou constatés d'avance",
+    "en": "Changes in Unearned or Deferred Revenues",
+    "synonyms": [
+      "Changes in Unearned or Deferred Revenues",
+      "CHG.UDR",
+      "var.pdca"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.CAP",
+    "fr": "Variation des diverses charges à payer",
+    "en": "Changes in Other Accrued Liabilities",
+    "synonyms": [
+      "Changes in Other Accrued Liabilities",
+      "CHG.OAL",
+      "var.cap"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.IAP",
+    "fr": "Variation des intérêts à payer",
+    "en": "Changes in Interest Payable",
+    "synonyms": [
+      "Changes in Interest Payable",
+      "CHG.IP",
+      "var.iap"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.TAP",
+    "fr": "Variation des impôts à payer",
+    "en": "Changes in Taxes Payable",
+    "synonyms": [
+      "Changes in Taxes Payable",
+      "CHG.TP",
+      "var.tap"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.PNCE",
+    "fr": "Variation des passifs non-courants d'exploitation",
+    "en": "Changes in Non-Current Operating Liabilities",
+    "synonyms": [
+      "Changes in Non-Current Operating Liabilities",
+      "CHG.NCOL",
+      "var.pnce"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.IAPLT",
+    "fr": "Variation des impôts à payer à long terme",
+    "en": "Changes in Non-Current Taxes Payable",
+    "synonyms": [
+      "Changes in Non-Current Taxes Payable",
+      "CHG.NCTP",
+      "var.iaplt"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.PR",
+    "fr": "Variation des plans de retraite",
+    "en": "Changes in Pension Liabilities",
+    "synonyms": [
+      "Changes in Pension Liabilities",
+      "CHG.PL",
+      "var.pr"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.PELLD",
+    "fr": "Variation des passifs d'exploitation de locations longue durée",
+    "en": "Changes in Operating Lease Liabilities",
+    "synonyms": [
+      "Changes in Operating Lease Liabilities",
+      "CHG.OLL",
+      "var.pelld"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "AFTE",
+    "fr": "Autres flux de trésorerie d'exploitation",
+    "en": "Other Cash Flows from Operating Activities",
+    "synonyms": [
+      "Other Cash Flows from Operating Activities",
+      "OCFOA",
+      "afte"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "FTET",
+    "fr": "Entrées/sorties nettes de trésorerie résultant de l'exploitation",
+    "en": "Net Cash Provided by Operating Activities",
+    "synonyms": [
+      "Net Cash Provided by Operating Activities",
+      "TCFOA",
+      "ftet"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "FTI",
+    "fr": "Flux de trésorerie d'investissement",
+    "en": "Cash Flows from Investing Activities",
+    "synonyms": [
+      "Cash Flows from Investing Activities",
+      "CFIA",
+      "fti"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.NET.ALLD",
+    "fr": "Variation nette des actifs en location longue durée",
+    "en": "Net Changes in Assets from Long-Term Leases",
+    "synonyms": [
+      "Net Changes in Assets from Long-Term Leases",
+      "NET.CHG.ALTL",
+      "var.net.alld"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.NET.IC",
+    "fr": "Variation nette des immobilisations corporelles",
+    "en": "Net Changes in Property, Plants, or Equipment",
+    "synonyms": [
+      "Net Changes in Property, Plants, or Equipment",
+      "NET.CHG.PPE",
+      "var.net.ic"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.NET.TER",
+    "fr": "Variation nette des terrains",
+    "en": "Net Changes in Land",
+    "synonyms": [
+      "Net Changes in Land",
+      "NET.CHG.LAND",
+      "var.net.ter"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.NET.II",
+    "fr": "Variation nette des immobilisations incorporelles",
+    "en": "Net Changes in Intangible Assets",
+    "synonyms": [
+      "Net Changes in Intangible Assets",
+      "NET.CHG.IA",
+      "var.net.ii"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.NET.EDA",
+    "fr": "Acquisitions nettes",
+    "en": "Net Acquisition of Businesses",
+    "synonyms": [
+      "Net Acquisition of Businesses",
+      "NET.CHG.GW",
+      "var.net.eda"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.ACI",
+    "fr": "Variation nette des actifs circulants d'investissement",
+    "en": "Net Changes in Current Investing Assets",
+    "synonyms": [
+      "Net Changes in Current Investing Assets",
+      "CHG.CIA",
+      "var.aci"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.AII",
+    "fr": "Variation nette des actifs immobilisés d'investissement",
+    "en": "Net Changes in Non-Current Investing Assets",
+    "synonyms": [
+      "Net Changes in Non-Current Investing Assets",
+      "CHG.NCIA",
+      "var.aii"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "AJT.GFI",
+    "fr": "Ajoute l'impact des gains financiers",
+    "en": "Add Impact of Financial Income",
+    "synonyms": [
+      "Add Impact of Financial Income",
+      "ADD.FINGAIN",
+      "ajt.gfi"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "AFTI",
+    "fr": "Autres flux de trésorerie d'investissement",
+    "en": "Other Cash Flows from Investing Activities",
+    "synonyms": [
+      "Other Cash Flows from Investing Activities",
+      "OCFIA",
+      "afti"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "FTIT",
+    "fr": "Entrées/sorties nettes de trésorerie issues de l'investissement",
+    "en": "Net Cash Provided by Investing Activities",
+    "synonyms": [
+      "Net Cash Provided by Investing Activities",
+      "TCFIA",
+      "ftit"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "FTF",
+    "fr": "Flux de trésorerie de financement",
+    "en": "Cash Flows from Financing Activities",
+    "synonyms": [
+      "Cash Flows from Financing Activities",
+      "CFFA",
+      "ftf"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.PFLLD",
+    "fr": "Variation des passifs financiers de locations longue durée",
+    "en": "Changes in Financial Lease Liabilities",
+    "synonyms": [
+      "Changes in Financial Lease Liabilities",
+      "CHG.FLL",
+      "var.pflld"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.DCT",
+    "fr": "Variation nette des dettes et effets à payer à court terme",
+    "en": "Changes in Short-Term Debts and Notes Payable",
+    "synonyms": [
+      "Changes in Short-Term Debts and Notes Payable",
+      "CHG.STD",
+      "var.dct"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.HPTQ",
+    "fr": "Variation nette des hypothèques",
+    "en": "Changes in Mortgages",
+    "synonyms": [
+      "Changes in Mortgages",
+      "CHG.MRTG",
+      "var.hptq"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.DLT",
+    "fr": "Variation nette des dettes à long terme",
+    "en": "Changes in Long-Term Debt",
+    "synonyms": [
+      "Changes in Long-Term Debt",
+      "CHG.LTD",
+      "var.dlt"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.OBLI",
+    "fr": "Variation nette des obligations",
+    "en": "Changes in Bonds",
+    "synonyms": [
+      "Changes in Bonds",
+      "CHG.BOND",
+      "var.obli"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.CS",
+    "fr": "Variation du capital social",
+    "en": "Changes in Paid-In Capital",
+    "synonyms": [
+      "Changes in Paid-In Capital",
+      "CHG.PIC",
+      "var.cs"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.ARA",
+    "fr": "Variation des autres résultats accumulés",
+    "en": "Changes in Other Comprehensive Income or Loss",
+    "synonyms": [
+      "Changes in Other Comprehensive Income or Loss",
+      "CHG.OCIL",
+      "var.ara"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "VAR.IM",
+    "fr": "Variation des intérêts minoritaires",
+    "en": "Changes in Non-Controlling Interest",
+    "synonyms": [
+      "Changes in Non-Controlling Interest",
+      "CHG.NCI",
+      "var.im"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "DIVPAY",
+    "fr": "Dividendes distribués",
+    "en": "Dividends Distributed to Owners",
+    "synonyms": [
+      "Dividends Distributed to Owners",
+      "PAIDIV",
+      "divpay"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "AFTF",
+    "fr": "Autres flux de trésorerie de financement",
+    "en": "Other Cash Flows from Financing Activities",
+    "synonyms": [
+      "Other Cash Flows from Financing Activities",
+      "OCFFA",
+      "aftf"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "FTFT",
+    "fr": "Entrées/sorties nettes de trésorerie issues du financement",
+    "en": "Net Cash Provided by Financing Activities",
+    "synonyms": [
+      "Net Cash Provided by Financing Activities",
+      "TCFFA",
+      "ftft"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "ETCHG",
+    "fr": "Effet des taux de change",
+    "en": "Effect of Exchange Rates",
+    "synonyms": [
+      "Effect of Exchange Rates",
+      "EOER",
+      "etchg"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "ACFT",
+    "fr": "Autres corrections de flux de trésorerie",
+    "en": "Other Cash Flow Corrections",
+    "synonyms": [
+      "Other Cash Flow Corrections",
+      "OCFC",
+      "acft"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "TRESOVAR",
+    "fr": "Variation de trésorerie",
+    "en": "Cash Variation",
+    "synonyms": [
+      "Cash Variation",
+      "CASHVAR",
+      "tresovar"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "TRESOINI",
+    "fr": "Trésorerie initiale",
+    "en": "Cash Beginning",
+    "synonyms": [
+      "Cash Beginning",
+      "CASHBEG",
+      "tresoini"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "TRESOFIN",
+    "fr": "Trésorerie finale",
+    "en": "Cash Ending",
+    "synonyms": [
+      "Cash Ending",
+      "CASHEND",
+      "tresofin"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "INTPAY",
+    "fr": "Intérêts payés",
+    "en": "Paid Interests",
+    "synonyms": [
+      "Paid Interests",
+      "PAIDINT",
+      "intpay"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "TAXPAY",
+    "fr": "Impôts payés",
+    "en": "Paid Taxes",
+    "synonyms": [
+      "Paid Taxes",
+      "PAIDTAX",
+      "taxpay"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "FTE.AMT",
+    "fr": "Amortissement total",
+    "en": "Total Depreciation",
+    "synonyms": [
+      "Total Depreciation",
+      "CFOA.DEPR",
+      "fte.amt"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "FLUXTRESO",
+    "fr": "Flux de trésorerie",
+    "en": "Cash Flows",
+    "synonyms": [
+      "Cash Flows",
+      "CASHFLOW",
+      "fluxtreso"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "ETAT.TFT",
+    "fr": "Tableau de flux de trésorerie",
+    "en": "Cash Flow Statement",
+    "synonyms": [
+      "Cash Flow Statement",
+      "STMT.CFS",
+      "etat.tft"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "FTE.RN",
+    "fr": "Résultat net",
+    "en": "Net Income",
+    "synonyms": [
+      "Net Income",
+      "CFOA.NI",
+      "fte.rn"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "FTE.RECON",
+    "fr": "Réconciliations entre RN et FTE",
+    "en": "Reconciliations Between NI and CFOA",
+    "synonyms": [
+      "Reconciliations Between NI and CFOA",
+      "CFOA.RECON",
+      "fte.recon"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "FTE.EXP",
+    "fr": "Variation des actifs et passifs d'exploitation",
+    "en": "Changes in Operating Assets and Liabilities",
+    "synonyms": [
+      "Changes in Operating Assets and Liabilities",
+      "CFOA.OP",
+      "fte.exp"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "FTI.EXP",
+    "fr": "Flux de trésorerie d'investissements dans l'exploitation",
+    "en": "Net Cash Provided by Operating Investment",
+    "synonyms": [
+      "Net Cash Provided by Operating Investment",
+      "CFIA.OP",
+      "fti.exp"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "FTI.INV",
+    "fr": "Flux de trésorerie d'investissements hors exploitation",
+    "en": "Net Cash Provided by Pure Investment",
+    "synonyms": [
+      "Net Cash Provided by Pure Investment",
+      "CFIA.INV",
+      "fti.inv"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "FTF.DBT",
+    "fr": "Flux de trésorerie de financement par dette",
+    "en": "Cash Flow from Debt Financing",
+    "synonyms": [
+      "Cash Flow from Debt Financing",
+      "CFFA.DBT",
+      "ftf.dbt"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "FTF.FP",
+    "fr": "Flux de trésorerie de financement par fonds propres",
+    "en": "Cash Flow from Equity Financing",
+    "synonyms": [
+      "Cash Flow from Equity Financing",
+      "CFFA.EQT",
+      "ftf.fp"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  },
+  {
+    "code": "AAFT",
+    "fr": "Autres ajustements des flux de trésorerie",
+    "en": "Other Adjustments to Cash Flows",
+    "synonyms": [
+      "Other Adjustments to Cash Flows",
+      "OACF",
+      "aaft"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "cash_flow"
+  }
+]

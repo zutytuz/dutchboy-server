@@ -1,0 +1,363 @@
+[
+  {
+    "code": "BCP",
+    "fr": "Besoin en capitaux permanents",
+    "en": "Need for Permanent Capital",
+    "synonyms": [
+      "nfpc",
+      "need for permanent capital",
+      "besoin en capitaux permanents"
+    ],
+    "formulas": [
+      "BCP = AIE + AII - PNCE"
+    ],
+    "category": "financing",
+    "type": "need"
+  },
+  {
+    "code": "BFR",
+    "fr": "Besoin en fonds de roulement",
+    "en": "Need for Working Capital",
+    "synonyms": [
+      "nfwc",
+      "need for working capital",
+      "working capital requirement",
+      "besoin en fonds de roulement"
+    ],
+    "formulas": [
+      "BFR = ACEX + ACI - PCE"
+    ],
+    "category": "financing",
+    "type": "need"
+  },
+  {
+    "code": "BDT",
+    "fr": "Besoin de trésorerie",
+    "en": "Need for Cash",
+    "synonyms": [
+      "nfc",
+      "need for cash",
+      "besoin de tresorerie",
+      "besoin de trésorerie"
+    ],
+    "formulas": [],
+    "category": "financing",
+    "type": "need"
+  },
+  {
+    "code": "CP",
+    "fr": "Capitaux permanents",
+    "en": "Permanent Capital",
+    "synonyms": [
+      "pc",
+      "permanent capital",
+      "capitaux permanents"
+    ],
+    "formulas": [
+      "CP = PNCF + FP"
+    ],
+    "category": "financing",
+    "type": "capital"
+  },
+  {
+    "code": "FR",
+    "fr": "Fonds de roulement",
+    "en": "Working Capital",
+    "synonyms": [
+      "wc",
+      "working capital",
+      "fonds de roulement"
+    ],
+    "formulas": [
+      "FR = PNC + FP - AI",
+      "FR = CP - BCP"
+    ],
+    "category": "financing",
+    "type": "working_capital"
+  },
+  {
+    "code": "IPE",
+    "fr": "Importance des passifs d'exploitation",
+    "en": "Reliance on Operating Liabilities",
+    "synonyms": [
+      "rol",
+      "reliance on operating liabilities",
+      "importance des passifs d'exploitation"
+    ],
+    "formulas": [
+      "IPE = (PCE + PNCE) / AT"
+    ],
+    "category": "financing",
+    "type": "ratio"
+  },
+  {
+    "code": "QDR",
+    "fr": "Qualité du résultat",
+    "en": "Quality of Income",
+    "synonyms": [
+      "qoi",
+      "quality of income",
+      "qualité du résultat",
+      "qualite du resultat"
+    ],
+    "formulas": [
+      "QDR = FTE / RN"
+    ],
+    "category": "financing",
+    "type": "ratio"
+  },
+  {
+    "code": "CRD",
+    "fr": "Coût réel de la dette",
+    "en": "Real Cost of Debt",
+    "synonyms": [
+      "rcd",
+      "real cost of debt",
+      "coût réel de la dette",
+      "cout reel de la dette"
+    ],
+    "formulas": [
+      "CRD = INT * (1 - T)"
+    ],
+    "category": "financing",
+    "type": "cost"
+  },
+  {
+    "code": "FTD",
+    "fr": "Flux de trésorerie disponible",
+    "en": "Free Cash Flows",
+    "synonyms": [
+      "fcf",
+      "free cash flow",
+      "free cash flows",
+      "flux de trésorerie disponible"
+    ],
+    "formulas": [
+      "FTD = FTE + INT * (1 - T) + FTI",
+      "FTD = FTE + RNE - RN + FTI"
+    ],
+    "category": "financing",
+    "type": "cash_flow"
+  },
+  {
+    "code": "RR",
+    "fr": "Ratio de restitution",
+    "en": "Give-Back Ratio",
+    "synonyms": [
+      "gbr",
+      "give-back ratio",
+      "give back ratio",
+      "ratio de restitution"
+    ],
+    "formulas": [
+      "RR = -FTF / FTD"
+    ],
+    "category": "financing",
+    "type": "ratio"
+  },
+  {
+    "code": "T",
+    "fr": "Taux d'imposition sur les sociétés",
+    "en": "Tax rate",
+    "synonyms": [
+      "t",
+      "tax rate",
+      "taux d imposition",
+      "taux d'impôt",
+      "corporate tax rate"
+    ],
+    "formulas": [
+      "T = TAX / BAVI",
+      "T = (BAVI - RN) / BAVI",
+      "T = TAX / (RN + TAX)"
+    ],
+    "category": "financing",
+    "type": "tax"
+  },
+  {
+    "code": "PNCF",
+    "fr": "Passifs non-courants de financement",
+    "en": "Non-Current Financing Liabilities",
+    "synonyms": [
+      "ncfl",
+      "non-current financing liabilities",
+      "non current financing liabilities"
+    ],
+    "formulas": [
+      "PNCF = PFLLD + HPTQ + DLT + OBLI + APNCF"
+    ],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "PNCE",
+    "fr": "Passifs non-courants d'exploitation",
+    "en": "Non-Current Operating Liabilities",
+    "synonyms": [
+      "ncol",
+      "non-current operating liabilities",
+      "non current operating liabilities"
+    ],
+    "formulas": [
+      "PNCE = IAPNC + PR + PELLD + APNCE"
+    ],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "PCE",
+    "fr": "Passifs courants d'exploitation",
+    "en": "Current Operating Liabilities",
+    "synonyms": [
+      "col",
+      "current operating liabilities"
+    ],
+    "formulas": [
+      "PCE = DF + SAP + PCT.PR + PDCA + ACAP + IAP + TAP + PCT.PELLD + APCE"
+    ],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "ACEX",
+    "fr": "Actifs circulants d'exploitation",
+    "en": "Current Operating Assets",
+    "synonyms": [
+      "coa",
+      "current operating assets",
+      "actifs circulants d exploitation"
+    ],
+    "formulas": [
+      "ACEX = CC + STK + CPD + IDCT + AACEX"
+    ],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "ACI",
+    "fr": "Actifs circulants d'investissement",
+    "en": "Current Investing Assets",
+    "synonyms": [
+      "cia",
+      "current investing assets",
+      "actifs circulants d investissement"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "PNC",
+    "fr": "Passifs non-courants",
+    "en": "Non-Current Liabilities",
+    "synonyms": [
+      "ncl",
+      "non-current liabilities",
+      "non current liabilities",
+      "passifs non courants"
+    ],
+    "formulas": [
+      "PNC = PNCF + PNCE"
+    ],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "FP",
+    "fr": "Fonds propres",
+    "en": "Stockholders Equity",
+    "synonyms": [
+      "se",
+      "stockholders equity",
+      "shareholders equity",
+      "equity",
+      "fonds propres"
+    ],
+    "formulas": [
+      "FP = CS + BND + ARA + AUTFP + IM"
+    ],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "INT",
+    "fr": "Charges d'intérêts",
+    "en": "Interest expenses",
+    "synonyms": [
+      "interest expenses",
+      "interest expense",
+      "charges d'intérêts",
+      "intérêts"
+    ],
+    "formulas": [
+      "INT = INT.HPTQ + INT.DLT + INT.OBLI + INT.PFLLD"
+    ],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "FTE",
+    "fr": "Flux de trésorerie d'exploitation",
+    "en": "Cash Flows from Operating Activities",
+    "synonyms": [
+      "cfoa",
+      "cash flows from operating activities",
+      "operating cash flow",
+      "flux de tresorerie d exploitation"
+    ],
+    "formulas": [],
+    "category": "cash_flow",
+    "type": "cash_flow"
+  },
+  {
+    "code": "FTI",
+    "fr": "Flux de trésorerie d'investissement",
+    "en": "Cash Flows from Investing Activities",
+    "synonyms": [
+      "cfia",
+      "cash flows from investing activities",
+      "investing cash flow"
+    ],
+    "formulas": [],
+    "category": "cash_flow",
+    "type": "cash_flow"
+  },
+  {
+    "code": "FTF",
+    "fr": "Flux de trésorerie de financement",
+    "en": "Cash Flows from Financing Activities",
+    "synonyms": [
+      "cffa",
+      "cash flows from financing activities",
+      "financing cash flow"
+    ],
+    "formulas": [],
+    "category": "cash_flow",
+    "type": "cash_flow"
+  },
+  {
+    "code": "RECON.RNFTE",
+    "fr": "Ajustement pour réconcilier résultat net et flux de trésorerie d'exploitation",
+    "en": "Adjustments to reconcile net income to cash flows from operating activities",
+    "synonyms": [
+      "recon.nicfo",
+      "adjustments to reconcile net income to cash flows from operating activities"
+    ],
+    "formulas": [],
+    "category": "cash_flow",
+    "type": "adjustment"
+  },
+  {
+    "code": "VAR.BFR",
+    "fr": "Variation du besoin en fonds de roulement",
+    "en": "Changes in Need for Working Capital",
+    "synonyms": [
+      "chg.nfwc",
+      "changes in need for working capital",
+      "change in working capital"
+    ],
+    "formulas": [],
+    "category": "cash_flow",
+    "type": "change"
+  }
+]

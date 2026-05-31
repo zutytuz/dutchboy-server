@@ -1,0 +1,1717 @@
+{
+  "AT": [
+    "Total Assets",
+    "TA",
+    "assets",
+    "total assets",
+    "at"
+  ],
+  "AC": [
+    "Current Assets",
+    "CA",
+    "current assets",
+    "ac"
+  ],
+  "ARL": [
+    "qa",
+    "quick assets",
+    "actifs relativement liquides"
+  ],
+  "TRESO": [
+    "trésorerie",
+    "tresorerie",
+    "trésorerie et équivalents de trésorerie",
+    "tresorerie et equivalents de tresorerie",
+    "cash",
+    "cash and cash equivalents",
+    "liquidités",
+    "liquidites",
+    "disponibilités",
+    "disponibilites"
+  ],
+  "ACI": [
+    "cia",
+    "current investing assets",
+    "actifs circulants d investissement"
+  ],
+  "ACEX": [
+    "coa",
+    "current operating assets",
+    "actifs circulants d exploitation"
+  ],
+  "CC": [
+    "ar",
+    "accounts receivable",
+    "trade receivables",
+    "créances clients"
+  ],
+  "PCD": [
+    "Allowance for Doubtful Accounts",
+    "ADA",
+    "allowance for doubtful accounts",
+    "bad debt allowance",
+    "pcd"
+  ],
+  "STK": [
+    "inv",
+    "inventories",
+    "inventory",
+    "stocks"
+  ],
+  "MARCH": [
+    "Merchandise",
+    "MERCH",
+    "merchandise",
+    "march"
+  ],
+  "PF": [
+    "Finished Products",
+    "FP",
+    "finished products",
+    "pf"
+  ],
+  "ECP": [
+    "Work In Progress",
+    "WIP",
+    "work in progress",
+    "ecp"
+  ],
+  "MP": [
+    "Raw Materials",
+    "RM",
+    "raw materials",
+    "mp"
+  ],
+  "FRNTR": [
+    "Supplies",
+    "SUPPL",
+    "supplies",
+    "frntr"
+  ],
+  "CPD": [
+    "Prepaid or Deferred Expenses",
+    "PDE",
+    "prepaid expenses",
+    "deferred expenses",
+    "cpd"
+  ],
+  "IDCT": [
+    "Current Deferred Taxes",
+    "CDT",
+    "current deferred taxes",
+    "idct"
+  ],
+  "AACEX": [
+    "Other Current Operating Assets",
+    "OCOA",
+    "other current operating assets",
+    "aacex"
+  ],
+  "AI": [
+    "Non-Current Assets",
+    "NCA",
+    "non-current assets",
+    "fixed assets",
+    "ai"
+  ],
+  "AIE": [
+    "Non-current Operating Assets",
+    "NCOA",
+    "non-current operating assets",
+    "aie"
+  ],
+  "IDLT": [
+    "Non-Current Deferred Taxes",
+    "NCDT",
+    "non-current deferred taxes",
+    "idlt"
+  ],
+  "ALLD": [
+    "Assets from Long-Term Leases",
+    "ALTL",
+    "assets from long-term leases",
+    "alld"
+  ],
+  "AA.ALLD": [
+    "Accumulated Depreciation on Assets from Long-Term Leases",
+    "AD.ALTL",
+    "accumulated depreciation on assets from long-term leases",
+    "aa.alld"
+  ],
+  "IC": [
+    "Property, Plants, and Equipment",
+    "PPE",
+    "property plant and equipment",
+    "ic"
+  ],
+  "AA.IC": [
+    "Accumulated Depreciation on Property, Plants, and Equipment",
+    "AD.PPE",
+    "accumulated depreciation on ppe",
+    "aa.ic"
+  ],
+  "TER": [
+    "Land",
+    "LAND",
+    "land",
+    "ter"
+  ],
+  "II": [
+    "Intangible Assets",
+    "IA",
+    "intangible assets",
+    "ii"
+  ],
+  "AA.II": [
+    "Accumulated Depreciation on Intangible Assets",
+    "AD.IA",
+    "accumulated depreciation on intangible assets",
+    "aa.ii"
+  ],
+  "EDA": [
+    "Goodwill",
+    "GW",
+    "goodwill",
+    "eda"
+  ],
+  "AAIE": [
+    "Other Non-current Operating Assets",
+    "ONCOA",
+    "other non-current operating assets",
+    "aaie"
+  ],
+  "AII": [
+    "Non-Current Investing Assets",
+    "NCIA",
+    "non-current investing assets",
+    "aii"
+  ],
+  "PT": [
+    "Total Liabilities",
+    "TL",
+    "total liabilities",
+    "pt"
+  ],
+  "PC": [
+    "Current Liabilities",
+    "CL",
+    "current liabilities",
+    "pc"
+  ],
+  "PCE": [
+    "col",
+    "current operating liabilities"
+  ],
+  "DF": [
+    "ap",
+    "accounts payable",
+    "trade payables",
+    "dettes fournisseurs"
+  ],
+  "SAP": [
+    "Employees Salaries Payable",
+    "ESP",
+    "salaries payable",
+    "sap"
+  ],
+  "CAPAC": [
+    "Contributions to Unemployment Insurance Payable",
+    "CUIP",
+    "capac"
+  ],
+  "CAPAM": [
+    "Contributions to Healthcare Insurance Payable",
+    "CHIP",
+    "capam"
+  ],
+  "CAPFP": [
+    "Contributions to Pension Funds Payable",
+    "CPFP",
+    "capfp"
+  ],
+  "PDCA": [
+    "udr",
+    "unearned revenues",
+    "deferred revenues"
+  ],
+  "ACAP": [
+    "Other Accrued Liabilities",
+    "OAL",
+    "other accrued liabilities",
+    "acap"
+  ],
+  "IAP": [
+    "Interest Payable",
+    "IP",
+    "interest payable",
+    "iap"
+  ],
+  "TAP": [
+    "Taxes Payable",
+    "TP",
+    "taxes payable",
+    "tap"
+  ],
+  "PCT.PR": [
+    "Current Portion of Pension Liabilities",
+    "CP.PL",
+    "current portion of pension liabilities",
+    "pct.pr"
+  ],
+  "PCT.PELLD": [
+    "Current Portion of Operating Lease Liabilities",
+    "CP.OLL",
+    "pct.pelld"
+  ],
+  "APCE": [
+    "Other Current Operating Liabilities",
+    "OCOL",
+    "apce"
+  ],
+  "DAP": [
+    "Dividends Payable",
+    "DP",
+    "dividends payable",
+    "dap"
+  ],
+  "PCF": [
+    "Current Financing Liabilities",
+    "CFL",
+    "current financing liabilities",
+    "pcf"
+  ],
+  "DCT": [
+    "Short-Term Debts and Current Notes Payable",
+    "STD",
+    "short-term debt",
+    "dct"
+  ],
+  "PCT.PFLLD": [
+    "Current Portion of Financial Lease Liabilities",
+    "CP.FLL",
+    "pct.pflld"
+  ],
+  "PCT.HPTQ": [
+    "Current Portion of Mortgages",
+    "CP.MRTG",
+    "pct.hptq"
+  ],
+  "PCT.DLT": [
+    "Current Portion of Long Term Debt",
+    "CP.LTD",
+    "pct.dlt"
+  ],
+  "PCT.OBLI": [
+    "Current Portion of Bonds",
+    "CP.BOND",
+    "pct.obli"
+  ],
+  "APCF": [
+    "Other Current Financing Liabilities",
+    "OCFL",
+    "apcf"
+  ],
+  "PNC": [
+    "ncl",
+    "non-current liabilities",
+    "non current liabilities",
+    "passifs non courants"
+  ],
+  "PNCF": [
+    "ncfl",
+    "non-current financing liabilities",
+    "non current financing liabilities"
+  ],
+  "PFLLD": [
+    "Financial Lease Liabilities",
+    "FLL",
+    "pflld"
+  ],
+  "HPTQ": [
+    "Mortgages",
+    "MRTG",
+    "hptq"
+  ],
+  "DLT": [
+    "Long Term Debt",
+    "LTD",
+    "dlt"
+  ],
+  "OBLI": [
+    "Bonds",
+    "BOND",
+    "obli"
+  ],
+  "APNCF": [
+    "Other Non-Current Financing Liabilities",
+    "ONCFL",
+    "apncf"
+  ],
+  "PNCE": [
+    "ncol",
+    "non-current operating liabilities",
+    "non current operating liabilities"
+  ],
+  "IAPLT": [
+    "Non-Current Taxes Payable",
+    "NCTP",
+    "iaplt"
+  ],
+  "PR": [
+    "Pension Liabilities",
+    "PL",
+    "pr"
+  ],
+  "PELLD": [
+    "Operating Lease Liabilities",
+    "OLL",
+    "pelld"
+  ],
+  "APNCE": [
+    "Other Non-Current Operating Liabilities",
+    "ONCOL",
+    "apnce"
+  ],
+  "FP": [
+    "se",
+    "stockholders equity",
+    "shareholders equity",
+    "equity",
+    "fonds propres"
+  ],
+  "CS": [
+    "Paid-in Capital",
+    "PIC",
+    "paid-in capital",
+    "cs"
+  ],
+  "APREF": [
+    "Preferred Stock",
+    "PRFSTK",
+    "apref"
+  ],
+  "AORD": [
+    "Common Stock",
+    "COMSTK",
+    "aord"
+  ],
+  "PREM": [
+    "Additional Paid-In Capital",
+    "APIC",
+    "prem"
+  ],
+  "APRPR": [
+    "Treasury Stock",
+    "TRSTK",
+    "aprpr"
+  ],
+  "BND": [
+    "Retained Earnings",
+    "RE",
+    "retained earnings",
+    "bnd"
+  ],
+  "ARA": [
+    "Other Comprehensive Income or Loss",
+    "OCIL",
+    "ara"
+  ],
+  "AUTFP": [
+    "Other Equity",
+    "OTHEQ",
+    "autfp"
+  ],
+  "IM": [
+    "Non-Controlling Interests",
+    "NCI",
+    "minority interests",
+    "im"
+  ],
+  "ETAT.BILAN": [
+    "Balance Sheet",
+    "STMT.BS",
+    "balance sheet",
+    "etat.bilan"
+  ],
+  "CI": [
+    "Invested Capital",
+    "IC",
+    "invested capital",
+    "ci"
+  ],
+  "DPI": [
+    "Interest Bearing Debts",
+    "IBD",
+    "dpi"
+  ],
+  "RPI": [
+    "Owners Wealth Invested",
+    "OWI",
+    "rpi"
+  ],
+  "CE": [
+    "ce",
+    "capital employed",
+    "capitaux employés",
+    "capitaux employes"
+  ],
+  "CA": [
+    "rev",
+    "revenue",
+    "revenues",
+    "sales",
+    "turnover",
+    "chiffre d'affaires",
+    "chiffre daffaires"
+  ],
+  "ESCC": [
+    "Discounts on Credit Cards",
+    "DCC",
+    "escc"
+  ],
+  "EPPA": [
+    "Discounts For Early Payments",
+    "DFEP",
+    "eppa"
+  ],
+  "RER": [
+    "Returns and Allowances",
+    "RETALL",
+    "rer"
+  ],
+  "CDV": [
+    "Cost Of Sales",
+    "COS",
+    "cdv"
+  ],
+  "MB": [
+    "gm",
+    "gross margin",
+    "gross profit",
+    "marge brute"
+  ],
+  "FNCT": [
+    "Selling, General and Administrative Expenses",
+    "SGNA",
+    "operating expenses",
+    "SG&A",
+    "fnct"
+  ],
+  "COM": [
+    "Selling and Marketing Expenses",
+    "SME",
+    "selling expenses",
+    "marketing expenses",
+    "com"
+  ],
+  "DCD": [
+    "Depreciation Of Doubtful Accounts or Bad Debt Expense",
+    "DODA",
+    "bad debt expense",
+    "dcd"
+  ],
+  "RED": [
+    "Research and Development Expenses",
+    "RND",
+    "R&D",
+    "red"
+  ],
+  "ADM": [
+    "Administrative Expenses",
+    "ADM",
+    "adm"
+  ],
+  "ACHEXP": [
+    "Other Operating Expenses",
+    "OTHOPEX",
+    "achexp"
+  ],
+  "EBE": [
+    "Earnings Before Interest Taxes Depreciation and Amortization",
+    "EBITDA",
+    "gross operating profit",
+    "ebe"
+  ],
+  "AMT": [
+    "Depreciation Expenses",
+    "DEPR",
+    "depreciation",
+    "amt"
+  ],
+  "AMT.IC": [
+    "Depreciation of Property, Plants, and Equipment",
+    "DEPR.PPE",
+    "amt.ic"
+  ],
+  "AMT.ALLD": [
+    "Depreciation of Assets from Long-Term Leases",
+    "DEPR.ALTL",
+    "amt.alld"
+  ],
+  "AMT.II": [
+    "Amortization of Intangible Assets",
+    "DEPR.IA",
+    "amt.ii"
+  ],
+  "REX": [
+    "Operating Income",
+    "OI",
+    "operating profit",
+    "EBIT before non-operating",
+    "rex"
+  ],
+  "GPHE": [
+    "Non-Operating Gains/Losses",
+    "NOGL",
+    "gphe"
+  ],
+  "GPCA": [
+    "Gain/Loss on Asset Disposal",
+    "GLAD",
+    "gpca"
+  ],
+  "DEPR": [
+    "Impairments",
+    "IMPAIR",
+    "depr"
+  ],
+  "DEPR.IC": [
+    "Impairments of Tangible Assets",
+    "IMPAIR.PPE",
+    "depr.ic"
+  ],
+  "DEPR.TER": [
+    "Impairments of Land",
+    "IMPAIR.LAND",
+    "depr.ter"
+  ],
+  "DEPR.II": [
+    "Impairments of Intangible Assets",
+    "IMPAIR.IA",
+    "depr.ii"
+  ],
+  "DEPR.EDA": [
+    "Impairments of Goodwill",
+    "IMPAIR.GW",
+    "depr.eda"
+  ],
+  "GFI": [
+    "Financial Gains/Losses",
+    "FINGAIN",
+    "gfi"
+  ],
+  "GSI": [
+    "Tax Gains/Losses",
+    "TAXGAIN",
+    "gsi"
+  ],
+  "AUTGPHE": [
+    "Other Non-Operating Gains/Losses",
+    "ONOGL",
+    "autgphe"
+  ],
+  "BAVII": [
+    "Earnings Before Interest and Taxes",
+    "EBIT",
+    "bavii"
+  ],
+  "INT": [
+    "interest expenses",
+    "interest expense",
+    "charges d'intérêts",
+    "intérêts"
+  ],
+  "INT.DCT": [
+    "Interests on Short-Term Debts",
+    "INT.STD",
+    "int.dct"
+  ],
+  "INT.HPTQ": [
+    "Interests on Mortgages",
+    "INT.MRTG",
+    "int.hptq"
+  ],
+  "INT.DLT": [
+    "Interests on Long Term Debt",
+    "INT.LTD",
+    "int.dlt"
+  ],
+  "INT.OBLI": [
+    "Interests on Bonds",
+    "INT.BOND",
+    "int.obli"
+  ],
+  "INT.PFLLD": [
+    "Interests on Financial Leases",
+    "INT.FLL",
+    "int.pflld"
+  ],
+  "BAVI": [
+    "Earnings Before Taxes",
+    "EBT",
+    "bavi"
+  ],
+  "TAX": [
+    "Provision for Income Taxes",
+    "income taxes",
+    "tax"
+  ],
+  "RN": [
+    "ni",
+    "net income",
+    "net income loss",
+    "net profit",
+    "profit net",
+    "résultat net",
+    "resultat net"
+  ],
+  "SDR": [
+    "Income Summary",
+    "IS",
+    "sdr"
+  ],
+  "ETAT.CDR": [
+    "Income Statement",
+    "STMT.IS",
+    "etat.cdr"
+  ],
+  "t": [
+    "Tax Rate",
+    "tax rate",
+    "t"
+  ],
+  "RNE": [
+    "nopat",
+    "net operating profit after taxes",
+    "net operating profit after tax",
+    "net ebit",
+    "résultat net d'exploitation",
+    "resultat net exploitation"
+  ],
+  "FTE": [
+    "cfoa",
+    "cash flows from operating activities",
+    "operating cash flow",
+    "flux de tresorerie d exploitation"
+  ],
+  "RN.TFT": [
+    "Net Income",
+    "NI.CFS",
+    "rn.tft"
+  ],
+  "RECON.RNFTE": [
+    "recon.nicfo",
+    "adjustments to reconcile net income to cash flows from operating activities"
+  ],
+  "CORR.AMT": [
+    "Cancel Impact of Depreciation",
+    "CNCL.DEPR",
+    "corr.amt"
+  ],
+  "CORR.AMT.IC": [
+    "Cancel Impact of Depreciation of PPE",
+    "CNCL.DEPR.PPE",
+    "corr.amt.ic"
+  ],
+  "CORR.AMT.II": [
+    "Cancel Impact of Depreciation of Intangible Assets",
+    "CNCL.DEPR.IA",
+    "corr.amt.ii"
+  ],
+  "CORR.AMT.ALLD": [
+    "Cancel Impact of Depreciation of Long-Term Lease Assets",
+    "CNCL.DEPR.ALTL",
+    "corr.amt.alld"
+  ],
+  "CORR.DEPR": [
+    "Cancel Impact of Impairments",
+    "CNCL.IMPAIR",
+    "corr.depr"
+  ],
+  "CORR.DEPR.IC": [
+    "Cancel Impact of PPE Impairments",
+    "CNCL.IMPAIR.PPE",
+    "corr.depr.ic"
+  ],
+  "CORR.DEPR.TER": [
+    "Cancel Impact of Land Impairments",
+    "CNCL.IMPAIR.LAND",
+    "corr.depr.ter"
+  ],
+  "CORR.DEPR.II": [
+    "Cancel Impact of IA Impairments",
+    "CNCL.IMPAIR.IA",
+    "corr.depr.ii"
+  ],
+  "CORR.DEPR.EDA": [
+    "Cancel Impact of Goodwill Impairments",
+    "CNCL.IMPAIR.GW",
+    "corr.depr.eda"
+  ],
+  "CORR.GPHE": [
+    "Cancel Impact of Non-Operating Gains/Losses",
+    "CNCL.NOGL",
+    "corr.gphe"
+  ],
+  "CORR.CA": [
+    "Cancel Impact of Asset Disposals",
+    "CNCL.AD",
+    "corr.ca"
+  ],
+  "CORR.GFI": [
+    "Cancel Impact of Financial Income",
+    "CNCL.FINGAIN",
+    "corr.gfi"
+  ],
+  "CORR.RNL": [
+    "Cancel Impact of Non-Cash Transactions",
+    "CNCL.NCT",
+    "corr.rnl"
+  ],
+  "VAR.BFR": [
+    "chg.nfwc",
+    "changes in need for working capital",
+    "change in working capital"
+  ],
+  "VAR.ACEX": [
+    "Changes in Current Operating Assets",
+    "CHG.COA",
+    "var.acex"
+  ],
+  "VAR.CC": [
+    "Changes in Accounts Receivable",
+    "CHG.AR",
+    "var.cc"
+  ],
+  "VAR.STK": [
+    "Changes in Inventories",
+    "CHG.INV",
+    "var.stk"
+  ],
+  "VAR.MARCH": [
+    "Changes in Inventories of Merchandise",
+    "CHG.MERCH",
+    "var.march"
+  ],
+  "VAR.PF": [
+    "Changes in Inventories of Finished Products",
+    "CHG.FP",
+    "var.pf"
+  ],
+  "VAR.ECP": [
+    "Changes in Work in Progress",
+    "CHG.WIP",
+    "var.ecp"
+  ],
+  "VAR.MP": [
+    "Changes in Raw Materials",
+    "CHG.RM",
+    "var.mp"
+  ],
+  "VAR.FRNTR": [
+    "Changes in Supplies",
+    "CHG.SUPPL",
+    "var.frntr"
+  ],
+  "VAR.CPD": [
+    "Changes in Prepaid or Deferred Expenses",
+    "CHG.PDE",
+    "var.cpd"
+  ],
+  "VAR.IDCT": [
+    "Changes in Current Deferred Taxes",
+    "CHG.CDT",
+    "var.idct"
+  ],
+  "VAR.IDLT": [
+    "Changes in Non-Current Deferred Taxes",
+    "CHG.NCDT",
+    "var.idlt"
+  ],
+  "VAR.PCE": [
+    "Changes in Current Operating Liabilities",
+    "CHG.COL",
+    "var.pce"
+  ],
+  "VAR.DF": [
+    "Changes in Accounts Payable",
+    "CHG.AP",
+    "var.df"
+  ],
+  "VAR.SAP": [
+    "Changes in Employees Salaries Payable",
+    "CHG.ESP",
+    "var.sap"
+  ],
+  "VAR.PCT.PR": [
+    "Changes in Current Portion of Pension Liabilities",
+    "CHG.CP.PL",
+    "var.pct.pr"
+  ],
+  "VAR.PDCA": [
+    "Changes in Unearned or Deferred Revenues",
+    "CHG.UDR",
+    "var.pdca"
+  ],
+  "VAR.CAP": [
+    "Changes in Other Accrued Liabilities",
+    "CHG.OAL",
+    "var.cap"
+  ],
+  "VAR.IAP": [
+    "Changes in Interest Payable",
+    "CHG.IP",
+    "var.iap"
+  ],
+  "VAR.TAP": [
+    "Changes in Taxes Payable",
+    "CHG.TP",
+    "var.tap"
+  ],
+  "VAR.PNCE": [
+    "Changes in Non-Current Operating Liabilities",
+    "CHG.NCOL",
+    "var.pnce"
+  ],
+  "VAR.IAPLT": [
+    "Changes in Non-Current Taxes Payable",
+    "CHG.NCTP",
+    "var.iaplt"
+  ],
+  "VAR.PR": [
+    "Changes in Pension Liabilities",
+    "CHG.PL",
+    "var.pr"
+  ],
+  "VAR.PELLD": [
+    "Changes in Operating Lease Liabilities",
+    "CHG.OLL",
+    "var.pelld"
+  ],
+  "AFTE": [
+    "Other Cash Flows from Operating Activities",
+    "OCFOA",
+    "afte"
+  ],
+  "FTET": [
+    "Net Cash Provided by Operating Activities",
+    "TCFOA",
+    "ftet"
+  ],
+  "FTI": [
+    "cfia",
+    "cash flows from investing activities",
+    "investing cash flow"
+  ],
+  "VAR.NET.ALLD": [
+    "Net Changes in Assets from Long-Term Leases",
+    "NET.CHG.ALTL",
+    "var.net.alld"
+  ],
+  "VAR.NET.IC": [
+    "Net Changes in Property, Plants, or Equipment",
+    "NET.CHG.PPE",
+    "var.net.ic"
+  ],
+  "VAR.NET.TER": [
+    "Net Changes in Land",
+    "NET.CHG.LAND",
+    "var.net.ter"
+  ],
+  "VAR.NET.II": [
+    "Net Changes in Intangible Assets",
+    "NET.CHG.IA",
+    "var.net.ii"
+  ],
+  "VAR.NET.EDA": [
+    "Net Acquisition of Businesses",
+    "NET.CHG.GW",
+    "var.net.eda"
+  ],
+  "VAR.ACI": [
+    "Net Changes in Current Investing Assets",
+    "CHG.CIA",
+    "var.aci"
+  ],
+  "VAR.AII": [
+    "Net Changes in Non-Current Investing Assets",
+    "CHG.NCIA",
+    "var.aii"
+  ],
+  "AJT.GFI": [
+    "Add Impact of Financial Income",
+    "ADD.FINGAIN",
+    "ajt.gfi"
+  ],
+  "AFTI": [
+    "Other Cash Flows from Investing Activities",
+    "OCFIA",
+    "afti"
+  ],
+  "FTIT": [
+    "Net Cash Provided by Investing Activities",
+    "TCFIA",
+    "ftit"
+  ],
+  "FTF": [
+    "cffa",
+    "cash flows from financing activities",
+    "financing cash flow"
+  ],
+  "VAR.PFLLD": [
+    "Changes in Financial Lease Liabilities",
+    "CHG.FLL",
+    "var.pflld"
+  ],
+  "VAR.DCT": [
+    "Changes in Short-Term Debts and Notes Payable",
+    "CHG.STD",
+    "var.dct"
+  ],
+  "VAR.HPTQ": [
+    "Changes in Mortgages",
+    "CHG.MRTG",
+    "var.hptq"
+  ],
+  "VAR.DLT": [
+    "Changes in Long-Term Debt",
+    "CHG.LTD",
+    "var.dlt"
+  ],
+  "VAR.OBLI": [
+    "Changes in Bonds",
+    "CHG.BOND",
+    "var.obli"
+  ],
+  "VAR.CS": [
+    "Changes in Paid-In Capital",
+    "CHG.PIC",
+    "var.cs"
+  ],
+  "VAR.ARA": [
+    "Changes in Other Comprehensive Income or Loss",
+    "CHG.OCIL",
+    "var.ara"
+  ],
+  "VAR.IM": [
+    "Changes in Non-Controlling Interest",
+    "CHG.NCI",
+    "var.im"
+  ],
+  "DIVPAY": [
+    "Dividends Distributed to Owners",
+    "PAIDIV",
+    "divpay"
+  ],
+  "AFTF": [
+    "Other Cash Flows from Financing Activities",
+    "OCFFA",
+    "aftf"
+  ],
+  "FTFT": [
+    "Net Cash Provided by Financing Activities",
+    "TCFFA",
+    "ftft"
+  ],
+  "ETCHG": [
+    "Effect of Exchange Rates",
+    "EOER",
+    "etchg"
+  ],
+  "ACFT": [
+    "Other Cash Flow Corrections",
+    "OCFC",
+    "acft"
+  ],
+  "TRESOVAR": [
+    "Cash Variation",
+    "CASHVAR",
+    "tresovar"
+  ],
+  "TRESOINI": [
+    "Cash Beginning",
+    "CASHBEG",
+    "tresoini"
+  ],
+  "TRESOFIN": [
+    "Cash Ending",
+    "CASHEND",
+    "tresofin"
+  ],
+  "INTPAY": [
+    "Paid Interests",
+    "PAIDINT",
+    "intpay"
+  ],
+  "TAXPAY": [
+    "Paid Taxes",
+    "PAIDTAX",
+    "taxpay"
+  ],
+  "FTE.AMT": [
+    "Total Depreciation",
+    "CFOA.DEPR",
+    "fte.amt"
+  ],
+  "FLUXTRESO": [
+    "Cash Flows",
+    "CASHFLOW",
+    "fluxtreso"
+  ],
+  "ETAT.TFT": [
+    "Cash Flow Statement",
+    "STMT.CFS",
+    "etat.tft"
+  ],
+  "FTE.RN": [
+    "Net Income",
+    "CFOA.NI",
+    "fte.rn"
+  ],
+  "FTE.RECON": [
+    "Reconciliations Between NI and CFOA",
+    "CFOA.RECON",
+    "fte.recon"
+  ],
+  "FTE.EXP": [
+    "Changes in Operating Assets and Liabilities",
+    "CFOA.OP",
+    "fte.exp"
+  ],
+  "FTI.EXP": [
+    "cfia.op",
+    "net cash provided by operating investment",
+    "operating investment cash flow"
+  ],
+  "FTI.INV": [
+    "Net Cash Provided by Pure Investment",
+    "CFIA.INV",
+    "fti.inv"
+  ],
+  "FTF.DBT": [
+    "Cash Flow from Debt Financing",
+    "CFFA.DBT",
+    "ftf.dbt"
+  ],
+  "FTF.FP": [
+    "Cash Flow from Equity Financing",
+    "CFFA.EQT",
+    "ftf.fp"
+  ],
+  "AAFT": [
+    "Other Adjustments to Cash Flows",
+    "OACF",
+    "aaft"
+  ],
+  "BCP": [
+    "nfpc",
+    "need for permanent capital",
+    "besoin en capitaux permanents"
+  ],
+  "BFR": [
+    "nfwc",
+    "need for working capital",
+    "working capital requirement",
+    "besoin en fonds de roulement"
+  ],
+  "BDT": [
+    "nfc",
+    "need for cash",
+    "besoin de tresorerie",
+    "besoin de trésorerie"
+  ],
+  "CP": [
+    "pc",
+    "permanent capital",
+    "capitaux permanents"
+  ],
+  "FR": [
+    "wc",
+    "working capital",
+    "fonds de roulement"
+  ],
+  "IPE": [
+    "rol",
+    "reliance on operating liabilities",
+    "importance des passifs d'exploitation"
+  ],
+  "QDR": [
+    "qoi",
+    "quality of income",
+    "qualité du résultat",
+    "qualite du resultat"
+  ],
+  "CRD": [
+    "rcd",
+    "real cost of debt",
+    "coût réel de la dette",
+    "cout reel de la dette"
+  ],
+  "FTD": [
+    "fcf",
+    "free cash flow",
+    "free cash flows",
+    "flux de trésorerie disponible"
+  ],
+  "RR": [
+    "gbr",
+    "give-back ratio",
+    "give back ratio",
+    "ratio de restitution"
+  ],
+  "T": [
+    "t",
+    "tax rate",
+    "taux d imposition",
+    "taux d'impôt",
+    "corporate tax rate"
+  ],
+  "RF": [
+    "risk-free rate",
+    "risk free rate",
+    "rf",
+    "taux sans risque"
+  ],
+  "KINV": [
+    "expected rate of return",
+    "expected return",
+    "kinv"
+  ],
+  "BETA.INV": [
+    "investment beta",
+    "quantity of risk",
+    "beta investment"
+  ],
+  "RINV": [
+    "market return for investment",
+    "rinv"
+  ],
+  "PINV": [
+    "market risk premium for investment",
+    "pinv"
+  ],
+  "RM": [
+    "market return",
+    "equity market return",
+    "rm"
+  ],
+  "PRA": [
+    "equity risk premium",
+    "market risk premium",
+    "erp",
+    "pra"
+  ],
+  "BETA": [
+    "beta",
+    "equity beta",
+    "stock beta"
+  ],
+  "KE": [
+    "cost of equity",
+    "ke",
+    "expected return on equity"
+  ],
+  "WD": [
+    "wd",
+    "weight of debt",
+    "debt weight"
+  ],
+  "WE": [
+    "we",
+    "weight of equity",
+    "equity weight"
+  ],
+  "CMPC": [
+    "wacc",
+    "weighted average cost of capital",
+    "cmpc"
+  ],
+  "BR": [
+    "ri",
+    "residual income",
+    "bénéfice résiduel"
+  ],
+  "VAE": [
+    "eva",
+    "economic value added",
+    "valeur ajoutée économique"
+  ],
+  "BPA": [
+    "eps",
+    "earnings per share",
+    "benefice par action"
+  ],
+  "RCB": [
+    "per",
+    "pe ratio",
+    "price earnings ratio",
+    "ratio cours bénéfice"
+  ],
+  "DIVDCL": [
+    "declared dividends",
+    "dcldiv",
+    "dividendes déclarés"
+  ],
+  "DPA": [
+    "dps",
+    "dividend per share",
+    "dividende par action"
+  ],
+  "BADPA": [
+    "etdps",
+    "earnings to dividends per share",
+    "payout ratio"
+  ],
+  "RPA": [
+    "dy",
+    "dividend yield",
+    "rendement par action"
+  ],
+  "VI": [
+    "iv",
+    "intrinsic value",
+    "valeur intrinsèque"
+  ],
+  "CB": [
+    "mc",
+    "market capitalization",
+    "market cap",
+    "capitalisation boursière"
+  ],
+  "VC": [
+    "bv",
+    "book value",
+    "valeur comptable"
+  ],
+  "VE": [
+    "ev",
+    "enterprise value",
+    "valeur de l entreprise"
+  ],
+  "VMVC": [
+    "mtbr",
+    "market to book ratio",
+    "price to book",
+    "cfp"
+  ],
+  "TQ": [
+    "tq",
+    "tobin q",
+    "tobin's q"
+  ],
+  "VEFTD": [
+    "evfcf",
+    "enterprise value to free cash flow",
+    "ev to fcf"
+  ],
+  "NAOC.MOY": [
+    "average shares outstanding",
+    "average ncso"
+  ],
+  "DRC": [
+    "dro",
+    "days receivable outstanding",
+    "accounts receivable payment delay",
+    "délai de recouvrement clients",
+    "delai de recouvrement clients"
+  ],
+  "DES": [
+    "dio",
+    "days inventory outstanding",
+    "inventory days",
+    "days inventory",
+    "délai d'écoulement des stocks",
+    "delai ecoulement stocks"
+  ],
+  "DPF": [
+    "dpo",
+    "days payable outstanding",
+    "payables days",
+    "délai de paiement fournisseurs",
+    "delai paiement fournisseurs"
+  ],
+  "DLC": [
+    "ddo",
+    "days deliverable outstanding",
+    "deferred revenue days",
+    "délai de livraison clients",
+    "delai livraison clients"
+  ],
+  "DCE": [
+    "ocd",
+    "operating cycle duration",
+    "cash-to-cash cycle",
+    "cash conversion cycle",
+    "durée du cycle d'exploitation",
+    "duree cycle exploitation"
+  ],
+  "VCE": [
+    "ocs",
+    "operating cycle speed",
+    "vitesse du cycle d'exploitation",
+    "vitesse cycle exploitation"
+  ],
+  "TRAI": [
+    "fatr",
+    "fixed assets turnover ratio",
+    "fixed asset turnover",
+    "taux de rotation des actifs immobilisés"
+  ],
+  "RNVA": [
+    "arnw",
+    "asset renewal",
+    "asset renewal ratio",
+    "renouvellement des actifs"
+  ],
+  "DVA": [
+    "aul",
+    "asset useful life",
+    "durée de vie des actifs",
+    "duree de vie des actifs"
+  ],
+  "TRCI": [
+    "ictr",
+    "invested capital turnover ratio",
+    "invested capital turnover",
+    "capital turnover"
+  ],
+  "CA.Q": [
+    "daily revenue",
+    "daily revenues",
+    "daily sales",
+    "ca quotidien"
+  ],
+  "CDV.Q": [
+    "daily cost of sales",
+    "daily cogs",
+    "cdv quotidien"
+  ],
+  "CC.MOY": [
+    "average accounts receivable",
+    "average ar",
+    "créances clients moyennes"
+  ],
+  "STK.MOY": [
+    "average inventories",
+    "average inventory",
+    "stocks moyens"
+  ],
+  "DF.MOY": [
+    "average accounts payable",
+    "average ap",
+    "dettes fournisseurs moyennes"
+  ],
+  "PDCA.MOY": [
+    "average unearned revenues",
+    "average deferred revenues"
+  ],
+  "AI.MOY": [
+    "average non current assets",
+    "average fixed assets"
+  ],
+  "AIE.MOY": [
+    "average non current operating assets",
+    "average ncoa"
+  ],
+  "CI.MOY": [
+    "average invested capital",
+    "average ic",
+    "average capital employed"
+  ],
+  "TMB": [
+    "gmr",
+    "gross margin ratio",
+    "gross margin",
+    "gross margin percentage",
+    "taux de marge brute"
+  ],
+  "TMN": [
+    "nmr",
+    "net margin ratio",
+    "profit margin",
+    "net margin",
+    "taux de marge nette"
+  ],
+  "TMNE": [
+    "nomr",
+    "net operating margin ratio",
+    "net operating margin",
+    "operating margin",
+    "taux de marge nette d exploitation"
+  ],
+  "RCI": [
+    "roic",
+    "return on invested capital",
+    "rci"
+  ],
+  "RFP": [
+    "roe",
+    "return on equity",
+    "rfp",
+    "rendement des fonds propres"
+  ],
+  "RCE": [
+    "roce",
+    "return on capital employed",
+    "rce"
+  ],
+  "RPI.MOY": [
+    "average owners wealth invested",
+    "average owi",
+    "average equity invested"
+  ],
+  "CE.MOY": [
+    "average capital employed",
+    "average ce"
+  ],
+  "SFR": [
+    "wcs",
+    "working capital surplus",
+    "working capital shortage",
+    "surplus de fonds de roulement"
+  ],
+  "RLG": [
+    "cur",
+    "current ratio",
+    "ratio de liquidité générale"
+  ],
+  "RLR": [
+    "qr",
+    "quick ratio",
+    "acid test ratio",
+    "ratio de liquidité relative"
+  ],
+  "RLI": [
+    "car",
+    "cash ratio",
+    "ratio de liquidité immédiate"
+  ],
+  "RPFP": [
+    "der",
+    "debt equity ratio",
+    "debt-to-equity ratio",
+    "ratio passifs sur fonds propres"
+  ],
+  "RPSA": [
+    "dar",
+    "debt asset ratio",
+    "debt-to-asset ratio",
+    "ratio passifs sur actifs"
+  ],
+  "TCI": [
+    "tie",
+    "times interest earned",
+    "interest coverage ratio",
+    "taux de couverture des intérêts"
+  ],
+  "TCFT": [
+    "cfcr",
+    "cash flow coverage ratio",
+    "taux de couverture des flux de tresorerie"
+  ],
+  "PV.CA": [
+    "pc.rev",
+    "percentage change in revenues",
+    "revenue growth",
+    "croissance du chiffre d'affaires"
+  ],
+  "PV.REX": [
+    "pc.ebit",
+    "percentage change in operating income",
+    "operating income growth"
+  ],
+  "ELE": [
+    "dol",
+    "degree of operating leverage",
+    "operating leverage",
+    "effet de levier d exploitation"
+  ],
+  "KD": [
+    "kd",
+    "cost of debt",
+    "average cost of debt",
+    "coût moyen de la dette"
+  ],
+  "KDN": [
+    "kdn",
+    "net cost of debt",
+    "after-tax cost of debt"
+  ],
+  "GND": [
+    "net gain on debt",
+    "gain net sur dette"
+  ],
+  "RPP": [
+    "lender owner ratio",
+    "ratio prêteur propriétaire",
+    "debt to owner wealth"
+  ],
+  "ELF": [
+    "financial leverage effect",
+    "financial leverage",
+    "effet de levier financier"
+  ],
+  "DPI.MOY": [
+    "average interest bearing debt",
+    "average ibd"
+  ],
+  "TRA": [
+    "arr",
+    "annual rate of return",
+    "taux de rendement annuel"
+  ],
+  "NDA": [
+    "noy",
+    "number of years",
+    "nombre d années"
+  ],
+  "NPPA": [
+    "nppy",
+    "ppy",
+    "periods per year",
+    "nombre de periodes par an"
+  ],
+  "RATE": [
+    "periodic rate of return",
+    "periodic discount rate",
+    "rate"
+  ],
+  "NPER": [
+    "number of periods",
+    "nper"
+  ],
+  "PMT": [
+    "payment",
+    "pmt",
+    "annuité",
+    "annuity payment"
+  ],
+  "PV": [
+    "present value",
+    "pv",
+    "valeur actuelle",
+    "valeur présente"
+  ],
+  "FV": [
+    "future value",
+    "fv",
+    "valeur future"
+  ],
+  "TYPE": [
+    "type",
+    "timing of payments",
+    "annuity due",
+    "ordinary annuity"
+  ],
+  "VAN": [
+    "npv",
+    "net present value",
+    "valeur actuelle nette"
+  ],
+  "TRI": [
+    "irr",
+    "internal rate of return",
+    "taux de rendement interne"
+  ],
+  "PERP": [
+    "perpetuity",
+    "perpétuité"
+  ],
+  "PCO": [
+    "pvcp",
+    "present value of a constant perpetuity",
+    "constant perpetuity"
+  ],
+  "G": [
+    "g",
+    "growth rate",
+    "taux de croissance"
+  ],
+  "PCR": [
+    "pvgp",
+    "present value of a growing perpetuity",
+    "growing perpetuity"
+  ],
+  "FT.INV": [
+    "cf_inv",
+    "cash flows of a project",
+    "project cash flows"
+  ],
+  "VA.INV": [
+    "pv_inv",
+    "present value of investment project"
+  ],
+  "INVEST": [
+    "initial investment",
+    "investissement initial"
+  ],
+  "VAN.INV": [
+    "npv_inv",
+    "project npv",
+    "net present value of investment project"
+  ],
+  "TRI.INV": [
+    "irr_inv",
+    "project irr",
+    "internal rate of return of investment project"
+  ],
+  "FT.OBLI": [
+    "cf_bond",
+    "cash flows of a bond"
+  ],
+  "VA.OBLI": [
+    "pv_bond",
+    "present value of a bond"
+  ],
+  "PO": [
+    "bp",
+    "bond price",
+    "prix de l obligation"
+  ],
+  "VAN.OBLI": [
+    "npv_bond",
+    "net present value of a bond"
+  ],
+  "RB": [
+    "bond yield",
+    "yield of a bond",
+    "rb"
+  ],
+  "FT.ACT": [
+    "cf_share",
+    "share cash flows",
+    "cash flows of a share"
+  ],
+  "VA.ACT": [
+    "pv_share",
+    "present value of a share"
+  ],
+  "VA.DIV": [
+    "pv_div",
+    "present value of future dividends"
+  ],
+  "VA.FTD": [
+    "pv_fcf",
+    "present value of future free cash flows"
+  ],
+  "NAOC": [
+    "ncso",
+    "number of common shares outstanding",
+    "shares outstanding"
+  ],
+  "CDA": [
+    "sp",
+    "stock price",
+    "share price",
+    "cours de l action"
+  ],
+  "VAN.ACT": [
+    "npv_share",
+    "net present value of a share"
+  ],
+  "RE": [
+    "share yield",
+    "share's yield",
+    "total shareholder return"
+  ]
+}

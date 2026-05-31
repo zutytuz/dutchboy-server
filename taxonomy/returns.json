@@ -1,0 +1,95 @@
+[
+  {
+    "code": "RCI",
+    "fr": "Rendement des capitaux investis",
+    "en": "Return on Invested Capital",
+    "synonyms": [
+      "roic",
+      "return on invested capital",
+      "rci"
+    ],
+    "formulas": [
+      "RCI = RNE / CI.MOY",
+      "RCI = TMNE * TRCI"
+    ],
+    "category": "returns",
+    "type": "ratio"
+  },
+  {
+    "code": "RFP",
+    "fr": "Rendement des fonds propres",
+    "en": "Return on Equity",
+    "synonyms": [
+      "roe",
+      "return on equity",
+      "rfp",
+      "rendement des fonds propres"
+    ],
+    "formulas": [
+      "RFP = RN / RPI.MOY"
+    ],
+    "category": "returns",
+    "type": "ratio"
+  },
+  {
+    "code": "RCE",
+    "fr": "Rendement des capitaux employés",
+    "en": "Return on Capital Employed",
+    "synonyms": [
+      "roce",
+      "return on capital employed",
+      "rce"
+    ],
+    "formulas": [
+      "RCE = RNE / CE.MOY"
+    ],
+    "category": "returns",
+    "type": "ratio"
+  },
+  {
+    "code": "RPI.MOY",
+    "fr": "Richesse des propriétaires investie moyenne",
+    "en": "Average owners wealth invested",
+    "synonyms": [
+      "average owners wealth invested",
+      "average owi",
+      "average equity invested"
+    ],
+    "formulas": [
+      "RPI.MOY = AVG_ALL('RPI')"
+    ],
+    "category": "returns",
+    "type": "average"
+  },
+  {
+    "code": "CE.MOY",
+    "fr": "Capitaux employés moyens",
+    "en": "Average capital employed",
+    "synonyms": [
+      "average capital employed",
+      "average ce"
+    ],
+    "formulas": [
+      "CE.MOY = AVG_ALL('CE')"
+    ],
+    "category": "returns",
+    "type": "average"
+  },
+  {
+    "code": "CE",
+    "fr": "Capitaux employés",
+    "en": "Capital Employed",
+    "synonyms": [
+      "ce",
+      "capital employed",
+      "capitaux employés",
+      "capitaux employes"
+    ],
+    "formulas": [
+      "CE = CI - TRESO",
+      "CE = ACI + ACEX - PCE + AIE + AII - PNCE"
+    ],
+    "category": "returns",
+    "type": "balance_sheet"
+  }
+]

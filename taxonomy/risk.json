@@ -1,0 +1,282 @@
+[
+  {
+    "code": "SFR",
+    "fr": "Surplus de fonds de roulement",
+    "en": "Working Capital Surplus or Shortage",
+    "synonyms": [
+      "wcs",
+      "working capital surplus",
+      "working capital shortage",
+      "surplus de fonds de roulement"
+    ],
+    "formulas": [
+      "SFR = (FR - BFR) / ABS(BFR)"
+    ],
+    "category": "risk",
+    "type": "liquidity"
+  },
+  {
+    "code": "RLG",
+    "fr": "Ratio de liquidité générale",
+    "en": "Current Ratio",
+    "synonyms": [
+      "cur",
+      "current ratio",
+      "ratio de liquidité générale"
+    ],
+    "formulas": [
+      "RLG = AC / PC",
+      "RLG = (TRESO + ACI + ACEX) / PC"
+    ],
+    "category": "risk",
+    "type": "liquidity"
+  },
+  {
+    "code": "RLR",
+    "fr": "Ratio de liquidité relative",
+    "en": "Quick Ratio",
+    "synonyms": [
+      "qr",
+      "quick ratio",
+      "acid test ratio",
+      "ratio de liquidité relative"
+    ],
+    "formulas": [
+      "RLR = ARL / PC",
+      "RLR = (TRESO + ACI + CC) / PC"
+    ],
+    "category": "risk",
+    "type": "liquidity"
+  },
+  {
+    "code": "RLI",
+    "fr": "Ratio de liquidité immédiate",
+    "en": "Cash Ratio",
+    "synonyms": [
+      "car",
+      "cash ratio",
+      "ratio de liquidité immédiate"
+    ],
+    "formulas": [
+      "RLI = TRESO / PC"
+    ],
+    "category": "risk",
+    "type": "liquidity"
+  },
+  {
+    "code": "RPFP",
+    "fr": "Ratio passifs sur fonds propres",
+    "en": "Debt-Equity Ratio",
+    "synonyms": [
+      "der",
+      "debt equity ratio",
+      "debt-to-equity ratio",
+      "ratio passifs sur fonds propres"
+    ],
+    "formulas": [
+      "RPFP = PT / FP"
+    ],
+    "category": "risk",
+    "type": "solvency"
+  },
+  {
+    "code": "RPSA",
+    "fr": "Ratio passifs sur actifs",
+    "en": "Debt-Asset Ratio",
+    "synonyms": [
+      "dar",
+      "debt asset ratio",
+      "debt-to-asset ratio",
+      "ratio passifs sur actifs"
+    ],
+    "formulas": [
+      "RPSA = PT / AT"
+    ],
+    "category": "risk",
+    "type": "solvency"
+  },
+  {
+    "code": "TCI",
+    "fr": "Taux de couverture des intérêts",
+    "en": "Times Interest Earned",
+    "synonyms": [
+      "tie",
+      "times interest earned",
+      "interest coverage ratio",
+      "taux de couverture des intérêts"
+    ],
+    "formulas": [
+      "TCI = BAVII / INT"
+    ],
+    "category": "risk",
+    "type": "solvency"
+  },
+  {
+    "code": "TCFT",
+    "fr": "Taux de couverture des flux de trésorerie",
+    "en": "Cash Flow Coverage Ratio",
+    "synonyms": [
+      "cfcr",
+      "cash flow coverage ratio",
+      "taux de couverture des flux de tresorerie"
+    ],
+    "formulas": [
+      "TCFT = PT / FTE"
+    ],
+    "category": "risk",
+    "type": "solvency"
+  },
+  {
+    "code": "PV.CA",
+    "fr": "Pourcentage de variation du chiffre d'affaires",
+    "en": "Percentage Change in Revenues",
+    "synonyms": [
+      "pc.rev",
+      "percentage change in revenues",
+      "revenue growth",
+      "croissance du chiffre d'affaires"
+    ],
+    "formulas": [
+      "PV.CA = (CA.Y2 - CA.Y1) / CA.Y1"
+    ],
+    "category": "risk",
+    "type": "volatility"
+  },
+  {
+    "code": "PV.REX",
+    "fr": "Pourcentage de variation du résultat d'exploitation",
+    "en": "Percentage Change in Operating Income",
+    "synonyms": [
+      "pc.ebit",
+      "percentage change in operating income",
+      "operating income growth"
+    ],
+    "formulas": [
+      "PV.REX = (REX.Y2 - REX.Y1) / REX.Y1"
+    ],
+    "category": "risk",
+    "type": "volatility"
+  },
+  {
+    "code": "ELE",
+    "fr": "Effet de levier d'exploitation",
+    "en": "Degree of Operating Leverage",
+    "synonyms": [
+      "dol",
+      "degree of operating leverage",
+      "operating leverage",
+      "effet de levier d exploitation"
+    ],
+    "formulas": [
+      "ELE = PV.REX / PV.CA"
+    ],
+    "category": "risk",
+    "type": "volatility"
+  },
+  {
+    "code": "KD",
+    "fr": "Coût moyen de la dette",
+    "en": "Cost of Debt",
+    "synonyms": [
+      "kd",
+      "cost of debt",
+      "average cost of debt",
+      "coût moyen de la dette"
+    ],
+    "formulas": [
+      "KD = RF + BETA.D * PD",
+      "KD = INT / DPI.MOY"
+    ],
+    "category": "risk",
+    "type": "cost"
+  },
+  {
+    "code": "KDN",
+    "fr": "Coût net de la dette",
+    "en": "Net Cost of Debt",
+    "synonyms": [
+      "kdn",
+      "net cost of debt",
+      "after-tax cost of debt"
+    ],
+    "formulas": [
+      "KDN = KD * (1 - T)"
+    ],
+    "category": "risk",
+    "type": "cost"
+  },
+  {
+    "code": "GND",
+    "fr": "Gain net sur dette",
+    "en": "Net Gain on Debt",
+    "synonyms": [
+      "net gain on debt",
+      "gain net sur dette"
+    ],
+    "formulas": [
+      "GND = RCI - KDN"
+    ],
+    "category": "risk",
+    "type": "leverage"
+  },
+  {
+    "code": "RPP",
+    "fr": "Ratio prêteur-propriétaire",
+    "en": "Lender-Owner Ratio",
+    "synonyms": [
+      "lender owner ratio",
+      "ratio prêteur propriétaire",
+      "debt to owner wealth"
+    ],
+    "formulas": [
+      "RPP = DPI.MOY / RPI.MOY"
+    ],
+    "category": "risk",
+    "type": "leverage"
+  },
+  {
+    "code": "ELF",
+    "fr": "Effet de levier financier",
+    "en": "Financial Leverage Effect",
+    "synonyms": [
+      "financial leverage effect",
+      "financial leverage",
+      "effet de levier financier"
+    ],
+    "formulas": [
+      "ELF = (RCI - KDN) * (DPI.MOY / RPI.MOY)",
+      "ELF = RFP - RCI"
+    ],
+    "category": "risk",
+    "type": "leverage"
+  },
+  {
+    "code": "ARL",
+    "fr": "Actifs relativement liquides",
+    "en": "Quick Assets",
+    "synonyms": [
+      "qa",
+      "quick assets",
+      "actifs relativement liquides"
+    ],
+    "formulas": [
+      "ARL = TRESO + ACI + CC"
+    ],
+    "category": "risk",
+    "type": "liquidity"
+  },
+  {
+    "code": "DPI.MOY",
+    "fr": "Dettes porteuses d'intérêts moyennes",
+    "en": "Average Interest Bearing Debts",
+    "synonyms": [
+      "average interest bearing debt",
+      "average ibd"
+    ],
+    "formulas": [
+      "DPI.MOY = AVG_ALL('DPI')"
+    ],
+    "category": "risk",
+    "type": "average"
+  }
+]

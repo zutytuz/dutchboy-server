@@ -1,0 +1,416 @@
+[
+  {
+    "code": "RF",
+    "fr": "Taux sans risque",
+    "en": "Risk-Free Rate",
+    "synonyms": [
+      "risk-free rate",
+      "risk free rate",
+      "rf",
+      "taux sans risque"
+    ],
+    "formulas": [],
+    "category": "market",
+    "type": "expected_return"
+  },
+  {
+    "code": "KINV",
+    "fr": "Taux de rendement attendu pour un investissement",
+    "en": "Expected Rate of Return on Investment",
+    "synonyms": [
+      "expected rate of return",
+      "expected return",
+      "kinv"
+    ],
+    "formulas": [
+      "KINV = RF + PINV * BETA.INV"
+    ],
+    "category": "market",
+    "type": "expected_return"
+  },
+  {
+    "code": "BETA.INV",
+    "fr": "Quantité de risque de l'investissement",
+    "en": "Quantity of Risk of the Investment",
+    "synonyms": [
+      "investment beta",
+      "quantity of risk",
+      "beta investment"
+    ],
+    "formulas": [],
+    "category": "market",
+    "type": "risk"
+  },
+  {
+    "code": "RINV",
+    "fr": "Rendement de marché pour un type d'investissement",
+    "en": "Market Return for a Kind of Investment",
+    "synonyms": [
+      "market return for investment",
+      "rinv"
+    ],
+    "formulas": [],
+    "category": "market",
+    "type": "expected_return"
+  },
+  {
+    "code": "PINV",
+    "fr": "Prime de risque de marché pour un type d'investissement",
+    "en": "Market Risk Premium for a Kind of Investment",
+    "synonyms": [
+      "market risk premium for investment",
+      "pinv"
+    ],
+    "formulas": [
+      "PINV = RINV - RF"
+    ],
+    "category": "market",
+    "type": "risk_premium"
+  },
+  {
+    "code": "RM",
+    "fr": "Rendement de marché actions",
+    "en": "Market Return on Equity Investment",
+    "synonyms": [
+      "market return",
+      "equity market return",
+      "rm"
+    ],
+    "formulas": [],
+    "category": "market",
+    "type": "expected_return"
+  },
+  {
+    "code": "PRA",
+    "fr": "Prime de risque actions",
+    "en": "Equity Risk Premium",
+    "synonyms": [
+      "equity risk premium",
+      "market risk premium",
+      "erp",
+      "pra"
+    ],
+    "formulas": [
+      "PRA = RM - RF"
+    ],
+    "category": "market",
+    "type": "risk_premium"
+  },
+  {
+    "code": "BETA",
+    "fr": "Bêta des fonds propres",
+    "en": "Equity Beta",
+    "synonyms": [
+      "beta",
+      "equity beta",
+      "stock beta"
+    ],
+    "formulas": [],
+    "category": "market",
+    "type": "risk"
+  },
+  {
+    "code": "KE",
+    "fr": "Coût des fonds propres",
+    "en": "Cost of Equity",
+    "synonyms": [
+      "cost of equity",
+      "ke",
+      "expected return on equity"
+    ],
+    "formulas": [
+      "KE = RF + PRA * BETA"
+    ],
+    "category": "market",
+    "type": "cost_of_capital"
+  },
+  {
+    "code": "WD",
+    "fr": "Poids de la dette dans les capitaux investis",
+    "en": "Proportion of Interest Bearing Debt in Invested Capital",
+    "synonyms": [
+      "wd",
+      "weight of debt",
+      "debt weight"
+    ],
+    "formulas": [
+      "WD = DPI.MOY / CI.MOY"
+    ],
+    "category": "market",
+    "type": "cost_of_capital"
+  },
+  {
+    "code": "WE",
+    "fr": "Poids des fonds propres dans les capitaux investis",
+    "en": "Proportion of Owners Wealth Invested in Invested Capital",
+    "synonyms": [
+      "we",
+      "weight of equity",
+      "equity weight"
+    ],
+    "formulas": [
+      "WE = RPI.MOY / CI.MOY"
+    ],
+    "category": "market",
+    "type": "cost_of_capital"
+  },
+  {
+    "code": "CMPC",
+    "fr": "Coût moyen pondéré du capital",
+    "en": "Weighted Average Cost of Capital",
+    "synonyms": [
+      "wacc",
+      "weighted average cost of capital",
+      "cmpc"
+    ],
+    "formulas": [
+      "CMPC = WD * KDN + WE * KE"
+    ],
+    "category": "market",
+    "type": "cost_of_capital"
+  },
+  {
+    "code": "BR",
+    "fr": "Bénéfice résiduel",
+    "en": "Residual Income",
+    "synonyms": [
+      "ri",
+      "residual income",
+      "bénéfice résiduel"
+    ],
+    "formulas": [
+      "BR = (RCI - CMPC) * CI.MOY",
+      "BR = (RFP - KE) * RPI.MOY",
+      "BR = RN - KE * RPI.MOY"
+    ],
+    "category": "market",
+    "type": "value_creation"
+  },
+  {
+    "code": "VAE",
+    "fr": "Valeur ajoutée économique",
+    "en": "Economic Value Added",
+    "synonyms": [
+      "eva",
+      "economic value added",
+      "valeur ajoutée économique"
+    ],
+    "formulas": [
+      "VAE = (RCI - CMPC) * CI.MOY",
+      "VAE = (RFP - KE) * RPI.MOY",
+      "VAE = RN - KE * RPI.MOY"
+    ],
+    "category": "market",
+    "type": "value_creation"
+  },
+  {
+    "code": "BPA",
+    "fr": "Bénéfice par action",
+    "en": "Earnings Per Share",
+    "synonyms": [
+      "eps",
+      "earnings per share",
+      "benefice par action"
+    ],
+    "formulas": [
+      "BPA = RN / NAOC.MOY"
+    ],
+    "category": "market",
+    "type": "market_performance"
+  },
+  {
+    "code": "RCB",
+    "fr": "Ratio cours-bénéfice",
+    "en": "Price-Earnings Ratio",
+    "synonyms": [
+      "per",
+      "pe ratio",
+      "price earnings ratio",
+      "ratio cours bénéfice"
+    ],
+    "formulas": [
+      "RCB = CDA / BPA"
+    ],
+    "category": "market",
+    "type": "market_performance"
+  },
+  {
+    "code": "DIVDCL",
+    "fr": "Dividendes déclarés",
+    "en": "Declared Dividends",
+    "synonyms": [
+      "declared dividends",
+      "dcldiv",
+      "dividendes déclarés"
+    ],
+    "formulas": [
+      "DIVDCL = RN - BND.Y2 + BND.Y1"
+    ],
+    "category": "market",
+    "type": "dividend"
+  },
+  {
+    "code": "DPA",
+    "fr": "Dividende par action",
+    "en": "Dividend Per Share",
+    "synonyms": [
+      "dps",
+      "dividend per share",
+      "dividende par action"
+    ],
+    "formulas": [
+      "DPA = DIVDCL / NAOC.MOY"
+    ],
+    "category": "market",
+    "type": "dividend"
+  },
+  {
+    "code": "BADPA",
+    "fr": "Bénéfice à dividende par action",
+    "en": "Earnings To Dividends Per Share",
+    "synonyms": [
+      "etdps",
+      "earnings to dividends per share",
+      "payout ratio"
+    ],
+    "formulas": [
+      "BADPA = DPA / BPA"
+    ],
+    "category": "market",
+    "type": "dividend"
+  },
+  {
+    "code": "RPA",
+    "fr": "Rendement par action",
+    "en": "Dividend Yield",
+    "synonyms": [
+      "dy",
+      "dividend yield",
+      "rendement par action"
+    ],
+    "formulas": [
+      "RPA = DPA / CDA"
+    ],
+    "category": "market",
+    "type": "dividend"
+  },
+  {
+    "code": "VI",
+    "fr": "Valeur intrinsèque",
+    "en": "Intrinsic Value",
+    "synonyms": [
+      "iv",
+      "intrinsic value",
+      "valeur intrinsèque"
+    ],
+    "formulas": [],
+    "category": "market",
+    "type": "valuation"
+  },
+  {
+    "code": "CB",
+    "fr": "Capitalisation boursière",
+    "en": "Market Capitalization",
+    "synonyms": [
+      "mc",
+      "market capitalization",
+      "market cap",
+      "capitalisation boursière"
+    ],
+    "formulas": [
+      "CB = NAOC * CDA"
+    ],
+    "category": "market",
+    "type": "valuation"
+  },
+  {
+    "code": "VC",
+    "fr": "Valeur comptable",
+    "en": "Book Value",
+    "synonyms": [
+      "bv",
+      "book value",
+      "valeur comptable"
+    ],
+    "formulas": [
+      "VC = AORD + PREM + APRPR + BND + ARA"
+    ],
+    "category": "market",
+    "type": "valuation"
+  },
+  {
+    "code": "VE",
+    "fr": "Valeur de l'entreprise",
+    "en": "Enterprise Value",
+    "synonyms": [
+      "ev",
+      "enterprise value",
+      "valeur de l entreprise"
+    ],
+    "formulas": [
+      "VE = AT - VC + CB"
+    ],
+    "category": "market",
+    "type": "valuation"
+  },
+  {
+    "code": "VMVC",
+    "fr": "Valeur marchande sur valeur comptable",
+    "en": "Market To Book Ratio",
+    "synonyms": [
+      "mtbr",
+      "market to book ratio",
+      "price to book",
+      "cfp"
+    ],
+    "formulas": [
+      "VMVC = CB / VC"
+    ],
+    "category": "market",
+    "type": "ratio"
+  },
+  {
+    "code": "TQ",
+    "fr": "Tobin's Q",
+    "en": "Tobin's Q",
+    "synonyms": [
+      "tq",
+      "tobin q",
+      "tobin's q"
+    ],
+    "formulas": [
+      "TQ = VE / AT"
+    ],
+    "category": "market",
+    "type": "ratio"
+  },
+  {
+    "code": "VEFTD",
+    "fr": "Valeur de l'entreprise sur flux de trésorerie disponibles",
+    "en": "Enterprise Value to Free Cash Flow",
+    "synonyms": [
+      "evfcf",
+      "enterprise value to free cash flow",
+      "ev to fcf"
+    ],
+    "formulas": [
+      "VEFTD = VE / FTD"
+    ],
+    "category": "market",
+    "type": "ratio"
+  },
+  {
+    "code": "NAOC.MOY",
+    "fr": "Nombre moyen d'actions ordinaires en circulation",
+    "en": "Average Number of Common Shares Outstanding",
+    "synonyms": [
+      "average shares outstanding",
+      "average ncso"
+    ],
+    "formulas": [
+      "NAOC.MOY = AVG_ALL('NAOC')"
+    ],
+    "category": "market",
+    "type": "average"
+  }
+]

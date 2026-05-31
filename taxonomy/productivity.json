@@ -1,0 +1,372 @@
+[
+  {
+    "code": "DRC",
+    "fr": "Délai de recouvrement clients",
+    "en": "Days Receivable Outstanding",
+    "synonyms": [
+      "dro",
+      "days receivable outstanding",
+      "accounts receivable payment delay",
+      "délai de recouvrement clients",
+      "delai de recouvrement clients"
+    ],
+    "formulas": [
+      "DRC = CC.MOY / CA.Q"
+    ],
+    "category": "productivity",
+    "type": "working_capital"
+  },
+  {
+    "code": "DES",
+    "fr": "Délai d'écoulement des stocks",
+    "en": "Days Inventory Outstanding",
+    "synonyms": [
+      "dio",
+      "days inventory outstanding",
+      "inventory days",
+      "days inventory",
+      "délai d'écoulement des stocks",
+      "delai ecoulement stocks"
+    ],
+    "formulas": [
+      "DES = STK.MOY / CDV.Q"
+    ],
+    "category": "productivity",
+    "type": "working_capital"
+  },
+  {
+    "code": "DPF",
+    "fr": "Délai de paiement fournisseurs",
+    "en": "Days Payable Outstanding",
+    "synonyms": [
+      "dpo",
+      "days payable outstanding",
+      "payables days",
+      "délai de paiement fournisseurs",
+      "delai paiement fournisseurs"
+    ],
+    "formulas": [
+      "DPF = DF.MOY / CDV.Q"
+    ],
+    "category": "productivity",
+    "type": "working_capital"
+  },
+  {
+    "code": "DLC",
+    "fr": "Délai de livraison clients",
+    "en": "Days Deliverable Outstanding",
+    "synonyms": [
+      "ddo",
+      "days deliverable outstanding",
+      "deferred revenue days",
+      "délai de livraison clients",
+      "delai livraison clients"
+    ],
+    "formulas": [
+      "DLC = PDCA.MOY / CA.Q"
+    ],
+    "category": "productivity",
+    "type": "working_capital"
+  },
+  {
+    "code": "DCE",
+    "fr": "Durée du cycle d'exploitation",
+    "en": "Operating Cycle Duration",
+    "synonyms": [
+      "ocd",
+      "operating cycle duration",
+      "cash-to-cash cycle",
+      "cash conversion cycle",
+      "durée du cycle d'exploitation",
+      "duree cycle exploitation"
+    ],
+    "formulas": [
+      "DCE = DRC + DES - DPF - DLC"
+    ],
+    "category": "productivity",
+    "type": "working_capital"
+  },
+  {
+    "code": "VCE",
+    "fr": "Vitesse du cycle d'exploitation",
+    "en": "Operating Cycle Speed",
+    "synonyms": [
+      "ocs",
+      "operating cycle speed",
+      "vitesse du cycle d'exploitation",
+      "vitesse cycle exploitation"
+    ],
+    "formulas": [
+      "VCE = 365 / (1 + DRC + DES + DPF + DLC)"
+    ],
+    "category": "productivity",
+    "type": "working_capital"
+  },
+  {
+    "code": "TRAI",
+    "fr": "Taux de rotation des actifs immobilisés",
+    "en": "Fixed Assets Turnover Ratio",
+    "synonyms": [
+      "fatr",
+      "fixed assets turnover ratio",
+      "fixed asset turnover",
+      "taux de rotation des actifs immobilisés"
+    ],
+    "formulas": [
+      "TRAI = CA / AI.MOY"
+    ],
+    "category": "productivity",
+    "type": "ratio"
+  },
+  {
+    "code": "RNVA",
+    "fr": "Renouvellement des actifs",
+    "en": "Asset Renewal",
+    "synonyms": [
+      "arnw",
+      "asset renewal",
+      "asset renewal ratio",
+      "renouvellement des actifs"
+    ],
+    "formulas": [
+      "RNVA = FTI.EXP / AMT"
+    ],
+    "category": "productivity",
+    "type": "ratio"
+  },
+  {
+    "code": "DVA",
+    "fr": "Durée de vie des actifs",
+    "en": "Asset Useful Life",
+    "synonyms": [
+      "aul",
+      "asset useful life",
+      "durée de vie des actifs",
+      "duree de vie des actifs"
+    ],
+    "formulas": [
+      "DVA = AIE.MOY / AMT"
+    ],
+    "category": "productivity",
+    "type": "ratio"
+  },
+  {
+    "code": "TRCI",
+    "fr": "Taux de rotation des capitaux investis",
+    "en": "Invested Capital Turnover Ratio",
+    "synonyms": [
+      "ictr",
+      "invested capital turnover ratio",
+      "invested capital turnover",
+      "capital turnover"
+    ],
+    "formulas": [
+      "TRCI = CA / CI.MOY"
+    ],
+    "category": "productivity",
+    "type": "ratio"
+  },
+  {
+    "code": "CA.Q",
+    "fr": "Chiffre d'affaires quotidien",
+    "en": "Daily revenues",
+    "synonyms": [
+      "daily revenue",
+      "daily revenues",
+      "daily sales",
+      "ca quotidien"
+    ],
+    "formulas": [
+      "CA.Q = CA / 365"
+    ],
+    "category": "productivity",
+    "type": "daily_metric"
+  },
+  {
+    "code": "CDV.Q",
+    "fr": "Coût des ventes quotidien",
+    "en": "Daily cost of sales",
+    "synonyms": [
+      "daily cost of sales",
+      "daily cogs",
+      "cdv quotidien"
+    ],
+    "formulas": [
+      "CDV.Q = CDV / 365"
+    ],
+    "category": "productivity",
+    "type": "daily_metric"
+  },
+  {
+    "code": "CC.MOY",
+    "fr": "Créances clients moyennes",
+    "en": "Average accounts receivable",
+    "synonyms": [
+      "average accounts receivable",
+      "average ar",
+      "créances clients moyennes"
+    ],
+    "formulas": [
+      "CC.MOY = AVG_ALL('CC')"
+    ],
+    "category": "productivity",
+    "type": "average"
+  },
+  {
+    "code": "STK.MOY",
+    "fr": "Stocks moyens",
+    "en": "Average inventories",
+    "synonyms": [
+      "average inventories",
+      "average inventory",
+      "stocks moyens"
+    ],
+    "formulas": [
+      "STK.MOY = AVG_ALL('STK')"
+    ],
+    "category": "productivity",
+    "type": "average"
+  },
+  {
+    "code": "DF.MOY",
+    "fr": "Dettes fournisseurs moyennes",
+    "en": "Average accounts payable",
+    "synonyms": [
+      "average accounts payable",
+      "average ap",
+      "dettes fournisseurs moyennes"
+    ],
+    "formulas": [
+      "DF.MOY = AVG_ALL('DF')"
+    ],
+    "category": "productivity",
+    "type": "average"
+  },
+  {
+    "code": "PDCA.MOY",
+    "fr": "Produits différés ou constatés d'avance moyens",
+    "en": "Average unearned or deferred revenues",
+    "synonyms": [
+      "average unearned revenues",
+      "average deferred revenues"
+    ],
+    "formulas": [
+      "PDCA.MOY = AVG_ALL('PDCA')"
+    ],
+    "category": "productivity",
+    "type": "average"
+  },
+  {
+    "code": "AI.MOY",
+    "fr": "Actifs immobilisés moyens",
+    "en": "Average non-current assets",
+    "synonyms": [
+      "average non current assets",
+      "average fixed assets"
+    ],
+    "formulas": [
+      "AI.MOY = AVG_ALL('AI')"
+    ],
+    "category": "productivity",
+    "type": "average"
+  },
+  {
+    "code": "AIE.MOY",
+    "fr": "Actifs immobilisés d'exploitation moyens",
+    "en": "Average non-current operating assets",
+    "synonyms": [
+      "average non current operating assets",
+      "average ncoa"
+    ],
+    "formulas": [
+      "AIE.MOY = AVG_ALL('AIE')"
+    ],
+    "category": "productivity",
+    "type": "average"
+  },
+  {
+    "code": "CI.MOY",
+    "fr": "Capitaux investis moyens",
+    "en": "Average invested capital",
+    "synonyms": [
+      "average invested capital",
+      "average ic",
+      "average capital employed"
+    ],
+    "formulas": [
+      "CI.MOY = AVG_ALL('CI')"
+    ],
+    "category": "productivity",
+    "type": "average"
+  },
+  {
+    "code": "CC",
+    "fr": "Créances clients",
+    "en": "Accounts Receivable",
+    "synonyms": [
+      "ar",
+      "accounts receivable",
+      "trade receivables",
+      "créances clients"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "STK",
+    "fr": "Stocks",
+    "en": "Inventories",
+    "synonyms": [
+      "inv",
+      "inventories",
+      "inventory",
+      "stocks"
+    ],
+    "formulas": [
+      "STK = MARCH + PF + ECP + MP + FRNTR"
+    ],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "DF",
+    "fr": "Dettes fournisseurs",
+    "en": "Accounts payable",
+    "synonyms": [
+      "ap",
+      "accounts payable",
+      "trade payables",
+      "dettes fournisseurs"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "PDCA",
+    "fr": "Produits différés ou constatés d'avance",
+    "en": "Unearned or Deferred Revenues",
+    "synonyms": [
+      "udr",
+      "unearned revenues",
+      "deferred revenues"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "balance_sheet"
+  },
+  {
+    "code": "FTI.EXP",
+    "fr": "Flux de trésorerie d'investissements dans l'exploitation",
+    "en": "Net cash provided by operating investment",
+    "synonyms": [
+      "cfia.op",
+      "net cash provided by operating investment",
+      "operating investment cash flow"
+    ],
+    "formulas": [],
+    "category": "cash_flow",
+    "type": "cash_flow"
+  }
+]

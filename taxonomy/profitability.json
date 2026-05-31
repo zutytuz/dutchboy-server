@@ -1,0 +1,123 @@
+[
+  {
+    "code": "TMB",
+    "fr": "Taux de marge brute",
+    "en": "Gross Margin Ratio",
+    "synonyms": [
+      "gmr",
+      "gross margin ratio",
+      "gross margin",
+      "gross margin percentage",
+      "taux de marge brute"
+    ],
+    "formulas": [
+      "TMB = MB / CA"
+    ],
+    "category": "profitability",
+    "type": "ratio"
+  },
+  {
+    "code": "TMN",
+    "fr": "Taux de marge nette",
+    "en": "Net Margin Ratio",
+    "synonyms": [
+      "nmr",
+      "net margin ratio",
+      "profit margin",
+      "net margin",
+      "taux de marge nette"
+    ],
+    "formulas": [
+      "TMN = RN / CA"
+    ],
+    "category": "profitability",
+    "type": "ratio"
+  },
+  {
+    "code": "TMNE",
+    "fr": "Taux de marge nette d'exploitation",
+    "en": "Net Operating Margin Ratio",
+    "synonyms": [
+      "nomr",
+      "net operating margin ratio",
+      "net operating margin",
+      "operating margin",
+      "taux de marge nette d exploitation"
+    ],
+    "formulas": [
+      "TMNE = RNE / CA"
+    ],
+    "category": "profitability",
+    "type": "ratio"
+  },
+  {
+    "code": "CA",
+    "fr": "Chiffre d'affaires",
+    "en": "Revenues",
+    "synonyms": [
+      "rev",
+      "revenue",
+      "revenues",
+      "sales",
+      "turnover",
+      "chiffre d'affaires",
+      "chiffre daffaires"
+    ],
+    "formulas": [],
+    "category": "accounting",
+    "type": "income_statement"
+  },
+  {
+    "code": "MB",
+    "fr": "Marge brute",
+    "en": "Gross Margin",
+    "synonyms": [
+      "gm",
+      "gross margin",
+      "gross profit",
+      "marge brute"
+    ],
+    "formulas": [
+      "MB = CA - CDV"
+    ],
+    "category": "profitability",
+    "type": "intermediate_balance"
+  },
+  {
+    "code": "RN",
+    "fr": "Résultat net",
+    "en": "Net Income",
+    "synonyms": [
+      "ni",
+      "net income",
+      "net income loss",
+      "net profit",
+      "profit net",
+      "résultat net",
+      "resultat net"
+    ],
+    "formulas": [
+      "RN = BAVI - TAX"
+    ],
+    "category": "profitability",
+    "type": "profitability"
+  },
+  {
+    "code": "RNE",
+    "fr": "Résultat net d'exploitation",
+    "en": "Net Operating Profit After Taxes",
+    "synonyms": [
+      "nopat",
+      "net operating profit after taxes",
+      "net operating profit after tax",
+      "net ebit",
+      "résultat net d'exploitation",
+      "resultat net exploitation"
+    ],
+    "formulas": [
+      "RNE = BAVII * (1 - T)"
+    ],
+    "category": "profitability",
+    "type": "profitability"
+  }
+]

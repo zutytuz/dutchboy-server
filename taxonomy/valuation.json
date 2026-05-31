@@ -1,0 +1,445 @@
+[
+  {
+    "code": "TRA",
+    "fr": "Taux de rendement annuel",
+    "en": "Annual Rate of Return",
+    "synonyms": [
+      "arr",
+      "annual rate of return",
+      "taux de rendement annuel"
+    ],
+    "formulas": [
+      "TRA = RATE * NPPA"
+    ],
+    "category": "valuation",
+    "type": "financial_math"
+  },
+  {
+    "code": "NDA",
+    "fr": "Nombre d'années",
+    "en": "Number of Years",
+    "synonyms": [
+      "noy",
+      "number of years",
+      "nombre d années"
+    ],
+    "formulas": [
+      "NDA = NPER / NPPA"
+    ],
+    "category": "valuation",
+    "type": "financial_math"
+  },
+  {
+    "code": "NPPA",
+    "fr": "Nombre de périodes par an",
+    "en": "Periods Per Year",
+    "synonyms": [
+      "nppy",
+      "ppy",
+      "periods per year",
+      "nombre de periodes par an"
+    ],
+    "formulas": [],
+    "category": "valuation",
+    "type": "financial_math"
+  },
+  {
+    "code": "RATE",
+    "fr": "Taux d'actualisation périodique",
+    "en": "Periodic rate of return",
+    "synonyms": [
+      "periodic rate of return",
+      "periodic discount rate",
+      "rate"
+    ],
+    "formulas": [
+      "RATE = TRA / NPPA"
+    ],
+    "category": "valuation",
+    "type": "financial_math"
+  },
+  {
+    "code": "NPER",
+    "fr": "Nombre de périodes",
+    "en": "Number of periods",
+    "synonyms": [
+      "number of periods",
+      "nper"
+    ],
+    "formulas": [
+      "NPER = NDA * NPPA"
+    ],
+    "category": "valuation",
+    "type": "financial_math"
+  },
+  {
+    "code": "PMT",
+    "fr": "Annuité",
+    "en": "Payment",
+    "synonyms": [
+      "payment",
+      "pmt",
+      "annuité",
+      "annuity payment"
+    ],
+    "formulas": [],
+    "category": "valuation",
+    "type": "financial_math"
+  },
+  {
+    "code": "PV",
+    "fr": "Valeur présente ou actualisée",
+    "en": "Present Value",
+    "synonyms": [
+      "present value",
+      "pv",
+      "valeur actuelle",
+      "valeur présente"
+    ],
+    "formulas": [],
+    "category": "valuation",
+    "type": "financial_math"
+  },
+  {
+    "code": "FV",
+    "fr": "Valeur future ou capitalisée",
+    "en": "Future Value",
+    "synonyms": [
+      "future value",
+      "fv",
+      "valeur future"
+    ],
+    "formulas": [],
+    "category": "valuation",
+    "type": "financial_math"
+  },
+  {
+    "code": "TYPE",
+    "fr": "Moment de l'annuité",
+    "en": "Timing of payments",
+    "synonyms": [
+      "type",
+      "timing of payments",
+      "annuity due",
+      "ordinary annuity"
+    ],
+    "formulas": [],
+    "category": "valuation",
+    "type": "financial_math"
+  },
+  {
+    "code": "VAN",
+    "fr": "Valeur actuelle nette",
+    "en": "Net Present Value",
+    "synonyms": [
+      "npv",
+      "net present value",
+      "valeur actuelle nette"
+    ],
+    "formulas": [],
+    "category": "valuation",
+    "type": "investment"
+  },
+  {
+    "code": "TRI",
+    "fr": "Taux de rendement interne",
+    "en": "Internal Rate of Return",
+    "synonyms": [
+      "irr",
+      "internal rate of return",
+      "taux de rendement interne"
+    ],
+    "formulas": [],
+    "category": "valuation",
+    "type": "investment"
+  },
+  {
+    "code": "PERP",
+    "fr": "Perpétuité",
+    "en": "Perpetuity",
+    "synonyms": [
+      "perpetuity",
+      "perpétuité"
+    ],
+    "formulas": [],
+    "category": "valuation",
+    "type": "financial_math"
+  },
+  {
+    "code": "PCO",
+    "fr": "Valeur actualisée d'une perpétuité constante",
+    "en": "Present Value of a Constant Perpetuity",
+    "synonyms": [
+      "pvcp",
+      "present value of a constant perpetuity",
+      "constant perpetuity"
+    ],
+    "formulas": [
+      "PCO = PMT / RATE"
+    ],
+    "category": "valuation",
+    "type": "financial_math"
+  },
+  {
+    "code": "G",
+    "fr": "Taux de croissance",
+    "en": "Growth Rate",
+    "synonyms": [
+      "g",
+      "growth rate",
+      "taux de croissance"
+    ],
+    "formulas": [],
+    "category": "valuation",
+    "type": "financial_math"
+  },
+  {
+    "code": "PCR",
+    "fr": "Valeur actualisée d'une perpétuité croissante",
+    "en": "Present Value of a Growing Perpetuity",
+    "synonyms": [
+      "pvgp",
+      "present value of a growing perpetuity",
+      "growing perpetuity"
+    ],
+    "formulas": [
+      "PCR = PMT * (1 - G) / (RATE - G)"
+    ],
+    "category": "valuation",
+    "type": "financial_math"
+  },
+  {
+    "code": "FT.INV",
+    "fr": "Flux de trésorerie du projet",
+    "en": "Cash Flows of Investment Project",
+    "synonyms": [
+      "cf_inv",
+      "cash flows of a project",
+      "project cash flows"
+    ],
+    "formulas": [],
+    "category": "valuation",
+    "type": "investment_decision"
+  },
+  {
+    "code": "VA.INV",
+    "fr": "Valeur actuelle du projet",
+    "en": "Present Value of Investment Project",
+    "synonyms": [
+      "pv_inv",
+      "present value of investment project"
+    ],
+    "formulas": [],
+    "category": "valuation",
+    "type": "investment_decision"
+  },
+  {
+    "code": "INVEST",
+    "fr": "Investissement initial",
+    "en": "Initial Investment",
+    "synonyms": [
+      "initial investment",
+      "investissement initial"
+    ],
+    "formulas": [],
+    "category": "valuation",
+    "type": "investment_decision"
+  },
+  {
+    "code": "VAN.INV",
+    "fr": "Valeur actuelle nette du projet",
+    "en": "Net Present Value of Investment Project",
+    "synonyms": [
+      "npv_inv",
+      "project npv",
+      "net present value of investment project"
+    ],
+    "formulas": [
+      "VAN.INV = VA.INV - INVEST"
+    ],
+    "category": "valuation",
+    "type": "investment_decision"
+  },
+  {
+    "code": "TRI.INV",
+    "fr": "Taux de rendement interne du projet",
+    "en": "Internal Rate of Return of Investment Project",
+    "synonyms": [
+      "irr_inv",
+      "project irr",
+      "internal rate of return of investment project"
+    ],
+    "formulas": [],
+    "category": "valuation",
+    "type": "investment_decision"
+  },
+  {
+    "code": "FT.OBLI",
+    "fr": "Flux de trésorerie de l'obligation",
+    "en": "Cash Flows of a Bond",
+    "synonyms": [
+      "cf_bond",
+      "cash flows of a bond"
+    ],
+    "formulas": [],
+    "category": "valuation",
+    "type": "bond"
+  },
+  {
+    "code": "VA.OBLI",
+    "fr": "Valeur actuelle de l'obligation",
+    "en": "Present Value of a Bond",
+    "synonyms": [
+      "pv_bond",
+      "present value of a bond"
+    ],
+    "formulas": [],
+    "category": "valuation",
+    "type": "bond"
+  },
+  {
+    "code": "PO",
+    "fr": "Prix de l'obligation",
+    "en": "Bond Price",
+    "synonyms": [
+      "bp",
+      "bond price",
+      "prix de l obligation"
+    ],
+    "formulas": [],
+    "category": "valuation",
+    "type": "bond"
+  },
+  {
+    "code": "VAN.OBLI",
+    "fr": "Valeur actuelle nette de l'obligation",
+    "en": "Net Present Value of a Bond",
+    "synonyms": [
+      "npv_bond",
+      "net present value of a bond"
+    ],
+    "formulas": [
+      "VAN.OBLI = VA.OBLI - PO"
+    ],
+    "category": "valuation",
+    "type": "bond"
+  },
+  {
+    "code": "RB",
+    "fr": "Rendement de l'obligation",
+    "en": "Bond Yield",
+    "synonyms": [
+      "bond yield",
+      "yield of a bond",
+      "rb"
+    ],
+    "formulas": [],
+    "category": "valuation",
+    "type": "bond"
+  },
+  {
+    "code": "FT.ACT",
+    "fr": "Flux de trésorerie par action",
+    "en": "Cash Flows of a Share",
+    "synonyms": [
+      "cf_share",
+      "share cash flows",
+      "cash flows of a share"
+    ],
+    "formulas": [],
+    "category": "valuation",
+    "type": "equity_valuation"
+  },
+  {
+    "code": "VA.ACT",
+    "fr": "Valeur actuelle d'une action",
+    "en": "Present Value of a Share",
+    "synonyms": [
+      "pv_share",
+      "present value of a share"
+    ],
+    "formulas": [],
+    "category": "valuation",
+    "type": "equity_valuation"
+  },
+  {
+    "code": "VA.DIV",
+    "fr": "Valeur actualisée des dividendes futurs",
+    "en": "Present Value of Future Dividends",
+    "synonyms": [
+      "pv_div",
+      "present value of future dividends"
+    ],
+    "formulas": [],
+    "category": "valuation",
+    "type": "equity_valuation"
+  },
+  {
+    "code": "VA.FTD",
+    "fr": "Valeur actualisée des flux de trésorerie disponibles futurs",
+    "en": "Present Value of Future Free Cash Flows",
+    "synonyms": [
+      "pv_fcf",
+      "present value of future free cash flows"
+    ],
+    "formulas": [],
+    "category": "valuation",
+    "type": "equity_valuation"
+  },
+  {
+    "code": "NAOC",
+    "fr": "Nombre d'actions ordinaires en circulation",
+    "en": "Number of Common Shares Outstanding",
+    "synonyms": [
+      "ncso",
+      "number of common shares outstanding",
+      "shares outstanding"
+    ],
+    "formulas": [],
+    "category": "valuation",
+    "type": "equity_valuation"
+  },
+  {
+    "code": "CDA",
+    "fr": "Cours de l'action",
+    "en": "Stock Price",
+    "synonyms": [
+      "sp",
+      "stock price",
+      "share price",
+      "cours de l action"
+    ],
+    "formulas": [
+      "CDA = (VA.FTD - DPI) / NAOC"
+    ],
+    "category": "valuation",
+    "type": "equity_valuation"
+  },
+  {
+    "code": "VAN.ACT",
+    "fr": "Valeur actuelle nette de l'action",
+    "en": "Net Present Value of a Share",
+    "synonyms": [
+      "npv_share",
+      "net present value of a share"
+    ],
+    "formulas": [
+      "VAN.ACT = VA.ACT - CDA"
+    ],
+    "category": "valuation",
+    "type": "equity_valuation"
+  },
+  {
+    "code": "RE",
+    "fr": "Rendement total de l'action",
+    "en": "Share's Yield",
+    "synonyms": [
+      "share yield",
+      "share's yield",
+      "total shareholder return"
+    ],
+    "formulas": [],
+    "category": "valuation",
+    "type": "equity_valuation"
+  }
+]
