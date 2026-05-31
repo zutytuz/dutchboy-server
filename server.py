@@ -41,7 +41,9 @@ def load_json_file(filename: str, default):
     generated_files = {
         "codes.json",
         "synonyms.json",
-        "formulas.json"
+        "formulas.json",
+        "display_mapping.json",
+        "display_classes.json"
     }
 
     if filename in generated_files:
@@ -55,14 +57,43 @@ def load_json_file(filename: str, default):
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
+    with open("generated/display_mapping.json", "r", encoding="utf-8") as f:
+        DISPLAY_MAPPING = json.load(f)
 
+    with open("generated/display_classes.json", "r", encoding="utf-8") as f:
+        DISPLAY_CLASSES = json.load(f)
 def save_json_file(filename: str, data) -> None:
     path = BASE_DIR / filename
 
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
+def enrich_display(code: str) -> dict:
+    code = str(code).upper().strip()
 
+    display_mapping_file = load_display_mapping()
+    display_classes = load_display_classes()
+
+    mapping_root = display_mapping_file.get("mapping", display_mapping_file)
+    mapping = mapping_root.get(code, {})
+
+    display_class = mapping.get("display_class", mapping.get("class", ""))
+    display_order = mapping.get("position", mapping.get("order", 999999))
+
+    style = display_classes.get(display_class, {})
+
+    return {
+        "display_class": display_class,
+        "display_order": display_order,
+        "rgb": style.get("rgb", []),
+        "font_rgb": style.get("font_rgb", [])
+    }
+CODES = load_json_file("codes.json", {})
+SYNONYMS = load_json_file("synonyms.json", {})
+FORMULAS = load_json_file("formulas.json", [])
+
+DISPLAY_MAPPING = load_json_file("display_mapping.json", {})
+DISPLAY_CLASSES = load_json_file("display_classes.json", {})
 # =====================================================
 # 4. TEXT HELPERS
 # =====================================================
@@ -153,6 +184,14 @@ def get_formula_targets() -> set[str]:
             targets.add(left.strip().upper())
 
     return targets
+def load_display_mapping() -> dict:
+    return load_json_file("display_mapping.json", {})
+
+
+def load_display_classes() -> dict:
+    return load_json_file("display_classes.json", {})
+
+
 
 
 # =====================================================
@@ -1274,8 +1313,11 @@ def rows_to_facts(extracted_rows: list) -> list:
     facts = []
 
     for row in extracted_rows:
-        facts.append({
-            "code": str(row.get("detected_code", "")).upper(),
+        code = str(row.get("detected_code", "")).upper()
+        display_info = enrich_display(code)
+
+        fact = {
+            "code": code,
             "label": row.get("detected_label", ""),
             "real_year": row.get("real_year", row.get("year")),
             "mapped_year": row.get("mapped_year", ""),
@@ -1284,7 +1326,10 @@ def rows_to_facts(extracted_rows: list) -> list:
             "source_block": row.get("source_block"),
             "source_row": row.get("source_row"),
             "source_col": row.get("source_col")
-        })
+        }
+
+        fact.update(display_info)
+        facts.append(fact)
 
     return facts
 
