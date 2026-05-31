@@ -1,0 +1,1713 @@
+{
+  "VERSION": "display_mapping_v0_5",
+  "SOURCE": "DutchBoy Excel structure pasted 2026-05-31",
+  "MAPPING": {
+    "TRESO": {
+      "statement": "BILAN",
+      "display_class": "TRESO",
+      "position": 1,
+      "source_row": 2,
+      "source_col": 1,
+      "label": ""
+    },
+    "ACI": {
+      "statement": "BILAN",
+      "display_class": "ACI",
+      "position": 2,
+      "source_row": 3,
+      "source_col": 1,
+      "label": "Actifs circulants d'investissement"
+    },
+    "CC": {
+      "statement": "BILAN",
+      "display_class": "ACE",
+      "position": 3,
+      "source_row": 4,
+      "source_col": 1,
+      "label": "Créances Clients"
+    },
+    "PCD": {
+      "statement": "BILAN",
+      "display_class": "ACE",
+      "position": 4,
+      "source_row": 5,
+      "source_col": 1,
+      "label": "Provisions pour créances douteuses"
+    },
+    "STK": {
+      "statement": "BILAN",
+      "display_class": "ACE",
+      "position": 5,
+      "source_row": 6,
+      "source_col": 1,
+      "label": "Stocks"
+    },
+    "MARCH": {
+      "statement": "BILAN",
+      "display_class": "ACE",
+      "position": 6,
+      "source_row": 7,
+      "source_col": 1,
+      "label": "Marchandises"
+    },
+    "PF": {
+      "statement": "BILAN",
+      "display_class": "ACE",
+      "position": 7,
+      "source_row": 8,
+      "source_col": 1,
+      "label": "Produits finis"
+    },
+    "ECP": {
+      "statement": "BILAN",
+      "display_class": "ACE",
+      "position": 8,
+      "source_row": 9,
+      "source_col": 1,
+      "label": "En-cours de Production"
+    },
+    "MP": {
+      "statement": "BILAN",
+      "display_class": "ACE",
+      "position": 9,
+      "source_row": 10,
+      "source_col": 1,
+      "label": "Matières Premières"
+    },
+    "FRNTR": {
+      "statement": "BILAN",
+      "display_class": "ACE",
+      "position": 10,
+      "source_row": 11,
+      "source_col": 1,
+      "label": "Fournitures"
+    },
+    "CPD": {
+      "statement": "BILAN",
+      "display_class": "ACE",
+      "position": 11,
+      "source_row": 12,
+      "source_col": 1,
+      "label": "Charges Prépayées ou Différées"
+    },
+    "IDCT": {
+      "statement": "BILAN",
+      "display_class": "ACE",
+      "position": 12,
+      "source_row": 13,
+      "source_col": 1,
+      "label": "Impôts différés à court terme"
+    },
+    "AACEX": {
+      "statement": "BILAN",
+      "display_class": "ACE",
+      "position": 13,
+      "source_row": 14,
+      "source_col": 1,
+      "label": "Autres Actifs Circulants d'exploitation"
+    },
+    "IDLT": {
+      "statement": "BILAN",
+      "display_class": "AIE",
+      "position": 14,
+      "source_row": 15,
+      "source_col": 1,
+      "label": "impôts différés à long terme"
+    },
+    "ALLD": {
+      "statement": "BILAN",
+      "display_class": "AIE",
+      "position": 15,
+      "source_row": 16,
+      "source_col": 1,
+      "label": "Actifs en Location Longue Durée"
+    },
+    "AA.ALLD": {
+      "statement": "BILAN",
+      "display_class": "AIE",
+      "position": 16,
+      "source_row": 17,
+      "source_col": 1,
+      "label": "Ammortissements Accumulés sur les Actifs en Location Longue Durée"
+    },
+    "IC": {
+      "statement": "BILAN",
+      "display_class": "AIE",
+      "position": 17,
+      "source_row": 18,
+      "source_col": 1,
+      "label": "Immobilisations Corporelles"
+    },
+    "AA.IC": {
+      "statement": "BILAN",
+      "display_class": "AIE",
+      "position": 18,
+      "source_row": 19,
+      "source_col": 1,
+      "label": "Ammortissements Accumulés sur les Immobilisations Corporelles"
+    },
+    "TER": {
+      "statement": "BILAN",
+      "display_class": "AIE",
+      "position": 19,
+      "source_row": 20,
+      "source_col": 1,
+      "label": "Terrains"
+    },
+    "II": {
+      "statement": "BILAN",
+      "display_class": "AIE",
+      "position": 20,
+      "source_row": 21,
+      "source_col": 1,
+      "label": "Immobilisations incorporelles"
+    },
+    "AA.II": {
+      "statement": "BILAN",
+      "display_class": "AIE",
+      "position": 21,
+      "source_row": 22,
+      "source_col": 1,
+      "label": "Ammortissements Accumulés sur les Immobilisations Incorporelles"
+    },
+    "EDA": {
+      "statement": "BILAN",
+      "display_class": "AIE",
+      "position": 22,
+      "source_row": 23,
+      "source_col": 1,
+      "label": "Ecart d'acquisition"
+    },
+    "AAIE": {
+      "statement": "BILAN",
+      "display_class": "AIE",
+      "position": 23,
+      "source_row": 24,
+      "source_col": 1,
+      "label": "Autres Actifs Immobilisés d'Exploitation"
+    },
+    "AII": {
+      "statement": "BILAN",
+      "display_class": "AII",
+      "position": 24,
+      "source_row": 25,
+      "source_col": 1,
+      "label": "Actifs Immobilisés d'Investissement"
+    },
+    "DF": {
+      "statement": "BILAN",
+      "display_class": "PCE",
+      "position": 25,
+      "source_row": 26,
+      "source_col": 1,
+      "label": "Dettes Fournisseurs"
+    },
+    "SAP": {
+      "statement": "BILAN",
+      "display_class": "PCE",
+      "position": 26,
+      "source_row": 27,
+      "source_col": 1,
+      "label": "Salaires A Payer"
+    },
+    "CAPAC": {
+      "statement": "BILAN",
+      "display_class": "PCE",
+      "position": 27,
+      "source_row": 28,
+      "source_col": 1,
+      "label": "Cotisations à verser à l’assurance-chômage"
+    },
+    "CAPAM": {
+      "statement": "BILAN",
+      "display_class": "PCE",
+      "position": 28,
+      "source_row": 29,
+      "source_col": 1,
+      "label": "Cotisations à verser à l’assurance maladie"
+    },
+    "CAPFP": {
+      "statement": "BILAN",
+      "display_class": "PCE",
+      "position": 29,
+      "source_row": 30,
+      "source_col": 1,
+      "label": "Cotisations à verser aux fonds de pension"
+    },
+    "PDCA": {
+      "statement": "BILAN",
+      "display_class": "PCE",
+      "position": 30,
+      "source_row": 31,
+      "source_col": 1,
+      "label": "Produits Différés ou Constatés d’Avance"
+    },
+    "ACAP": {
+      "statement": "BILAN",
+      "display_class": "PCE",
+      "position": 31,
+      "source_row": 32,
+      "source_col": 1,
+      "label": "Autres Charges A Payer"
+    },
+    "IAP": {
+      "statement": "BILAN",
+      "display_class": "PCE",
+      "position": 32,
+      "source_row": 33,
+      "source_col": 1,
+      "label": "Intérêts à payer"
+    },
+    "TAP": {
+      "statement": "BILAN",
+      "display_class": "PCE",
+      "position": 33,
+      "source_row": 34,
+      "source_col": 1,
+      "label": "Impôts à payer"
+    },
+    "PCT.PR": {
+      "statement": "BILAN",
+      "display_class": "PCE",
+      "position": 34,
+      "source_row": 35,
+      "source_col": 1,
+      "label": "Part à Court-Terme des Plans de Retraite"
+    },
+    "PCT.PELLD": {
+      "statement": "BILAN",
+      "display_class": "PCE",
+      "position": 35,
+      "source_row": 36,
+      "source_col": 1,
+      "label": "Part à Court-Terme des Passifs d’Exploitation de Locations Longue Durée"
+    },
+    "APCE": {
+      "statement": "BILAN",
+      "display_class": "PCE",
+      "position": 36,
+      "source_row": 37,
+      "source_col": 1,
+      "label": "Autres Passifs Courants d’Exploitation"
+    },
+    "DAP": {
+      "statement": "BILAN",
+      "display_class": "DAP",
+      "position": 37,
+      "source_row": 38,
+      "source_col": 1,
+      "label": "Dividendes à payer"
+    },
+    "DCT": {
+      "statement": "BILAN",
+      "display_class": "PCF",
+      "position": 38,
+      "source_row": 39,
+      "source_col": 1,
+      "label": "Dettes (et effets à payer) à Court-Terme"
+    },
+    "PCT.PFLLD": {
+      "statement": "BILAN",
+      "display_class": "PCF",
+      "position": 39,
+      "source_row": 40,
+      "source_col": 1,
+      "label": "Part à Court-Terme des Passifs Financiers de Locations Longue Durée"
+    },
+    "PCT.HPTQ": {
+      "statement": "BILAN",
+      "display_class": "PCF",
+      "position": 40,
+      "source_row": 41,
+      "source_col": 1,
+      "label": "Part à Court Terme des Hypothèques"
+    },
+    "PCT.DLT": {
+      "statement": "BILAN",
+      "display_class": "PCF",
+      "position": 41,
+      "source_row": 42,
+      "source_col": 1,
+      "label": "Part à Court Terme des Dettes à Long Terme"
+    },
+    "PCT.OBLI": {
+      "statement": "BILAN",
+      "display_class": "PCF",
+      "position": 42,
+      "source_row": 43,
+      "source_col": 1,
+      "label": "Part à Court Terme des Obligations"
+    },
+    "APCF": {
+      "statement": "BILAN",
+      "display_class": "PCF",
+      "position": 43,
+      "source_row": 44,
+      "source_col": 1,
+      "label": "Autres Passifs Courants de Financement"
+    },
+    "PFLLD": {
+      "statement": "BILAN",
+      "display_class": "PNCF",
+      "position": 44,
+      "source_row": 45,
+      "source_col": 1,
+      "label": "Passifs Financiers de Locations Longue Durée"
+    },
+    "HPTQ": {
+      "statement": "BILAN",
+      "display_class": "PNCF",
+      "position": 45,
+      "source_row": 46,
+      "source_col": 1,
+      "label": "Hypothèques"
+    },
+    "DLT": {
+      "statement": "BILAN",
+      "display_class": "PNCF",
+      "position": 46,
+      "source_row": 47,
+      "source_col": 1,
+      "label": "Dettes à long terme"
+    },
+    "OBLI": {
+      "statement": "BILAN",
+      "display_class": "PNCF",
+      "position": 47,
+      "source_row": 48,
+      "source_col": 1,
+      "label": "Obligations"
+    },
+    "APNCF": {
+      "statement": "BILAN",
+      "display_class": "PNCF",
+      "position": 48,
+      "source_row": 49,
+      "source_col": 1,
+      "label": "Autres Passifs Non-Courants de Financement"
+    },
+    "IAPLT": {
+      "statement": "BILAN",
+      "display_class": "PNCE",
+      "position": 49,
+      "source_row": 50,
+      "source_col": 1,
+      "label": "Impôts A Payer A Long Terme"
+    },
+    "PR": {
+      "statement": "BILAN",
+      "display_class": "PNCE",
+      "position": 50,
+      "source_row": 51,
+      "source_col": 1,
+      "label": "Plan de retraite"
+    },
+    "PELLD": {
+      "statement": "BILAN",
+      "display_class": "PNCE",
+      "position": 51,
+      "source_row": 52,
+      "source_col": 1,
+      "label": "Passifs d’Exploitation de Locations Longue Durée"
+    },
+    "APNCE": {
+      "statement": "BILAN",
+      "display_class": "PNCE",
+      "position": 52,
+      "source_row": 53,
+      "source_col": 1,
+      "label": "Autres Passifs Non-Courants d’Exploitation"
+    },
+    "APREF": {
+      "statement": "BILAN",
+      "display_class": "FP",
+      "position": 53,
+      "source_row": 54,
+      "source_col": 1,
+      "label": "Actions Préférentielles"
+    },
+    "AORD": {
+      "statement": "BILAN",
+      "display_class": "FP",
+      "position": 54,
+      "source_row": 55,
+      "source_col": 1,
+      "label": "Actions Ordinaires"
+    },
+    "PREM": {
+      "statement": "BILAN",
+      "display_class": "FP",
+      "position": 55,
+      "source_row": 56,
+      "source_col": 1,
+      "label": "Prime d'Emission"
+    },
+    "APRPR": {
+      "statement": "BILAN",
+      "display_class": "FP",
+      "position": 56,
+      "source_row": 57,
+      "source_col": 1,
+      "label": "Actions propres"
+    },
+    "BND": {
+      "statement": "BILAN",
+      "display_class": "FP",
+      "position": 57,
+      "source_row": 58,
+      "source_col": 1,
+      "label": "Bénéfices Non Distribués"
+    },
+    "ARA": {
+      "statement": "BILAN",
+      "display_class": "FP",
+      "position": 58,
+      "source_row": 59,
+      "source_col": 1,
+      "label": "Autres Résultats Accumulés"
+    },
+    "AUTFP": {
+      "statement": "BILAN",
+      "display_class": "FP",
+      "position": 59,
+      "source_row": 60,
+      "source_col": 1,
+      "label": "Autres fonds propres"
+    },
+    "IM": {
+      "statement": "BILAN",
+      "display_class": "FP",
+      "position": 60,
+      "source_row": 61,
+      "source_col": 1,
+      "label": "Intérêts minoritaires"
+    },
+    "AT": {
+      "statement": "BILAN",
+      "display_class": "AII",
+      "position": 61,
+      "source_row": 2,
+      "source_col": 9,
+      "label": "Actifs Totaux"
+    },
+    "AC": {
+      "statement": "BILAN",
+      "display_class": "ACE",
+      "position": 62,
+      "source_row": 3,
+      "source_col": 9,
+      "label": "Actifs circulants"
+    },
+    "ARL": {
+      "statement": "BILAN",
+      "display_class": "ACE",
+      "position": 63,
+      "source_row": 4,
+      "source_col": 9,
+      "label": "Actifs Relativement liquides"
+    },
+    "ACEX": {
+      "statement": "BILAN",
+      "display_class": "ACE",
+      "position": 64,
+      "source_row": 5,
+      "source_col": 9,
+      "label": "Actifs circulants d'exploitations"
+    },
+    "AI": {
+      "statement": "BILAN",
+      "display_class": "AIE",
+      "position": 65,
+      "source_row": 6,
+      "source_col": 9,
+      "label": "Actifs Immobilisés"
+    },
+    "AIE": {
+      "statement": "BILAN",
+      "display_class": "AIE",
+      "position": 66,
+      "source_row": 7,
+      "source_col": 9,
+      "label": "Actifs Immobilisés d'exploitation"
+    },
+    "PT": {
+      "statement": "BILAN",
+      "display_class": "PCE",
+      "position": 67,
+      "source_row": 8,
+      "source_col": 9,
+      "label": "Passifs Totaux"
+    },
+    "PC": {
+      "statement": "BILAN",
+      "display_class": "PCE",
+      "position": 68,
+      "source_row": 9,
+      "source_col": 9,
+      "label": "Passifs courants"
+    },
+    "PCE": {
+      "statement": "BILAN",
+      "display_class": "PCE",
+      "position": 69,
+      "source_row": 10,
+      "source_col": 9,
+      "label": "Passifs courants d'exploitation"
+    },
+    "PCF": {
+      "statement": "BILAN",
+      "display_class": "PCF",
+      "position": 70,
+      "source_row": 11,
+      "source_col": 9,
+      "label": "Passifs courants de Financement"
+    },
+    "PNC": {
+      "statement": "BILAN",
+      "display_class": "PNCF",
+      "position": 71,
+      "source_row": 12,
+      "source_col": 9,
+      "label": "Passifs non-courants"
+    },
+    "PNCF": {
+      "statement": "BILAN",
+      "display_class": "PNCF",
+      "position": 72,
+      "source_row": 13,
+      "source_col": 9,
+      "label": "Passifs non-courants de financement"
+    },
+    "PNCE": {
+      "statement": "BILAN",
+      "display_class": "PNCE",
+      "position": 73,
+      "source_row": 14,
+      "source_col": 9,
+      "label": "Passifs non-courants d'exploitation"
+    },
+    "FP": {
+      "statement": "BILAN",
+      "display_class": "FPB",
+      "position": 74,
+      "source_row": 15,
+      "source_col": 9,
+      "label": "Fonds propres"
+    },
+    "CS": {
+      "statement": "BILAN",
+      "display_class": "FPB",
+      "position": 75,
+      "source_row": 16,
+      "source_col": 9,
+      "label": "Capital social"
+    },
+    "CI": {
+      "statement": "BILAN",
+      "display_class": "DCR",
+      "position": 76,
+      "source_row": 17,
+      "source_col": 9,
+      "label": "Capitaux Investis"
+    },
+    "DPI": {
+      "statement": "BILAN",
+      "display_class": "DCR",
+      "position": 77,
+      "source_row": 18,
+      "source_col": 9,
+      "label": "Dettes Porteuses d'Intérêts"
+    },
+    "RPI": {
+      "statement": "BILAN",
+      "display_class": "DCR",
+      "position": 78,
+      "source_row": 19,
+      "source_col": 9,
+      "label": "Richesse des propriétaires investie"
+    },
+    "CE": {
+      "statement": "BILAN",
+      "display_class": "DCR",
+      "position": 79,
+      "source_row": 20,
+      "source_col": 9,
+      "label": "Capitaux Employés"
+    },
+    "CA.TOT": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "CA",
+      "position": 80,
+      "source_row": 23,
+      "source_col": 9,
+      "label": "Chiffre d'affaires total"
+    },
+    "ESCC": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "CA",
+      "position": 81,
+      "source_row": 24,
+      "source_col": 9,
+      "label": "Escomptes Sur Cartes de Crédit"
+    },
+    "EPPA": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "CA",
+      "position": 82,
+      "source_row": 25,
+      "source_col": 9,
+      "label": "Escomptes pour Paiement Anticipé"
+    },
+    "RER": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "CA",
+      "position": 83,
+      "source_row": 26,
+      "source_col": 9,
+      "label": "Retours et Rabais"
+    },
+    "CA": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "CA",
+      "position": 84,
+      "source_row": 27,
+      "source_col": 9,
+      "label": "Chiffre d'affaires"
+    },
+    "CDV": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "CDV",
+      "position": 85,
+      "source_row": 28,
+      "source_col": 9,
+      "label": "Coût Des Ventes"
+    },
+    "MB": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "CA",
+      "position": 86,
+      "source_row": 29,
+      "source_col": 9,
+      "label": "Marge brute"
+    },
+    "COM": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "CFO",
+      "position": 87,
+      "source_row": 30,
+      "source_col": 9,
+      "label": "Charges Commerciales"
+    },
+    "RED": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "CFO",
+      "position": 88,
+      "source_row": 31,
+      "source_col": 9,
+      "label": "Charges de Recherche Et Développement"
+    },
+    "ADM": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "CFO",
+      "position": 89,
+      "source_row": 32,
+      "source_col": 9,
+      "label": "Charges Administratives"
+    },
+    "FNCT": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "CFO",
+      "position": 90,
+      "source_row": 33,
+      "source_col": 9,
+      "label": "Charges Fonctionnelles"
+    },
+    "DCD": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "DEPRA",
+      "position": 91,
+      "source_row": 34,
+      "source_col": 9,
+      "label": "Dépréciation des Créances Douteuses"
+    },
+    "ACHEXP": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "CFO",
+      "position": 92,
+      "source_row": 35,
+      "source_col": 9,
+      "label": "Autres charges d’exploitation"
+    },
+    "EBE": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "CA",
+      "position": 93,
+      "source_row": 36,
+      "source_col": 9,
+      "label": "Excédent brut d'exploitation"
+    },
+    "AMT.IC": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "AMTD",
+      "position": 94,
+      "source_row": 37,
+      "source_col": 9,
+      "label": "Amortissement des immobilisations corporelles"
+    },
+    "AMT.ALLD": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "AMTD",
+      "position": 95,
+      "source_row": 38,
+      "source_col": 9,
+      "label": "Amortissement des actifs en location longue durée"
+    },
+    "AMT:II": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "AMTD",
+      "position": 96,
+      "source_row": 39,
+      "source_col": 9,
+      "label": "Amortissement des immobilisations incorporelles"
+    },
+    "AMT": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "AMTD",
+      "position": 97,
+      "source_row": 40,
+      "source_col": 9,
+      "label": "Charges d'Amortissement"
+    },
+    "AMT.TOT": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "AMTD",
+      "position": 98,
+      "source_row": 41,
+      "source_col": 9,
+      "label": "Charges totales d'Amortissement"
+    },
+    "REX": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "CA",
+      "position": 99,
+      "source_row": 42,
+      "source_col": 9,
+      "label": "Résultat d'exploitation"
+    },
+    "DEPRE.IC": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "DEPRA",
+      "position": 100,
+      "source_row": 43,
+      "source_col": 9,
+      "label": "Dépréciations d’immobilisations corporelles"
+    },
+    "DEPR.TER": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "DEPRA",
+      "position": 101,
+      "source_row": 44,
+      "source_col": 9,
+      "label": "Dépréciations de terrains"
+    },
+    "DEPR.II": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "DEPRA",
+      "position": 102,
+      "source_row": 45,
+      "source_col": 9,
+      "label": "Dépréciations d’immobilisations incorporelles"
+    },
+    "DEPR.EDA": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "DEPRA",
+      "position": 103,
+      "source_row": 46,
+      "source_col": 9,
+      "label": "Dépréciations d’écarts d’acquisition"
+    },
+    "DEPR": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "DEPRA",
+      "position": 104,
+      "source_row": 47,
+      "source_col": 9,
+      "label": "Dépréciations d’actifs"
+    },
+    "DEPR.TOT": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "DEPRA",
+      "position": 105,
+      "source_row": 48,
+      "source_col": 9,
+      "label": "Dépréciations d’actifs totale"
+    },
+    "GFI": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "DEPRA",
+      "position": 106,
+      "source_row": 49,
+      "source_col": 9,
+      "label": "(Gains) Pertes Financières"
+    },
+    "GSI": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "DEPRA",
+      "position": 107,
+      "source_row": 50,
+      "source_col": 9,
+      "label": "(Gains) Pertes Sur Impôts"
+    },
+    "GPHE": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "DEPRA",
+      "position": 108,
+      "source_row": 51,
+      "source_col": 9,
+      "label": "Autres (Gains) Pertes Hors Exploitation"
+    },
+    "GPCA": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "DEPRA",
+      "position": 109,
+      "source_row": 52,
+      "source_col": 9,
+      "label": "(Gains) Pertes sur Cession d’Actifs"
+    },
+    "GPHE.TOT": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "DEPRA",
+      "position": 110,
+      "source_row": 53,
+      "source_col": 9,
+      "label": "(Gain) Pertes Hors Exploitation"
+    },
+    "BAVII": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "CA",
+      "position": 111,
+      "source_row": 54,
+      "source_col": 9,
+      "label": "Bénéfice avant intérêts et impôts"
+    },
+    "INT.DCT": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "INTS",
+      "position": 112,
+      "source_row": 55,
+      "source_col": 9,
+      "label": "Intérêts sur dettes à court-terme"
+    },
+    "INT.HPTQ": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "INTS",
+      "position": 113,
+      "source_row": 56,
+      "source_col": 9,
+      "label": "Intérêts sur hypothèques"
+    },
+    "INT.DLT": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "INTS",
+      "position": 114,
+      "source_row": 57,
+      "source_col": 9,
+      "label": "Intérêts sur dettes à long terme"
+    },
+    "INT.OBLI": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "INTS",
+      "position": 115,
+      "source_row": 58,
+      "source_col": 9,
+      "label": "Intérêts sur obligations"
+    },
+    "INT.PFLLD": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "INTS",
+      "position": 116,
+      "source_row": 59,
+      "source_col": 9,
+      "label": "Intérêts sur le passifs financiers de locations longues durées"
+    },
+    "INT": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "INTS",
+      "position": 117,
+      "source_row": 60,
+      "source_col": 9,
+      "label": "Charges d'intérêts"
+    },
+    "INT.TOT": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "INTS",
+      "position": 118,
+      "source_row": 61,
+      "source_col": 9,
+      "label": "Charges totales d'intérêts"
+    },
+    "BAVI": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "CA",
+      "position": 119,
+      "source_row": 62,
+      "source_col": 9,
+      "label": "Bénéfice avant impôts"
+    },
+    "TAX": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "CFO",
+      "position": 120,
+      "source_row": 63,
+      "source_col": 9,
+      "label": "Impôt sur les sociétés"
+    },
+    "RN": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "CA",
+      "position": 121,
+      "source_row": 64,
+      "source_col": 9,
+      "label": "Résultat net"
+    },
+    "t": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "CFO",
+      "position": 122,
+      "source_row": 65,
+      "source_col": 9,
+      "label": "Taux d’imposition sur les sociétés"
+    },
+    "RNE": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "CA",
+      "position": 123,
+      "source_row": 66,
+      "source_col": 9,
+      "label": "Résultat net d’Exploitation"
+    },
+    "RN.TFT": {
+      "statement": "TFT",
+      "display_class": "RNTFT",
+      "position": 124,
+      "source_row": 2,
+      "source_col": 17,
+      "label": "Résultat Net"
+    },
+    "RECON.RNFTE": {
+      "statement": "TFT",
+      "display_class": "AJJ",
+      "position": 125,
+      "source_row": 3,
+      "source_col": 17,
+      "label": "Ajustement pour réconcilier résultat net et flux de trésorerie d’exploitation"
+    },
+    "CORR.AMT.TOT": {
+      "statement": "TFT",
+      "display_class": "AJJ",
+      "position": 126,
+      "source_row": 4,
+      "source_col": 17,
+      "label": "Corrige l’impact du total des amortissements sur le résultat net"
+    },
+    "CORR.AMT": {
+      "statement": "TFT",
+      "display_class": "AJJ",
+      "position": 127,
+      "source_row": 5,
+      "source_col": 17,
+      "label": "Corrige l'impact des autres amortissements sur le résultat net"
+    },
+    "CORR.AMT.IC": {
+      "statement": "TFT",
+      "display_class": "AJJ",
+      "position": 128,
+      "source_row": 6,
+      "source_col": 17,
+      "label": "Corrige l’impact des amortissements des IC sur le résultat net"
+    },
+    "CORR.AMT.II": {
+      "statement": "TFT",
+      "display_class": "AJJ",
+      "position": 129,
+      "source_row": 7,
+      "source_col": 17,
+      "label": "Corrige l’impact des amortissements des II sur le résultat net"
+    },
+    "CORR.AMT.ALLD": {
+      "statement": "TFT",
+      "display_class": "AJJ",
+      "position": 130,
+      "source_row": 8,
+      "source_col": 17,
+      "label": "Corrige l’impact des amortissements des ALLD sur le résultat net"
+    },
+    "CORR.DEPR.TOT": {
+      "statement": "TFT",
+      "display_class": "AJJ",
+      "position": 131,
+      "source_row": 9,
+      "source_col": 17,
+      "label": "Corrige l'impact du total des dépréciations d'actifs sur le résultat net"
+    },
+    "CORR.DEPR": {
+      "statement": "TFT",
+      "display_class": "AJJ",
+      "position": 132,
+      "source_row": 10,
+      "source_col": 17,
+      "label": "Corrige l’impact de dépréciations d’actifs sur le résultat net"
+    },
+    "CORR.DEPR.IC": {
+      "statement": "TFT",
+      "display_class": "AJJ",
+      "position": 133,
+      "source_row": 11,
+      "source_col": 17,
+      "label": "Corrige l’impact de dépréciations d’actifs sur le résultat net"
+    },
+    "CORR.DEPR.TER": {
+      "statement": "TFT",
+      "display_class": "AJJ",
+      "position": 134,
+      "source_row": 12,
+      "source_col": 17,
+      "label": "Corrige l’impact de dépréciations d’actifs sur le résultat net"
+    },
+    "CORR.DEPR.II": {
+      "statement": "TFT",
+      "display_class": "AJJ",
+      "position": 135,
+      "source_row": 13,
+      "source_col": 17,
+      "label": "Corrige l’impact de dépréciations d’actifs sur le résultat net"
+    },
+    "CORR.DEPR.EDA": {
+      "statement": "TFT",
+      "display_class": "AJJ",
+      "position": 136,
+      "source_row": 14,
+      "source_col": 17,
+      "label": "Corrige l’impact de dépréciations d’actifs sur le résultat net"
+    },
+    "CORR.GPHE": {
+      "statement": "TFT",
+      "display_class": "AJJ",
+      "position": 137,
+      "source_row": 15,
+      "source_col": 17,
+      "label": "Corrige l’impact de gains et pertes hors exploitation sur le résultat net"
+    },
+    "CORR.CA": {
+      "statement": "TFT",
+      "display_class": "AJJ",
+      "position": 138,
+      "source_row": 16,
+      "source_col": 17,
+      "label": "Corrige l’impact des cessions d’actifs sur le résultat net"
+    },
+    "CORR.GFI": {
+      "statement": "TFT",
+      "display_class": "AJJ",
+      "position": 139,
+      "source_row": 17,
+      "source_col": 17,
+      "label": "Corrige l’impact des gains financiers sur le résultat net"
+    },
+    "CORR.RNL": {
+      "statement": "TFT",
+      "display_class": "AJJ",
+      "position": 140,
+      "source_row": 18,
+      "source_col": 17,
+      "label": "Corrige l’impact de transactions non pécunières sur le résultat net"
+    },
+    "VAR.BFR": {
+      "statement": "TFT",
+      "display_class": "VAR",
+      "position": 141,
+      "source_row": 19,
+      "source_col": 17,
+      "label": "Variation du Besoin en Fonds de Roulement"
+    },
+    "VAR.ACEX.TOT": {
+      "statement": "TFT",
+      "display_class": "VAR",
+      "position": 142,
+      "source_row": 20,
+      "source_col": 17,
+      "label": "Variation du total des actifs circulants d’exploitation"
+    },
+    "VAR.ACEX": {
+      "statement": "TFT",
+      "display_class": "VAR",
+      "position": 143,
+      "source_row": 21,
+      "source_col": 17,
+      "label": "Variation des autres actifs circulants d'exploitation"
+    },
+    "VAR.CC": {
+      "statement": "TFT",
+      "display_class": "VAR",
+      "position": 144,
+      "source_row": 22,
+      "source_col": 17,
+      "label": "Variation des créances clients"
+    },
+    "VAR.STK": {
+      "statement": "TFT",
+      "display_class": "VAR",
+      "position": 145,
+      "source_row": 23,
+      "source_col": 17,
+      "label": "Variation des stocks"
+    },
+    "VAR.MARCH": {
+      "statement": "TFT",
+      "display_class": "VAR",
+      "position": 146,
+      "source_row": 24,
+      "source_col": 17,
+      "label": "Variation des stocks de marchandises"
+    },
+    "VAR.PF": {
+      "statement": "TFT",
+      "display_class": "VAR",
+      "position": 147,
+      "source_row": 25,
+      "source_col": 17,
+      "label": "Variation des stocks de produits finis"
+    },
+    "VAR.ECP": {
+      "statement": "TFT",
+      "display_class": "VAR",
+      "position": 148,
+      "source_row": 26,
+      "source_col": 17,
+      "label": "Variation des stocks en cours de production"
+    },
+    "VAR.MP": {
+      "statement": "TFT",
+      "display_class": "VAR",
+      "position": 149,
+      "source_row": 27,
+      "source_col": 17,
+      "label": "Variation des stocks de matières premières"
+    },
+    "VAR.FRNTR": {
+      "statement": "TFT",
+      "display_class": "VAR",
+      "position": 150,
+      "source_row": 28,
+      "source_col": 17,
+      "label": "\""
+    },
+    "VAR.CPD": {
+      "statement": "TFT",
+      "display_class": "VAR",
+      "position": 151,
+      "source_row": 29,
+      "source_col": 17,
+      "label": "Variation des charges prépayées ou différées"
+    },
+    "VAR.IDCT": {
+      "statement": "TFT",
+      "display_class": "VAR",
+      "position": 152,
+      "source_row": 30,
+      "source_col": 17,
+      "label": "Variation des impôts différés à court terme"
+    },
+    "VAR.IDLT": {
+      "statement": "TFT",
+      "display_class": "VAR",
+      "position": 153,
+      "source_row": 31,
+      "source_col": 17,
+      "label": "Variation des impôts différés à long terme"
+    },
+    "VAR.PCE.TOT": {
+      "statement": "TFT",
+      "display_class": "VAR",
+      "position": 154,
+      "source_row": 32,
+      "source_col": 17,
+      "label": "Variation du total des passifs courants d'exploitation"
+    },
+    "VAR.PCE": {
+      "statement": "TFT",
+      "display_class": "VAR",
+      "position": 155,
+      "source_row": 33,
+      "source_col": 17,
+      "label": "Variation des autres passifs courants d’exploitation"
+    },
+    "VAR.DF": {
+      "statement": "TFT",
+      "display_class": "VAR",
+      "position": 156,
+      "source_row": 34,
+      "source_col": 17,
+      "label": "Variation des dettes fournisseurs"
+    },
+    "VAR.SAP": {
+      "statement": "TFT",
+      "display_class": "VAR",
+      "position": 157,
+      "source_row": 35,
+      "source_col": 17,
+      "label": "Variation des salaires à payer"
+    },
+    "VAR.PCT.PR": {
+      "statement": "TFT",
+      "display_class": "VAR",
+      "position": 158,
+      "source_row": 36,
+      "source_col": 17,
+      "label": "Variation de la part à court terme des plans de retraite"
+    },
+    "VAR.PDCA": {
+      "statement": "TFT",
+      "display_class": "VAR",
+      "position": 159,
+      "source_row": 37,
+      "source_col": 17,
+      "label": "Variation des produits différés ou constatés d’avance"
+    },
+    "VAR.CAP": {
+      "statement": "TFT",
+      "display_class": "VAR",
+      "position": 160,
+      "source_row": 38,
+      "source_col": 17,
+      "label": "Variation des diverses charges à payer"
+    },
+    "VAR.IAP": {
+      "statement": "TFT",
+      "display_class": "VAR",
+      "position": 161,
+      "source_row": 39,
+      "source_col": 17,
+      "label": "Variation des intérêts à payer"
+    },
+    "VAR.TAP": {
+      "statement": "TFT",
+      "display_class": "VAR",
+      "position": 162,
+      "source_row": 40,
+      "source_col": 17,
+      "label": "Variation des impôts à payer"
+    },
+    "VAR.PNCE.TOT": {
+      "statement": "TFT",
+      "display_class": "VAR",
+      "position": 163,
+      "source_row": 41,
+      "source_col": 17,
+      "label": "Variation du total des passifs non-courants d'exploitation"
+    },
+    "VAR.PNCE": {
+      "statement": "TFT",
+      "display_class": "VAR",
+      "position": 164,
+      "source_row": 42,
+      "source_col": 17,
+      "label": "Variation des passifs non-courants d’exploitation"
+    },
+    "VAR.IAPLT": {
+      "statement": "TFT",
+      "display_class": "VAR",
+      "position": 165,
+      "source_row": 43,
+      "source_col": 17,
+      "label": "Variation des impôts à payer à long terme"
+    },
+    "VAR.PR": {
+      "statement": "TFT",
+      "display_class": "VAR",
+      "position": 166,
+      "source_row": 44,
+      "source_col": 17,
+      "label": "Variation des plans de retraite"
+    },
+    "VAR.PELLD": {
+      "statement": "TFT",
+      "display_class": "VAR",
+      "position": 167,
+      "source_row": 45,
+      "source_col": 17,
+      "label": "Variation des Passifs d’Exploitation de Locations Longue Durée"
+    },
+    "AFTE": {
+      "statement": "TFT",
+      "display_class": "VAR",
+      "position": 168,
+      "source_row": 46,
+      "source_col": 17,
+      "label": "Autres flux de trésorerie d’exploitation"
+    },
+    "VAR.NET.ALLD": {
+      "statement": "TFT",
+      "display_class": "VARINV",
+      "position": 169,
+      "source_row": 47,
+      "source_col": 17,
+      "label": "Variation nette des actifs en location longue durée"
+    },
+    "VAR.NET.IC": {
+      "statement": "TFT",
+      "display_class": "VARINV",
+      "position": 170,
+      "source_row": 48,
+      "source_col": 17,
+      "label": "Variation nette des immobilisations corporelles"
+    },
+    "VAR.NET.TER": {
+      "statement": "TFT",
+      "display_class": "VARINV",
+      "position": 171,
+      "source_row": 49,
+      "source_col": 17,
+      "label": "Variation nette des terrains"
+    },
+    "VAR.NET.II": {
+      "statement": "TFT",
+      "display_class": "VARINV",
+      "position": 172,
+      "source_row": 50,
+      "source_col": 17,
+      "label": "Variation nette des immobilisations incorporelles"
+    },
+    "VAR.NET.EDA": {
+      "statement": "TFT",
+      "display_class": "VARINV",
+      "position": 173,
+      "source_row": 51,
+      "source_col": 17,
+      "label": "Acquisitions nettes"
+    },
+    "VAR.ACI": {
+      "statement": "TFT",
+      "display_class": "VARAI",
+      "position": 174,
+      "source_row": 52,
+      "source_col": 17,
+      "label": "Variation nettes des actifs circulants d’investissement"
+    },
+    "VAR.AII": {
+      "statement": "TFT",
+      "display_class": "VARAI",
+      "position": 175,
+      "source_row": 53,
+      "source_col": 17,
+      "label": "Variation nettes des actifs immobilisés d’investissement"
+    },
+    "AJT.GFI": {
+      "statement": "TFT",
+      "display_class": "AJJ",
+      "position": 176,
+      "source_row": 54,
+      "source_col": 17,
+      "label": "Ajoute l’impact des gains financier"
+    },
+    "AFTI": {
+      "statement": "TFT",
+      "display_class": "VARAI",
+      "position": 177,
+      "source_row": 55,
+      "source_col": 17,
+      "label": "Autres flux de trésorerie d’investissement"
+    },
+    "VAR.PFLLD": {
+      "statement": "TFT",
+      "display_class": "VARPAS",
+      "position": 178,
+      "source_row": 56,
+      "source_col": 17,
+      "label": "Variation des Passifs Financiers de Locations Longue Durée"
+    },
+    "VAR.DCT": {
+      "statement": "TFT",
+      "display_class": "VARPAS",
+      "position": 179,
+      "source_row": 57,
+      "source_col": 17,
+      "label": "Variation nette des dettes et effets à payer à court terme"
+    },
+    "VAR.HPTQ": {
+      "statement": "TFT",
+      "display_class": "VARPAS",
+      "position": 180,
+      "source_row": 58,
+      "source_col": 17,
+      "label": "Variation nette des hypothèques (courantes et non-courantes)"
+    },
+    "VAR.DLT": {
+      "statement": "TFT",
+      "display_class": "VARPAS",
+      "position": 181,
+      "source_row": 59,
+      "source_col": 17,
+      "label": "Variation nette des dettes à long terme (courantes et non-courantes)"
+    },
+    "VAR.OBLI": {
+      "statement": "TFT",
+      "display_class": "VARPAS",
+      "position": 182,
+      "source_row": 60,
+      "source_col": 17,
+      "label": "Variation nette des obligations (courantes et non-courantes)"
+    },
+    "VAR.CS": {
+      "statement": "TFT",
+      "display_class": "VARCAPS",
+      "position": 183,
+      "source_row": 61,
+      "source_col": 17,
+      "label": "Variation du capital social"
+    },
+    "VAR.ARA": {
+      "statement": "TFT",
+      "display_class": "VARCAPS",
+      "position": 184,
+      "source_row": 62,
+      "source_col": 17,
+      "label": "Variation des autres résultats accumulés"
+    },
+    "VAR.IM": {
+      "statement": "TFT",
+      "display_class": "VARCAPS",
+      "position": 185,
+      "source_row": 63,
+      "source_col": 17,
+      "label": "Variation des intérêts minoritaires"
+    },
+    "DIVPAY": {
+      "statement": "TFT",
+      "display_class": "VARCAPS",
+      "position": 186,
+      "source_row": 64,
+      "source_col": 17,
+      "label": "Dividendes distribués"
+    },
+    "AFTF": {
+      "statement": "TFT",
+      "display_class": "AUTR",
+      "position": 187,
+      "source_row": 65,
+      "source_col": 17,
+      "label": "Autres flux de trésorerie de financement"
+    },
+    "ETCHG": {
+      "statement": "TFT",
+      "display_class": "AUTR",
+      "position": 188,
+      "source_row": 66,
+      "source_col": 17,
+      "label": "Effet des taux de change"
+    },
+    "ACFT": {
+      "statement": "TFT",
+      "display_class": "AUTR",
+      "position": 189,
+      "source_row": 67,
+      "source_col": 17,
+      "label": "Autres corrections de flux de trésorerie"
+    },
+    "FTET": {
+      "statement": "TFT_SUITE",
+      "display_class": "FTE",
+      "position": 190,
+      "source_row": 2,
+      "source_col": 25,
+      "label": "Entrées (sorties) nettes de trésorerie résultant de l’exploitation",
+      "placements": [
+        {
+          "statement": "TFT_SUITE",
+          "display_class": "FTE",
+          "position": 190,
+          "source_row": 2,
+          "source_col": 25,
+          "label": "Entrées (sorties) nettes de trésorerie résultant de l’exploitation"
+        },
+        {
+          "statement": "TFT_SUITE",
+          "display_class": "FTE",
+          "position": 194,
+          "source_row": 6,
+          "source_col": 25,
+          "label": "Entrées (sorties) nettes de trésorerie issues du financement"
+        }
+      ]
+    },
+    "FTE": {
+      "statement": "TFT_SUITE",
+      "display_class": "FTE",
+      "position": 191,
+      "source_row": 3,
+      "source_col": 25,
+      "label": "Flux de trésorerie d’exploitation"
+    },
+    "FTIT": {
+      "statement": "TFT_SUITE",
+      "display_class": "FTI",
+      "position": 192,
+      "source_row": 4,
+      "source_col": 25,
+      "label": "Entrées (sorties) nettes de trésorerie issues de l’investissement"
+    },
+    "FTI": {
+      "statement": "TFT_SUITE",
+      "display_class": "FTI",
+      "position": 193,
+      "source_row": 5,
+      "source_col": 25,
+      "label": "Flux de trésorerie d’investissement"
+    },
+    "FTF": {
+      "statement": "TFT_SUITE",
+      "display_class": "FTF",
+      "position": 195,
+      "source_row": 7,
+      "source_col": 25,
+      "label": "Flux de trésorerie de financement"
+    },
+    "TRESOVAR": {
+      "statement": "TFT_SUITE",
+      "display_class": "TRESO",
+      "position": 196,
+      "source_row": 8,
+      "source_col": 25,
+      "label": "Variation de trésorerie"
+    },
+    "TRESOINI": {
+      "statement": "TFT_SUITE",
+      "display_class": "TRESO",
+      "position": 197,
+      "source_row": 9,
+      "source_col": 25,
+      "label": "Trésorerie initiale"
+    },
+    "TRESOFIN": {
+      "statement": "TFT_SUITE",
+      "display_class": "TRESO",
+      "position": 198,
+      "source_row": 10,
+      "source_col": 25,
+      "label": "Trésorerie finale"
+    },
+    "INTPAY": {
+      "statement": "TFT_SUITE",
+      "display_class": "AUTR",
+      "position": 199,
+      "source_row": 11,
+      "source_col": 25,
+      "label": "Intérêts payés"
+    },
+    "TAXPAY": {
+      "statement": "TFT_SUITE",
+      "display_class": "AUTR",
+      "position": 200,
+      "source_row": 12,
+      "source_col": 25,
+      "label": "Impôts payés"
+    },
+    "FTE.AMT": {
+      "statement": "TFT_SUITE",
+      "display_class": "AUTR",
+      "position": 201,
+      "source_row": 13,
+      "source_col": 25,
+      "label": "Amortissement total"
+    },
+    "FLUXTRESO": {
+      "statement": "TFT_SUITE",
+      "display_class": "TRESO",
+      "position": 202,
+      "source_row": 14,
+      "source_col": 25,
+      "label": "Flux de trésorerie"
+    },
+    "ETAT.TFT": {
+      "statement": "TFT_SUITE",
+      "display_class": "AUTR",
+      "position": 203,
+      "source_row": 15,
+      "source_col": 25,
+      "label": "Tableau de flux de trésorerie"
+    },
+    "FTE.RN": {
+      "statement": "TFT_SUITE",
+      "display_class": "FTE",
+      "position": 204,
+      "source_row": 16,
+      "source_col": 25,
+      "label": "Résultat Net"
+    },
+    "FTE.RECON": {
+      "statement": "TFT_SUITE",
+      "display_class": "FTE",
+      "position": 205,
+      "source_row": 17,
+      "source_col": 25,
+      "label": "Réconciliations entre RN et FTE"
+    },
+    "FTE.EXP": {
+      "statement": "TFT_SUITE",
+      "display_class": "FTE",
+      "position": 206,
+      "source_row": 18,
+      "source_col": 25,
+      "label": "Variation des actifs et passifs d’exploitation"
+    },
+    "FTI.EXP": {
+      "statement": "TFT_SUITE",
+      "display_class": "FTI",
+      "position": 207,
+      "source_row": 19,
+      "source_col": 25,
+      "label": "Flux de trésorerie d’investissements dans l’exploitation"
+    },
+    "FTI.INV": {
+      "statement": "TFT_SUITE",
+      "display_class": "FTI",
+      "position": 208,
+      "source_row": 20,
+      "source_col": 25,
+      "label": "Flux de trésorerie d’investissements hors exploitation"
+    },
+    "FTF.DBT": {
+      "statement": "TFT_SUITE",
+      "display_class": "FTF",
+      "position": 209,
+      "source_row": 21,
+      "source_col": 25,
+      "label": "Flux de trésorerie de financement par dette"
+    },
+    "FTF.FP": {
+      "statement": "TFT_SUITE",
+      "display_class": "FTF",
+      "position": 210,
+      "source_row": 22,
+      "source_col": 25,
+      "label": "Flux de trésorerie de financement par fonds propres"
+    },
+    "AAFT": {
+      "statement": "TFT_SUITE",
+      "display_class": "AUTR",
+      "position": 211,
+      "source_row": 23,
+      "source_col": 25,
+      "label": "Autre ajustements des flux de trésorerie"
+    },
+    "AMT.II": {
+      "statement": "COMPTE_RESULTAT",
+      "display_class": "AMTD",
+      "position": 96,
+      "source_row": 39,
+      "source_col": 9,
+      "label": "Amortissement des immobilisations incorporelles",
+      "alias_of": "AMT:II"
+    }
+  }
+}

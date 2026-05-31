@@ -1,0 +1,259 @@
+{
+  "TRESO": {
+    "label": "Trésorerie",
+    "rgb": [255, 255, 170],
+    "font_rgb": [0, 0, 0]
+  },
+
+  "ACI": {
+    "label": "Actifs circulants d'investissement",
+    "rgb": [255, 255, 4],
+    "font_rgb": [0, 0, 0]
+  },
+
+  "ACE": {
+    "label": "Actifs circulants d'exploitation",
+    "rgb": [255, 241, 0],
+    "font_rgb": [0, 0, 0]
+  },
+
+  "AIE": {
+    "label": "Actifs immobilisés d'exploitation",
+    "rgb": [255, 119, 0],
+    "font_rgb": [255, 255, 255]
+  },
+
+  "AII": {
+    "label": "Actifs immobilisés d'investissement",
+    "rgb": [255, 50, 0],
+    "font_rgb": [255, 255, 255]
+  },
+
+  "PCE": {
+    "label": "Passifs courants d'exploitation",
+    "rgb": [178, 212, 255],
+    "font_rgb": [0, 0, 0]
+  },
+
+  "DAP": {
+    "label": "Dividendes à payer",
+    "rgb": [153, 187, 221],
+    "font_rgb": [0, 0, 0]
+  },
+
+  "PCF": {
+    "label": "Passifs courants de financement",
+    "rgb": [42, 212, 255],
+    "font_rgb": [0, 0, 0]
+  },
+
+  "PNCF": {
+    "label": "Passifs non courants de financement",
+    "rgb": [0, 153, 204],
+    "font_rgb": [255, 255, 255]
+  },
+
+  "PNCE": {
+    "label": "Passifs non courants d'exploitation",
+    "rgb": [0, 85, 255],
+    "font_rgb": [255, 255, 255]
+  },
+
+  "FP": {
+    "label": "Fonds propres",
+    "rgb": [51, 51, 51],
+    "font_rgb": [255, 255, 255]
+  },
+
+  "FPB": {
+    "label": "Fonds propres - bloc secondaire",
+    "rgb": [85, 85, 85],
+    "font_rgb": [255, 255, 255]
+  },
+
+  "DCR": {
+    "label": "Compte de résultat",
+    "rgb": [51, 51, 153],
+    "font_rgb": [255, 255, 255]
+  },
+
+  "CDV": {
+    "label": "Coût des ventes",
+    "rgb": [255, 204, 204],
+    "font_rgb": [0, 0, 0]
+  },
+
+  "CA": {
+    "label": "Chiffre d'affaires",
+    "rgb": [170, 255, 170],
+    "font_rgb": [0, 0, 0]
+  },
+
+  "CFO": {
+    "label": "Charges fonctionnelles",
+    "rgb": [255, 170, 170],
+    "font_rgb": [0, 0, 0]
+  },
+
+  "AMTD": {
+    "label": "Amortissements",
+    "rgb": [255, 153, 153],
+    "font_rgb": [0, 0, 0]
+  },
+
+  "DEPRA": {
+    "label": "Dépréciations",
+    "rgb": [255, 102, 153],
+    "font_rgb": [0, 0, 0]
+  },
+
+  "INTS": {
+    "label": "Intérêts",
+    "rgb": [255, 153, 222],
+    "font_rgb": [0, 0, 0]
+  },
+
+  "RNTFT": {
+    "label": "Résultat net TFT",
+    "rgb": [255, 0, 0],
+    "font_rgb": [255, 255, 255]
+  },
+
+  "AJJ": {
+    "label": "Ajustements",
+    "rgb": [255, 50, 50],
+    "font_rgb": [255, 255, 255]
+  },
+
+  "VAR": {
+    "label": "Variations",
+    "rgb": [255, 85, 85],
+    "font_rgb": [255, 255, 255]
+  },
+
+  "VARINV": {
+    "label": "Variations investissements",
+    "rgb": [0, 170, 0],
+    "font_rgb": [255, 255, 255]
+  },
+
+  "VARAI": {
+    "label": "Variations actifs d'investissement",
+    "rgb": [0, 204, 0],
+    "font_rgb": [255, 255, 255]
+  },
+
+  "VARPAS": {
+    "label": "Variations passifs",
+    "rgb": [0, 119, 204],
+    "font_rgb": [255, 255, 255]
+  },
+
+  "VARCAPS": {
+    "label": "Variations capitaux",
+    "rgb": [0, 0, 204],
+    "font_rgb": [255, 255, 255]
+  },
+
+  "AUTR": {
+    "label": "Autres",
+    "rgb": [136, 136, 136],
+    "font_rgb": [255, 255, 255]
+  },
+
+  "FTE": {
+    "label": "Flux de trésorerie d'exploitation",
+    "rgb": [204, 0, 0],
+    "font_rgb": [255, 255, 255]
+  },
+
+  "FTI": {
+    "label": "Flux de trésorerie d'investissement",
+    "rgb": [0, 102, 0],
+    "font_rgb": [255, 255, 255]
+  },
+
+  "FTF": {
+    "label": "Flux de trésorerie de financement",
+    "rgb": [0, 0, 102],
+    "font_rgb": [255, 255, 255]
+  },
+
+  "PROF": {
+    "label": "Ratios de profitabilité",
+    "rgb": [255, 119, 119],
+    "font_rgb": [0, 0, 0]
+  },
+
+  "PROD": {
+    "label": "Ratios de productivité",
+    "rgb": [193, 240, 200],
+    "font_rgb": [0, 0, 0]
+  },
+
+  "PRODBIS": {
+    "label": "Ratios de productivité avancés",
+    "rgb": [255, 153, 119],
+    "font_rgb": [0, 0, 0]
+  },
+
+  "RENT": {
+    "label": "Ratios de rentabilité",
+    "rgb": [255, 0, 0],
+    "font_rgb": [255, 255, 255]
+  },
+
+  "FIN1": {
+    "label": "Politique de financement",
+    "rgb": [255, 85, 0],
+    "font_rgb": [255, 255, 255]
+  },
+
+  "FIN2": {
+    "label": "Risque financier",
+    "rgb": [255, 170, 0],
+    "font_rgb": [0, 0, 0]
+  },
+
+  "FIN3": {
+    "label": "Structure financière",
+    "rgb": [51, 51, 102],
+    "font_rgb": [255, 255, 255]
+  },
+
+  "FIN4": {
+    "label": "Mathématiques financières",
+    "rgb": [51, 102, 204],
+    "font_rgb": [255, 255, 255]
+  },
+
+  "LIQ": {
+    "label": "Liquidité",
+    "rgb": [220, 187, 255],
+    "font_rgb": [0, 0, 0]
+  },
+
+  "SOLV": {
+    "label": "Solvabilité",
+    "rgb": [102, 0, 153],
+    "font_rgb": [255, 255, 255]
+  },
+
+  "VOLL": {
+    "label": "Volatilité / levier",
+    "rgb": [204, 0, 255],
+    "font_rgb": [255, 255, 255]
+  },
+
+  "VOLL2": {
+    "label": "Volatilité / levier avancé",
+    "rgb": [204, 0, 238],
+    "font_rgb": [255, 255, 255]
+  },
+
+  "MARCHE": {
+    "label": "Performance de marché",
+    "rgb": [131, 204, 235],
+    "font_rgb": [0, 0, 0]
+  }
+}

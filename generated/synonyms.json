@@ -1,5 +1,7 @@
 {
   "AT": [
+    "AT",
+    "Actifs totaux",
     "Total Assets",
     "TA",
     "assets",
@@ -7,17 +9,23 @@
     "at"
   ],
   "AC": [
+    "AC",
+    "Actifs circulants",
     "Current Assets",
     "CA",
     "current assets",
     "ac"
   ],
   "ARL": [
+    "ARL",
+    "Actifs relativement liquides",
     "qa",
     "quick assets",
     "actifs relativement liquides"
   ],
   "TRESO": [
+    "TRESO",
+    "Trésorerie et équivalents de trésorerie",
     "trésorerie",
     "tresorerie",
     "trésorerie et équivalents de trésorerie",
@@ -30,22 +38,30 @@
     "disponibilites"
   ],
   "ACI": [
+    "ACI",
+    "Actifs circulants d'investissement",
     "cia",
     "current investing assets",
     "actifs circulants d investissement"
   ],
   "ACEX": [
+    "ACEX",
+    "Actifs circulants d'exploitation",
     "coa",
     "current operating assets",
     "actifs circulants d exploitation"
   ],
   "CC": [
+    "CC",
+    "Créances clients",
     "ar",
     "accounts receivable",
     "trade receivables",
     "créances clients"
   ],
   "PCD": [
+    "PCD",
+    "Provisions pour créances douteuses",
     "Allowance for Doubtful Accounts",
     "ADA",
     "allowance for doubtful accounts",
@@ -53,42 +69,56 @@
     "pcd"
   ],
   "STK": [
+    "STK",
+    "Stocks",
     "inv",
     "inventories",
     "inventory",
     "stocks"
   ],
   "MARCH": [
+    "MARCH",
+    "Marchandises",
     "Merchandise",
     "MERCH",
     "merchandise",
     "march"
   ],
   "PF": [
+    "PF",
+    "Produits finis",
     "Finished Products",
     "FP",
     "finished products",
     "pf"
   ],
   "ECP": [
+    "ECP",
+    "En-cours de production",
     "Work In Progress",
     "WIP",
     "work in progress",
     "ecp"
   ],
   "MP": [
+    "MP",
+    "Matières premières",
     "Raw Materials",
     "RM",
     "raw materials",
     "mp"
   ],
   "FRNTR": [
+    "FRNTR",
+    "Fournitures",
     "Supplies",
     "SUPPL",
     "supplies",
     "frntr"
   ],
   "CPD": [
+    "CPD",
+    "Charges prépayées ou différées",
     "Prepaid or Deferred Expenses",
     "PDE",
     "prepaid expenses",
@@ -96,18 +126,24 @@
     "cpd"
   ],
   "IDCT": [
+    "IDCT",
+    "Impôts différés à court terme",
     "Current Deferred Taxes",
     "CDT",
     "current deferred taxes",
     "idct"
   ],
   "AACEX": [
+    "AACEX",
+    "Autres actifs circulants d'exploitation",
     "Other Current Operating Assets",
     "OCOA",
     "other current operating assets",
     "aacex"
   ],
   "AI": [
+    "AI",
+    "Actifs immobilisés",
     "Non-Current Assets",
     "NCA",
     "non-current assets",
@@ -115,264 +151,360 @@
     "ai"
   ],
   "AIE": [
+    "AIE",
+    "Actifs immobilisés d'exploitation",
     "Non-current Operating Assets",
     "NCOA",
     "non-current operating assets",
     "aie"
   ],
   "IDLT": [
+    "IDLT",
+    "Impôts différés à long terme",
     "Non-Current Deferred Taxes",
     "NCDT",
     "non-current deferred taxes",
     "idlt"
   ],
   "ALLD": [
+    "ALLD",
+    "Actifs en location longue durée",
     "Assets from Long-Term Leases",
     "ALTL",
     "assets from long-term leases",
     "alld"
   ],
   "AA.ALLD": [
+    "AA.ALLD",
+    "Amortissements accumulés sur actifs en location longue durée",
     "Accumulated Depreciation on Assets from Long-Term Leases",
     "AD.ALTL",
     "accumulated depreciation on assets from long-term leases",
     "aa.alld"
   ],
   "IC": [
+    "IC",
+    "Immobilisations corporelles",
     "Property, Plants, and Equipment",
     "PPE",
     "property plant and equipment",
     "ic"
   ],
   "AA.IC": [
+    "AA.IC",
+    "Amortissements accumulés sur immobilisations corporelles",
     "Accumulated Depreciation on Property, Plants, and Equipment",
     "AD.PPE",
     "accumulated depreciation on ppe",
     "aa.ic"
   ],
   "TER": [
+    "TER",
+    "Terrains",
     "Land",
     "LAND",
     "land",
     "ter"
   ],
   "II": [
+    "II",
+    "Immobilisations incorporelles",
     "Intangible Assets",
     "IA",
     "intangible assets",
     "ii"
   ],
   "AA.II": [
+    "AA.II",
+    "Amortissements accumulés sur immobilisations incorporelles",
     "Accumulated Depreciation on Intangible Assets",
     "AD.IA",
     "accumulated depreciation on intangible assets",
     "aa.ii"
   ],
   "EDA": [
+    "EDA",
+    "Écart d'acquisition",
     "Goodwill",
     "GW",
     "goodwill",
     "eda"
   ],
   "AAIE": [
+    "AAIE",
+    "Autres actifs immobilisés d'exploitation",
     "Other Non-current Operating Assets",
     "ONCOA",
     "other non-current operating assets",
     "aaie"
   ],
   "AII": [
+    "AII",
+    "Actifs immobilisés d'investissement",
     "Non-Current Investing Assets",
     "NCIA",
     "non-current investing assets",
     "aii"
   ],
   "PT": [
+    "PT",
+    "Passifs totaux",
     "Total Liabilities",
     "TL",
     "total liabilities",
     "pt"
   ],
   "PC": [
+    "PC",
+    "Passifs courants",
     "Current Liabilities",
     "CL",
     "current liabilities",
     "pc"
   ],
   "PCE": [
+    "PCE",
+    "Passifs courants d'exploitation",
     "col",
     "current operating liabilities"
   ],
   "DF": [
+    "DF",
+    "Dettes fournisseurs",
     "ap",
     "accounts payable",
     "trade payables",
     "dettes fournisseurs"
   ],
   "SAP": [
+    "SAP",
+    "Salaires à payer",
     "Employees Salaries Payable",
     "ESP",
     "salaries payable",
     "sap"
   ],
   "CAPAC": [
+    "CAPAC",
+    "Cotisations à verser à l'assurance-chômage",
     "Contributions to Unemployment Insurance Payable",
     "CUIP",
     "capac"
   ],
   "CAPAM": [
+    "CAPAM",
+    "Cotisations à verser à l'assurance maladie",
     "Contributions to Healthcare Insurance Payable",
     "CHIP",
     "capam"
   ],
   "CAPFP": [
+    "CAPFP",
+    "Cotisations à verser aux fonds de pension",
     "Contributions to Pension Funds Payable",
     "CPFP",
     "capfp"
   ],
   "PDCA": [
+    "PDCA",
+    "Produits différés ou constatés d'avance",
     "udr",
     "unearned revenues",
     "deferred revenues"
   ],
   "ACAP": [
+    "ACAP",
+    "Autres charges à payer",
     "Other Accrued Liabilities",
     "OAL",
     "other accrued liabilities",
     "acap"
   ],
   "IAP": [
+    "IAP",
+    "Intérêts à payer",
     "Interest Payable",
     "IP",
     "interest payable",
     "iap"
   ],
   "TAP": [
+    "TAP",
+    "Impôts à payer",
     "Taxes Payable",
     "TP",
     "taxes payable",
     "tap"
   ],
   "PCT.PR": [
+    "PCT.PR",
+    "Part à court terme des plans de retraite",
     "Current Portion of Pension Liabilities",
     "CP.PL",
     "current portion of pension liabilities",
     "pct.pr"
   ],
   "PCT.PELLD": [
+    "PCT.PELLD",
+    "Part à court terme des passifs d'exploitation de locations longue durée",
     "Current Portion of Operating Lease Liabilities",
     "CP.OLL",
     "pct.pelld"
   ],
   "APCE": [
+    "APCE",
+    "Autres passifs courants d'exploitation",
     "Other Current Operating Liabilities",
     "OCOL",
     "apce"
   ],
   "DAP": [
+    "DAP",
+    "Dividendes à payer",
     "Dividends Payable",
     "DP",
     "dividends payable",
     "dap"
   ],
   "PCF": [
+    "PCF",
+    "Passifs courants de financement",
     "Current Financing Liabilities",
     "CFL",
     "current financing liabilities",
     "pcf"
   ],
   "DCT": [
+    "DCT",
+    "Dettes et effets à payer à court terme",
     "Short-Term Debts and Current Notes Payable",
     "STD",
     "short-term debt",
     "dct"
   ],
   "PCT.PFLLD": [
+    "PCT.PFLLD",
+    "Part à court terme des passifs financiers de locations longue durée",
     "Current Portion of Financial Lease Liabilities",
     "CP.FLL",
     "pct.pflld"
   ],
   "PCT.HPTQ": [
+    "PCT.HPTQ",
+    "Part à court terme des hypothèques",
     "Current Portion of Mortgages",
     "CP.MRTG",
     "pct.hptq"
   ],
   "PCT.DLT": [
+    "PCT.DLT",
+    "Part à court terme des dettes à long terme",
     "Current Portion of Long Term Debt",
     "CP.LTD",
     "pct.dlt"
   ],
   "PCT.OBLI": [
+    "PCT.OBLI",
+    "Part à court terme des obligations",
     "Current Portion of Bonds",
     "CP.BOND",
     "pct.obli"
   ],
   "APCF": [
+    "APCF",
+    "Autres passifs courants de financement",
     "Other Current Financing Liabilities",
     "OCFL",
     "apcf"
   ],
   "PNC": [
+    "PNC",
+    "Passifs non-courants",
     "ncl",
     "non-current liabilities",
     "non current liabilities",
     "passifs non courants"
   ],
   "PNCF": [
+    "PNCF",
+    "Passifs non-courants de financement",
     "ncfl",
     "non-current financing liabilities",
     "non current financing liabilities"
   ],
   "PFLLD": [
+    "PFLLD",
+    "Passifs financiers de locations longue durée",
     "Financial Lease Liabilities",
     "FLL",
     "pflld"
   ],
   "HPTQ": [
+    "HPTQ",
+    "Hypothèques",
     "Mortgages",
     "MRTG",
     "hptq"
   ],
   "DLT": [
+    "DLT",
+    "Dettes à long terme",
     "Long Term Debt",
     "LTD",
     "dlt"
   ],
   "OBLI": [
+    "OBLI",
+    "Obligations",
     "Bonds",
     "BOND",
     "obli"
   ],
   "APNCF": [
+    "APNCF",
+    "Autres passifs non-courants de financement",
     "Other Non-Current Financing Liabilities",
     "ONCFL",
     "apncf"
   ],
   "PNCE": [
+    "PNCE",
+    "Passifs non-courants d'exploitation",
     "ncol",
     "non-current operating liabilities",
     "non current operating liabilities"
   ],
   "IAPLT": [
+    "IAPLT",
+    "Impôts à payer à long terme",
     "Non-Current Taxes Payable",
     "NCTP",
     "iaplt"
   ],
   "PR": [
+    "PR",
+    "Plans de retraite",
     "Pension Liabilities",
     "PL",
     "pr"
   ],
   "PELLD": [
+    "PELLD",
+    "Passifs d'exploitation de locations longue durée",
     "Operating Lease Liabilities",
     "OLL",
     "pelld"
   ],
   "APNCE": [
+    "APNCE",
+    "Autres passifs non-courants d'exploitation",
     "Other Non-Current Operating Liabilities",
     "ONCOL",
     "apnce"
   ],
   "FP": [
+    "FP",
+    "Fonds propres",
     "se",
     "stockholders equity",
     "shareholders equity",
@@ -380,82 +512,112 @@
     "fonds propres"
   ],
   "CS": [
+    "CS",
+    "Capital social",
     "Paid-in Capital",
     "PIC",
     "paid-in capital",
     "cs"
   ],
   "APREF": [
+    "APREF",
+    "Actions préférentielles",
     "Preferred Stock",
     "PRFSTK",
     "apref"
   ],
   "AORD": [
+    "AORD",
+    "Actions ordinaires",
     "Common Stock",
     "COMSTK",
     "aord"
   ],
   "PREM": [
+    "PREM",
+    "Prime d'émission",
     "Additional Paid-In Capital",
     "APIC",
     "prem"
   ],
   "APRPR": [
+    "APRPR",
+    "Actions propres",
     "Treasury Stock",
     "TRSTK",
     "aprpr"
   ],
   "BND": [
+    "BND",
+    "Bénéfices non distribués",
     "Retained Earnings",
     "RE",
     "retained earnings",
     "bnd"
   ],
   "ARA": [
+    "ARA",
+    "Autres résultats accumulés",
     "Other Comprehensive Income or Loss",
     "OCIL",
     "ara"
   ],
   "AUTFP": [
+    "AUTFP",
+    "Autres fonds propres",
     "Other Equity",
     "OTHEQ",
     "autfp"
   ],
   "IM": [
+    "IM",
+    "Intérêts minoritaires",
     "Non-Controlling Interests",
     "NCI",
     "minority interests",
     "im"
   ],
   "ETAT.BILAN": [
+    "ETAT.BILAN",
+    "Bilan",
     "Balance Sheet",
     "STMT.BS",
     "balance sheet",
     "etat.bilan"
   ],
   "CI": [
+    "CI",
+    "Capitaux investis",
     "Invested Capital",
     "IC",
     "invested capital",
     "ci"
   ],
   "DPI": [
+    "DPI",
+    "Dettes porteuses d'intérêts",
     "Interest Bearing Debts",
     "IBD",
     "dpi"
   ],
   "RPI": [
+    "RPI",
+    "Richesse des propriétaires investie",
     "Owners Wealth Invested",
     "OWI",
     "rpi"
   ],
   "CE": [
+    "CE",
+    "Capitaux employés",
     "ce",
     "capital employed",
     "capitaux employés",
     "capitaux employes"
   ],
   "CA": [
+    "CA",
+    "Chiffre d'affaires",
     "rev",
     "revenue",
     "revenues",
@@ -465,32 +627,44 @@
     "chiffre daffaires"
   ],
   "ESCC": [
+    "ESCC",
+    "Escomptes sur cartes de crédit",
     "Discounts on Credit Cards",
     "DCC",
     "escc"
   ],
   "EPPA": [
+    "EPPA",
+    "Escomptes pour paiement anticipé",
     "Discounts For Early Payments",
     "DFEP",
     "eppa"
   ],
   "RER": [
+    "RER",
+    "Retours et rabais",
     "Returns and Allowances",
     "RETALL",
     "rer"
   ],
   "CDV": [
+    "CDV",
+    "Coût des ventes",
     "Cost Of Sales",
     "COS",
     "cdv"
   ],
   "MB": [
+    "MB",
+    "Marge brute",
     "gm",
     "gross margin",
     "gross profit",
     "marge brute"
   ],
   "FNCT": [
+    "FNCT",
+    "Charges fonctionnelles",
     "Selling, General and Administrative Expenses",
     "SGNA",
     "operating expenses",
@@ -498,6 +672,8 @@
     "fnct"
   ],
   "COM": [
+    "COM",
+    "Charges commerciales",
     "Selling and Marketing Expenses",
     "SME",
     "selling expenses",
@@ -505,55 +681,74 @@
     "com"
   ],
   "DCD": [
+    "DCD",
+    "Dépréciation des créances douteuses",
     "Depreciation Of Doubtful Accounts or Bad Debt Expense",
     "DODA",
     "bad debt expense",
     "dcd"
   ],
   "RED": [
+    "RED",
+    "Charges de recherche et développement",
     "Research and Development Expenses",
     "RND",
     "R&D",
     "red"
   ],
   "ADM": [
-    "Administrative Expenses",
     "ADM",
+    "Charges administratives",
+    "Administrative Expenses",
     "adm"
   ],
   "ACHEXP": [
+    "ACHEXP",
+    "Autres charges d'exploitation",
     "Other Operating Expenses",
     "OTHOPEX",
     "achexp"
   ],
   "EBE": [
+    "EBE",
+    "Excédent brut d'exploitation",
     "Earnings Before Interest Taxes Depreciation and Amortization",
     "EBITDA",
     "gross operating profit",
     "ebe"
   ],
   "AMT": [
+    "AMT",
+    "Charges d'amortissement",
     "Depreciation Expenses",
     "DEPR",
     "depreciation",
     "amt"
   ],
   "AMT.IC": [
+    "AMT.IC",
+    "Amortissement des immobilisations corporelles",
     "Depreciation of Property, Plants, and Equipment",
     "DEPR.PPE",
     "amt.ic"
   ],
   "AMT.ALLD": [
+    "AMT.ALLD",
+    "Amortissement des actifs en location longue durée",
     "Depreciation of Assets from Long-Term Leases",
     "DEPR.ALTL",
     "amt.alld"
   ],
   "AMT.II": [
+    "AMT.II",
+    "Amortissement des immobilisations incorporelles",
     "Amortization of Intangible Assets",
     "DEPR.IA",
     "amt.ii"
   ],
   "REX": [
+    "REX",
+    "Résultat d'exploitation",
     "Operating Income",
     "OI",
     "operating profit",
@@ -561,102 +756,142 @@
     "rex"
   ],
   "GPHE": [
+    "GPHE",
+    "Gains/pertes hors exploitation",
     "Non-Operating Gains/Losses",
     "NOGL",
     "gphe"
   ],
   "GPCA": [
+    "GPCA",
+    "Gains/pertes sur cession d'actifs",
     "Gain/Loss on Asset Disposal",
     "GLAD",
     "gpca"
   ],
   "DEPR": [
+    "DEPR",
+    "Dépréciations d'actifs",
     "Impairments",
     "IMPAIR",
     "depr"
   ],
   "DEPR.IC": [
+    "DEPR.IC",
+    "Dépréciations d'immobilisations corporelles",
     "Impairments of Tangible Assets",
     "IMPAIR.PPE",
     "depr.ic"
   ],
   "DEPR.TER": [
+    "DEPR.TER",
+    "Dépréciations de terrains",
     "Impairments of Land",
     "IMPAIR.LAND",
     "depr.ter"
   ],
   "DEPR.II": [
+    "DEPR.II",
+    "Dépréciations d'immobilisations incorporelles",
     "Impairments of Intangible Assets",
     "IMPAIR.IA",
     "depr.ii"
   ],
   "DEPR.EDA": [
+    "DEPR.EDA",
+    "Dépréciations d'écarts d'acquisition",
     "Impairments of Goodwill",
     "IMPAIR.GW",
     "depr.eda"
   ],
   "GFI": [
+    "GFI",
+    "Gains/pertes financières",
     "Financial Gains/Losses",
     "FINGAIN",
     "gfi"
   ],
   "GSI": [
+    "GSI",
+    "Gains/pertes sur impôts",
     "Tax Gains/Losses",
     "TAXGAIN",
     "gsi"
   ],
   "AUTGPHE": [
+    "AUTGPHE",
+    "Autres gains/pertes hors exploitation",
     "Other Non-Operating Gains/Losses",
     "ONOGL",
     "autgphe"
   ],
   "BAVII": [
+    "BAVII",
+    "Bénéfice avant intérêts et impôts",
     "Earnings Before Interest and Taxes",
     "EBIT",
     "bavii"
   ],
   "INT": [
+    "INT",
+    "Charges d'intérêts",
     "interest expenses",
     "interest expense",
     "charges d'intérêts",
     "intérêts"
   ],
   "INT.DCT": [
+    "INT.DCT",
+    "Intérêts sur dettes à court terme",
     "Interests on Short-Term Debts",
     "INT.STD",
     "int.dct"
   ],
   "INT.HPTQ": [
+    "INT.HPTQ",
+    "Intérêts sur hypothèques",
     "Interests on Mortgages",
     "INT.MRTG",
     "int.hptq"
   ],
   "INT.DLT": [
+    "INT.DLT",
+    "Intérêts sur dettes à long terme",
     "Interests on Long Term Debt",
     "INT.LTD",
     "int.dlt"
   ],
   "INT.OBLI": [
+    "INT.OBLI",
+    "Intérêts sur obligations",
     "Interests on Bonds",
     "INT.BOND",
     "int.obli"
   ],
   "INT.PFLLD": [
+    "INT.PFLLD",
+    "Intérêts sur passifs financiers de locations longues durées",
     "Interests on Financial Leases",
     "INT.FLL",
     "int.pflld"
   ],
   "BAVI": [
+    "BAVI",
+    "Bénéfice avant impôts",
     "Earnings Before Taxes",
     "EBT",
     "bavi"
   ],
   "TAX": [
+    "TAX",
+    "Impôt sur les sociétés",
     "Provision for Income Taxes",
     "income taxes",
     "tax"
   ],
   "RN": [
+    "RN",
+    "Résultat net",
     "ni",
     "net income",
     "net income loss",
@@ -666,21 +901,31 @@
     "resultat net"
   ],
   "SDR": [
+    "SDR",
+    "Sommaire des résultats",
     "Income Summary",
     "IS",
     "sdr"
   ],
   "ETAT.CDR": [
+    "ETAT.CDR",
+    "Compte de résultat",
     "Income Statement",
     "STMT.IS",
     "etat.cdr"
   ],
-  "t": [
-    "Tax Rate",
+  "T": [
+    "T",
+    "Taux d'imposition sur les sociétés",
+    "t",
     "tax rate",
-    "t"
+    "taux d imposition",
+    "taux d'impôt",
+    "corporate tax rate"
   ],
   "RNE": [
+    "RNE",
+    "Résultat net d'exploitation",
     "nopat",
     "net operating profit after taxes",
     "net operating profit after tax",
@@ -689,626 +934,863 @@
     "resultat net exploitation"
   ],
   "FTE": [
+    "FTE",
+    "Flux de trésorerie d'exploitation",
     "cfoa",
     "cash flows from operating activities",
     "operating cash flow",
     "flux de tresorerie d exploitation"
   ],
   "RN.TFT": [
+    "RN.TFT",
+    "Résultat net",
     "Net Income",
     "NI.CFS",
     "rn.tft"
   ],
   "RECON.RNFTE": [
+    "RECON.RNFTE",
+    "Ajustement pour réconcilier résultat net et flux de trésorerie d'exploitation",
     "recon.nicfo",
     "adjustments to reconcile net income to cash flows from operating activities"
   ],
   "CORR.AMT": [
+    "CORR.AMT",
+    "Corrige l'impact des amortissements sur le résultat net",
     "Cancel Impact of Depreciation",
     "CNCL.DEPR",
     "corr.amt"
   ],
   "CORR.AMT.IC": [
+    "CORR.AMT.IC",
+    "Corrige l'impact des amortissements des IC",
     "Cancel Impact of Depreciation of PPE",
     "CNCL.DEPR.PPE",
     "corr.amt.ic"
   ],
   "CORR.AMT.II": [
+    "CORR.AMT.II",
+    "Corrige l'impact des amortissements des II",
     "Cancel Impact of Depreciation of Intangible Assets",
     "CNCL.DEPR.IA",
     "corr.amt.ii"
   ],
   "CORR.AMT.ALLD": [
+    "CORR.AMT.ALLD",
+    "Corrige l'impact des amortissements des ALLD",
     "Cancel Impact of Depreciation of Long-Term Lease Assets",
     "CNCL.DEPR.ALTL",
     "corr.amt.alld"
   ],
   "CORR.DEPR": [
+    "CORR.DEPR",
+    "Corrige l'impact de dépréciations d'actifs",
     "Cancel Impact of Impairments",
     "CNCL.IMPAIR",
     "corr.depr"
   ],
   "CORR.DEPR.IC": [
+    "CORR.DEPR.IC",
+    "Corrige l'impact de dépréciations d'IC",
     "Cancel Impact of PPE Impairments",
     "CNCL.IMPAIR.PPE",
     "corr.depr.ic"
   ],
   "CORR.DEPR.TER": [
+    "CORR.DEPR.TER",
+    "Corrige l'impact de dépréciations de terrains",
     "Cancel Impact of Land Impairments",
     "CNCL.IMPAIR.LAND",
     "corr.depr.ter"
   ],
   "CORR.DEPR.II": [
+    "CORR.DEPR.II",
+    "Corrige l'impact de dépréciations d'II",
     "Cancel Impact of IA Impairments",
     "CNCL.IMPAIR.IA",
     "corr.depr.ii"
   ],
   "CORR.DEPR.EDA": [
+    "CORR.DEPR.EDA",
+    "Corrige l'impact de dépréciations d'EDA",
     "Cancel Impact of Goodwill Impairments",
     "CNCL.IMPAIR.GW",
     "corr.depr.eda"
   ],
   "CORR.GPHE": [
+    "CORR.GPHE",
+    "Corrige l'impact de gains et pertes hors exploitation",
     "Cancel Impact of Non-Operating Gains/Losses",
     "CNCL.NOGL",
     "corr.gphe"
   ],
   "CORR.CA": [
+    "CORR.CA",
+    "Corrige l'impact des cessions d'actifs",
     "Cancel Impact of Asset Disposals",
     "CNCL.AD",
     "corr.ca"
   ],
   "CORR.GFI": [
+    "CORR.GFI",
+    "Corrige l'impact des gains financiers",
     "Cancel Impact of Financial Income",
     "CNCL.FINGAIN",
     "corr.gfi"
   ],
   "CORR.RNL": [
+    "CORR.RNL",
+    "Corrige l'impact de transactions non pécuniaires",
     "Cancel Impact of Non-Cash Transactions",
     "CNCL.NCT",
     "corr.rnl"
   ],
   "VAR.BFR": [
+    "VAR.BFR",
+    "Variation du besoin en fonds de roulement",
     "chg.nfwc",
     "changes in need for working capital",
     "change in working capital"
   ],
   "VAR.ACEX": [
+    "VAR.ACEX",
+    "Variation des actifs circulants d'exploitation",
     "Changes in Current Operating Assets",
     "CHG.COA",
     "var.acex"
   ],
   "VAR.CC": [
+    "VAR.CC",
+    "Variation des créances clients",
     "Changes in Accounts Receivable",
     "CHG.AR",
     "var.cc"
   ],
   "VAR.STK": [
+    "VAR.STK",
+    "Variation des stocks",
     "Changes in Inventories",
     "CHG.INV",
     "var.stk"
   ],
   "VAR.MARCH": [
+    "VAR.MARCH",
+    "Variation des stocks de marchandises",
     "Changes in Inventories of Merchandise",
     "CHG.MERCH",
     "var.march"
   ],
   "VAR.PF": [
+    "VAR.PF",
+    "Variation des stocks de produits finis",
     "Changes in Inventories of Finished Products",
     "CHG.FP",
     "var.pf"
   ],
   "VAR.ECP": [
+    "VAR.ECP",
+    "Variation des stocks en cours de production",
     "Changes in Work in Progress",
     "CHG.WIP",
     "var.ecp"
   ],
   "VAR.MP": [
+    "VAR.MP",
+    "Variation des stocks de matières premières",
     "Changes in Raw Materials",
     "CHG.RM",
     "var.mp"
   ],
   "VAR.FRNTR": [
+    "VAR.FRNTR",
+    "Variation des stocks de consommables",
     "Changes in Supplies",
     "CHG.SUPPL",
     "var.frntr"
   ],
   "VAR.CPD": [
+    "VAR.CPD",
+    "Variation des charges prépayées ou différées",
     "Changes in Prepaid or Deferred Expenses",
     "CHG.PDE",
     "var.cpd"
   ],
   "VAR.IDCT": [
+    "VAR.IDCT",
+    "Variation des impôts différés à court terme",
     "Changes in Current Deferred Taxes",
     "CHG.CDT",
     "var.idct"
   ],
   "VAR.IDLT": [
+    "VAR.IDLT",
+    "Variation des impôts différés à long terme",
     "Changes in Non-Current Deferred Taxes",
     "CHG.NCDT",
     "var.idlt"
   ],
   "VAR.PCE": [
+    "VAR.PCE",
+    "Variation des passifs courants d'exploitation",
     "Changes in Current Operating Liabilities",
     "CHG.COL",
     "var.pce"
   ],
   "VAR.DF": [
+    "VAR.DF",
+    "Variation des dettes fournisseurs",
     "Changes in Accounts Payable",
     "CHG.AP",
     "var.df"
   ],
   "VAR.SAP": [
+    "VAR.SAP",
+    "Variation des salaires à payer",
     "Changes in Employees Salaries Payable",
     "CHG.ESP",
     "var.sap"
   ],
   "VAR.PCT.PR": [
+    "VAR.PCT.PR",
+    "Variation de la part à court terme des plans de retraite",
     "Changes in Current Portion of Pension Liabilities",
     "CHG.CP.PL",
     "var.pct.pr"
   ],
   "VAR.PDCA": [
+    "VAR.PDCA",
+    "Variation des produits différés ou constatés d'avance",
     "Changes in Unearned or Deferred Revenues",
     "CHG.UDR",
     "var.pdca"
   ],
   "VAR.CAP": [
+    "VAR.CAP",
+    "Variation des diverses charges à payer",
     "Changes in Other Accrued Liabilities",
     "CHG.OAL",
     "var.cap"
   ],
   "VAR.IAP": [
+    "VAR.IAP",
+    "Variation des intérêts à payer",
     "Changes in Interest Payable",
     "CHG.IP",
     "var.iap"
   ],
   "VAR.TAP": [
+    "VAR.TAP",
+    "Variation des impôts à payer",
     "Changes in Taxes Payable",
     "CHG.TP",
     "var.tap"
   ],
   "VAR.PNCE": [
+    "VAR.PNCE",
+    "Variation des passifs non-courants d'exploitation",
     "Changes in Non-Current Operating Liabilities",
     "CHG.NCOL",
     "var.pnce"
   ],
   "VAR.IAPLT": [
+    "VAR.IAPLT",
+    "Variation des impôts à payer à long terme",
     "Changes in Non-Current Taxes Payable",
     "CHG.NCTP",
     "var.iaplt"
   ],
   "VAR.PR": [
+    "VAR.PR",
+    "Variation des plans de retraite",
     "Changes in Pension Liabilities",
     "CHG.PL",
     "var.pr"
   ],
   "VAR.PELLD": [
+    "VAR.PELLD",
+    "Variation des passifs d'exploitation de locations longue durée",
     "Changes in Operating Lease Liabilities",
     "CHG.OLL",
     "var.pelld"
   ],
   "AFTE": [
+    "AFTE",
+    "Autres flux de trésorerie d'exploitation",
     "Other Cash Flows from Operating Activities",
     "OCFOA",
     "afte"
   ],
   "FTET": [
+    "FTET",
+    "Entrées/sorties nettes de trésorerie résultant de l'exploitation",
     "Net Cash Provided by Operating Activities",
     "TCFOA",
     "ftet"
   ],
   "FTI": [
+    "FTI",
+    "Flux de trésorerie d'investissement",
     "cfia",
     "cash flows from investing activities",
     "investing cash flow"
   ],
   "VAR.NET.ALLD": [
+    "VAR.NET.ALLD",
+    "Variation nette des actifs en location longue durée",
     "Net Changes in Assets from Long-Term Leases",
     "NET.CHG.ALTL",
     "var.net.alld"
   ],
   "VAR.NET.IC": [
+    "VAR.NET.IC",
+    "Variation nette des immobilisations corporelles",
     "Net Changes in Property, Plants, or Equipment",
     "NET.CHG.PPE",
     "var.net.ic"
   ],
   "VAR.NET.TER": [
+    "VAR.NET.TER",
+    "Variation nette des terrains",
     "Net Changes in Land",
     "NET.CHG.LAND",
     "var.net.ter"
   ],
   "VAR.NET.II": [
+    "VAR.NET.II",
+    "Variation nette des immobilisations incorporelles",
     "Net Changes in Intangible Assets",
     "NET.CHG.IA",
     "var.net.ii"
   ],
   "VAR.NET.EDA": [
+    "VAR.NET.EDA",
+    "Acquisitions nettes",
     "Net Acquisition of Businesses",
     "NET.CHG.GW",
     "var.net.eda"
   ],
   "VAR.ACI": [
+    "VAR.ACI",
+    "Variation nette des actifs circulants d'investissement",
     "Net Changes in Current Investing Assets",
     "CHG.CIA",
     "var.aci"
   ],
   "VAR.AII": [
+    "VAR.AII",
+    "Variation nette des actifs immobilisés d'investissement",
     "Net Changes in Non-Current Investing Assets",
     "CHG.NCIA",
     "var.aii"
   ],
   "AJT.GFI": [
+    "AJT.GFI",
+    "Ajoute l'impact des gains financiers",
     "Add Impact of Financial Income",
     "ADD.FINGAIN",
     "ajt.gfi"
   ],
   "AFTI": [
+    "AFTI",
+    "Autres flux de trésorerie d'investissement",
     "Other Cash Flows from Investing Activities",
     "OCFIA",
     "afti"
   ],
   "FTIT": [
+    "FTIT",
+    "Entrées/sorties nettes de trésorerie issues de l'investissement",
     "Net Cash Provided by Investing Activities",
     "TCFIA",
     "ftit"
   ],
   "FTF": [
+    "FTF",
+    "Flux de trésorerie de financement",
     "cffa",
     "cash flows from financing activities",
     "financing cash flow"
   ],
   "VAR.PFLLD": [
+    "VAR.PFLLD",
+    "Variation des passifs financiers de locations longue durée",
     "Changes in Financial Lease Liabilities",
     "CHG.FLL",
     "var.pflld"
   ],
   "VAR.DCT": [
+    "VAR.DCT",
+    "Variation nette des dettes et effets à payer à court terme",
     "Changes in Short-Term Debts and Notes Payable",
     "CHG.STD",
     "var.dct"
   ],
   "VAR.HPTQ": [
+    "VAR.HPTQ",
+    "Variation nette des hypothèques",
     "Changes in Mortgages",
     "CHG.MRTG",
     "var.hptq"
   ],
   "VAR.DLT": [
+    "VAR.DLT",
+    "Variation nette des dettes à long terme",
     "Changes in Long-Term Debt",
     "CHG.LTD",
     "var.dlt"
   ],
   "VAR.OBLI": [
+    "VAR.OBLI",
+    "Variation nette des obligations",
     "Changes in Bonds",
     "CHG.BOND",
     "var.obli"
   ],
   "VAR.CS": [
+    "VAR.CS",
+    "Variation du capital social",
     "Changes in Paid-In Capital",
     "CHG.PIC",
     "var.cs"
   ],
   "VAR.ARA": [
+    "VAR.ARA",
+    "Variation des autres résultats accumulés",
     "Changes in Other Comprehensive Income or Loss",
     "CHG.OCIL",
     "var.ara"
   ],
   "VAR.IM": [
+    "VAR.IM",
+    "Variation des intérêts minoritaires",
     "Changes in Non-Controlling Interest",
     "CHG.NCI",
     "var.im"
   ],
   "DIVPAY": [
+    "DIVPAY",
+    "Dividendes distribués",
     "Dividends Distributed to Owners",
     "PAIDIV",
     "divpay"
   ],
   "AFTF": [
+    "AFTF",
+    "Autres flux de trésorerie de financement",
     "Other Cash Flows from Financing Activities",
     "OCFFA",
     "aftf"
   ],
   "FTFT": [
+    "FTFT",
+    "Entrées/sorties nettes de trésorerie issues du financement",
     "Net Cash Provided by Financing Activities",
     "TCFFA",
     "ftft"
   ],
   "ETCHG": [
+    "ETCHG",
+    "Effet des taux de change",
     "Effect of Exchange Rates",
     "EOER",
     "etchg"
   ],
   "ACFT": [
+    "ACFT",
+    "Autres corrections de flux de trésorerie",
     "Other Cash Flow Corrections",
     "OCFC",
     "acft"
   ],
   "TRESOVAR": [
+    "TRESOVAR",
+    "Variation de trésorerie",
     "Cash Variation",
     "CASHVAR",
     "tresovar"
   ],
   "TRESOINI": [
+    "TRESOINI",
+    "Trésorerie initiale",
     "Cash Beginning",
     "CASHBEG",
     "tresoini"
   ],
   "TRESOFIN": [
+    "TRESOFIN",
+    "Trésorerie finale",
     "Cash Ending",
     "CASHEND",
     "tresofin"
   ],
   "INTPAY": [
+    "INTPAY",
+    "Intérêts payés",
     "Paid Interests",
     "PAIDINT",
     "intpay"
   ],
   "TAXPAY": [
+    "TAXPAY",
+    "Impôts payés",
     "Paid Taxes",
     "PAIDTAX",
     "taxpay"
   ],
   "FTE.AMT": [
+    "FTE.AMT",
+    "Amortissement total",
     "Total Depreciation",
     "CFOA.DEPR",
     "fte.amt"
   ],
   "FLUXTRESO": [
+    "FLUXTRESO",
+    "Flux de trésorerie",
     "Cash Flows",
     "CASHFLOW",
     "fluxtreso"
   ],
   "ETAT.TFT": [
+    "ETAT.TFT",
+    "Tableau de flux de trésorerie",
     "Cash Flow Statement",
     "STMT.CFS",
     "etat.tft"
   ],
   "FTE.RN": [
+    "FTE.RN",
+    "Résultat net",
     "Net Income",
     "CFOA.NI",
     "fte.rn"
   ],
   "FTE.RECON": [
+    "FTE.RECON",
+    "Réconciliations entre RN et FTE",
     "Reconciliations Between NI and CFOA",
     "CFOA.RECON",
     "fte.recon"
   ],
   "FTE.EXP": [
+    "FTE.EXP",
+    "Variation des actifs et passifs d'exploitation",
     "Changes in Operating Assets and Liabilities",
     "CFOA.OP",
     "fte.exp"
   ],
   "FTI.EXP": [
+    "FTI.EXP",
+    "Flux de trésorerie d'investissements dans l'exploitation",
     "cfia.op",
     "net cash provided by operating investment",
     "operating investment cash flow"
   ],
   "FTI.INV": [
+    "FTI.INV",
+    "Flux de trésorerie d'investissements hors exploitation",
     "Net Cash Provided by Pure Investment",
     "CFIA.INV",
     "fti.inv"
   ],
   "FTF.DBT": [
+    "FTF.DBT",
+    "Flux de trésorerie de financement par dette",
     "Cash Flow from Debt Financing",
     "CFFA.DBT",
     "ftf.dbt"
   ],
   "FTF.FP": [
+    "FTF.FP",
+    "Flux de trésorerie de financement par fonds propres",
     "Cash Flow from Equity Financing",
     "CFFA.EQT",
     "ftf.fp"
   ],
   "AAFT": [
+    "AAFT",
+    "Autres ajustements des flux de trésorerie",
     "Other Adjustments to Cash Flows",
     "OACF",
     "aaft"
   ],
   "BCP": [
+    "BCP",
+    "Besoin en capitaux permanents",
     "nfpc",
     "need for permanent capital",
     "besoin en capitaux permanents"
   ],
   "BFR": [
+    "BFR",
+    "Besoin en fonds de roulement",
     "nfwc",
     "need for working capital",
     "working capital requirement",
     "besoin en fonds de roulement"
   ],
   "BDT": [
+    "BDT",
+    "Besoin de trésorerie",
     "nfc",
     "need for cash",
     "besoin de tresorerie",
     "besoin de trésorerie"
   ],
   "CP": [
+    "CP",
+    "Capitaux permanents",
     "pc",
     "permanent capital",
     "capitaux permanents"
   ],
   "FR": [
+    "FR",
+    "Fonds de roulement",
     "wc",
     "working capital",
     "fonds de roulement"
   ],
   "IPE": [
+    "IPE",
+    "Importance des passifs d'exploitation",
     "rol",
     "reliance on operating liabilities",
     "importance des passifs d'exploitation"
   ],
   "QDR": [
+    "QDR",
+    "Qualité du résultat",
     "qoi",
     "quality of income",
     "qualité du résultat",
     "qualite du resultat"
   ],
   "CRD": [
+    "CRD",
+    "Coût réel de la dette",
     "rcd",
     "real cost of debt",
     "coût réel de la dette",
     "cout reel de la dette"
   ],
   "FTD": [
+    "FTD",
+    "Flux de trésorerie disponible",
     "fcf",
     "free cash flow",
     "free cash flows",
     "flux de trésorerie disponible"
   ],
   "RR": [
+    "RR",
+    "Ratio de restitution",
     "gbr",
     "give-back ratio",
     "give back ratio",
     "ratio de restitution"
   ],
-  "T": [
-    "t",
-    "tax rate",
-    "taux d imposition",
-    "taux d'impôt",
-    "corporate tax rate"
-  ],
   "RF": [
+    "RF",
+    "Taux sans risque",
     "risk-free rate",
     "risk free rate",
     "rf",
     "taux sans risque"
   ],
   "KINV": [
+    "KINV",
+    "Taux de rendement attendu pour un investissement",
     "expected rate of return",
     "expected return",
     "kinv"
   ],
   "BETA.INV": [
+    "BETA.INV",
+    "Quantité de risque de l'investissement",
     "investment beta",
     "quantity of risk",
     "beta investment"
   ],
   "RINV": [
+    "RINV",
+    "Rendement de marché pour un type d'investissement",
     "market return for investment",
     "rinv"
   ],
   "PINV": [
+    "PINV",
+    "Prime de risque de marché pour un type d'investissement",
     "market risk premium for investment",
     "pinv"
   ],
   "RM": [
+    "RM",
+    "Rendement de marché actions",
     "market return",
     "equity market return",
     "rm"
   ],
   "PRA": [
+    "PRA",
+    "Prime de risque actions",
     "equity risk premium",
     "market risk premium",
     "erp",
     "pra"
   ],
   "BETA": [
+    "BETA",
+    "Bêta des fonds propres",
     "beta",
     "equity beta",
     "stock beta"
   ],
   "KE": [
+    "KE",
+    "Coût des fonds propres",
     "cost of equity",
     "ke",
     "expected return on equity"
   ],
   "WD": [
+    "WD",
+    "Poids de la dette dans les capitaux investis",
     "wd",
     "weight of debt",
     "debt weight"
   ],
   "WE": [
+    "WE",
+    "Poids des fonds propres dans les capitaux investis",
     "we",
     "weight of equity",
     "equity weight"
   ],
   "CMPC": [
+    "CMPC",
+    "Coût moyen pondéré du capital",
     "wacc",
     "weighted average cost of capital",
     "cmpc"
   ],
   "BR": [
+    "BR",
+    "Bénéfice résiduel",
     "ri",
     "residual income",
     "bénéfice résiduel"
   ],
   "VAE": [
+    "VAE",
+    "Valeur ajoutée économique",
     "eva",
     "economic value added",
     "valeur ajoutée économique"
   ],
   "BPA": [
+    "BPA",
+    "Bénéfice par action",
     "eps",
     "earnings per share",
     "benefice par action"
   ],
   "RCB": [
+    "RCB",
+    "Ratio cours-bénéfice",
     "per",
     "pe ratio",
     "price earnings ratio",
     "ratio cours bénéfice"
   ],
   "DIVDCL": [
+    "DIVDCL",
+    "Dividendes déclarés",
     "declared dividends",
     "dcldiv",
     "dividendes déclarés"
   ],
   "DPA": [
+    "DPA",
+    "Dividende par action",
     "dps",
     "dividend per share",
     "dividende par action"
   ],
   "BADPA": [
+    "BADPA",
+    "Bénéfice à dividende par action",
     "etdps",
     "earnings to dividends per share",
     "payout ratio"
   ],
   "RPA": [
+    "RPA",
+    "Rendement par action",
     "dy",
     "dividend yield",
     "rendement par action"
   ],
   "VI": [
+    "VI",
+    "Valeur intrinsèque",
     "iv",
     "intrinsic value",
     "valeur intrinsèque"
   ],
   "CB": [
+    "CB",
+    "Capitalisation boursière",
     "mc",
     "market capitalization",
     "market cap",
     "capitalisation boursière"
   ],
   "VC": [
+    "VC",
+    "Valeur comptable",
     "bv",
     "book value",
     "valeur comptable"
   ],
   "VE": [
+    "VE",
+    "Valeur de l'entreprise",
     "ev",
     "enterprise value",
     "valeur de l entreprise"
   ],
   "VMVC": [
+    "VMVC",
+    "Valeur marchande sur valeur comptable",
     "mtbr",
     "market to book ratio",
     "price to book",
     "cfp"
   ],
   "TQ": [
+    "TQ",
+    "Tobin's Q",
     "tq",
     "tobin q",
     "tobin's q"
   ],
   "VEFTD": [
+    "VEFTD",
+    "Valeur de l'entreprise sur flux de trésorerie disponibles",
     "evfcf",
     "enterprise value to free cash flow",
     "ev to fcf"
   ],
   "NAOC.MOY": [
+    "NAOC.MOY",
+    "Nombre moyen d'actions ordinaires en circulation",
     "average shares outstanding",
     "average ncso"
   ],
   "DRC": [
+    "DRC",
+    "Délai de recouvrement clients",
     "dro",
     "days receivable outstanding",
     "accounts receivable payment delay",
@@ -1316,6 +1798,8 @@
     "delai de recouvrement clients"
   ],
   "DES": [
+    "DES",
+    "Délai d'écoulement des stocks",
     "dio",
     "days inventory outstanding",
     "inventory days",
@@ -1324,6 +1808,8 @@
     "delai ecoulement stocks"
   ],
   "DPF": [
+    "DPF",
+    "Délai de paiement fournisseurs",
     "dpo",
     "days payable outstanding",
     "payables days",
@@ -1331,6 +1817,8 @@
     "delai paiement fournisseurs"
   ],
   "DLC": [
+    "DLC",
+    "Délai de livraison clients",
     "ddo",
     "days deliverable outstanding",
     "deferred revenue days",
@@ -1338,6 +1826,8 @@
     "delai livraison clients"
   ],
   "DCE": [
+    "DCE",
+    "Durée du cycle d'exploitation",
     "ocd",
     "operating cycle duration",
     "cash-to-cash cycle",
@@ -1346,79 +1836,109 @@
     "duree cycle exploitation"
   ],
   "VCE": [
+    "VCE",
+    "Vitesse du cycle d'exploitation",
     "ocs",
     "operating cycle speed",
     "vitesse du cycle d'exploitation",
     "vitesse cycle exploitation"
   ],
   "TRAI": [
+    "TRAI",
+    "Taux de rotation des actifs immobilisés",
     "fatr",
     "fixed assets turnover ratio",
     "fixed asset turnover",
     "taux de rotation des actifs immobilisés"
   ],
   "RNVA": [
+    "RNVA",
+    "Renouvellement des actifs",
     "arnw",
     "asset renewal",
     "asset renewal ratio",
     "renouvellement des actifs"
   ],
   "DVA": [
+    "DVA",
+    "Durée de vie des actifs",
     "aul",
     "asset useful life",
     "durée de vie des actifs",
     "duree de vie des actifs"
   ],
   "TRCI": [
+    "TRCI",
+    "Taux de rotation des capitaux investis",
     "ictr",
     "invested capital turnover ratio",
     "invested capital turnover",
     "capital turnover"
   ],
   "CA.Q": [
+    "CA.Q",
+    "Chiffre d'affaires quotidien",
     "daily revenue",
     "daily revenues",
     "daily sales",
     "ca quotidien"
   ],
   "CDV.Q": [
+    "CDV.Q",
+    "Coût des ventes quotidien",
     "daily cost of sales",
     "daily cogs",
     "cdv quotidien"
   ],
   "CC.MOY": [
+    "CC.MOY",
+    "Créances clients moyennes",
     "average accounts receivable",
     "average ar",
     "créances clients moyennes"
   ],
   "STK.MOY": [
+    "STK.MOY",
+    "Stocks moyens",
     "average inventories",
     "average inventory",
     "stocks moyens"
   ],
   "DF.MOY": [
+    "DF.MOY",
+    "Dettes fournisseurs moyennes",
     "average accounts payable",
     "average ap",
     "dettes fournisseurs moyennes"
   ],
   "PDCA.MOY": [
+    "PDCA.MOY",
+    "Produits différés ou constatés d'avance moyens",
     "average unearned revenues",
     "average deferred revenues"
   ],
   "AI.MOY": [
+    "AI.MOY",
+    "Actifs immobilisés moyens",
     "average non current assets",
     "average fixed assets"
   ],
   "AIE.MOY": [
+    "AIE.MOY",
+    "Actifs immobilisés d'exploitation moyens",
     "average non current operating assets",
     "average ncoa"
   ],
   "CI.MOY": [
+    "CI.MOY",
+    "Capitaux investis moyens",
     "average invested capital",
     "average ic",
     "average capital employed"
   ],
   "TMB": [
+    "TMB",
+    "Taux de marge brute",
     "gmr",
     "gross margin ratio",
     "gross margin",
@@ -1426,6 +1946,8 @@
     "taux de marge brute"
   ],
   "TMN": [
+    "TMN",
+    "Taux de marge nette",
     "nmr",
     "net margin ratio",
     "profit margin",
@@ -1433,6 +1955,8 @@
     "taux de marge nette"
   ],
   "TMNE": [
+    "TMNE",
+    "Taux de marge nette d'exploitation",
     "nomr",
     "net operating margin ratio",
     "net operating margin",
@@ -1440,276 +1964,386 @@
     "taux de marge nette d exploitation"
   ],
   "RCI": [
+    "RCI",
+    "Rendement des capitaux investis",
     "roic",
     "return on invested capital",
     "rci"
   ],
   "RFP": [
+    "RFP",
+    "Rendement des fonds propres",
     "roe",
     "return on equity",
     "rfp",
     "rendement des fonds propres"
   ],
   "RCE": [
+    "RCE",
+    "Rendement des capitaux employés",
     "roce",
     "return on capital employed",
     "rce"
   ],
   "RPI.MOY": [
+    "RPI.MOY",
+    "Richesse des propriétaires investie moyenne",
     "average owners wealth invested",
     "average owi",
     "average equity invested"
   ],
   "CE.MOY": [
+    "CE.MOY",
+    "Capitaux employés moyens",
     "average capital employed",
     "average ce"
   ],
   "SFR": [
+    "SFR",
+    "Surplus de fonds de roulement",
     "wcs",
     "working capital surplus",
     "working capital shortage",
     "surplus de fonds de roulement"
   ],
   "RLG": [
+    "RLG",
+    "Ratio de liquidité générale",
     "cur",
     "current ratio",
     "ratio de liquidité générale"
   ],
   "RLR": [
+    "RLR",
+    "Ratio de liquidité relative",
     "qr",
     "quick ratio",
     "acid test ratio",
     "ratio de liquidité relative"
   ],
   "RLI": [
+    "RLI",
+    "Ratio de liquidité immédiate",
     "car",
     "cash ratio",
     "ratio de liquidité immédiate"
   ],
   "RPFP": [
+    "RPFP",
+    "Ratio passifs sur fonds propres",
     "der",
     "debt equity ratio",
     "debt-to-equity ratio",
     "ratio passifs sur fonds propres"
   ],
   "RPSA": [
+    "RPSA",
+    "Ratio passifs sur actifs",
     "dar",
     "debt asset ratio",
     "debt-to-asset ratio",
     "ratio passifs sur actifs"
   ],
   "TCI": [
+    "TCI",
+    "Taux de couverture des intérêts",
     "tie",
     "times interest earned",
     "interest coverage ratio",
     "taux de couverture des intérêts"
   ],
   "TCFT": [
+    "TCFT",
+    "Taux de couverture des flux de trésorerie",
     "cfcr",
     "cash flow coverage ratio",
     "taux de couverture des flux de tresorerie"
   ],
   "PV.CA": [
+    "PV.CA",
+    "Pourcentage de variation du chiffre d'affaires",
     "pc.rev",
     "percentage change in revenues",
     "revenue growth",
     "croissance du chiffre d'affaires"
   ],
   "PV.REX": [
+    "PV.REX",
+    "Pourcentage de variation du résultat d'exploitation",
     "pc.ebit",
     "percentage change in operating income",
     "operating income growth"
   ],
   "ELE": [
+    "ELE",
+    "Effet de levier d'exploitation",
     "dol",
     "degree of operating leverage",
     "operating leverage",
     "effet de levier d exploitation"
   ],
   "KD": [
+    "KD",
+    "Coût moyen de la dette",
     "kd",
     "cost of debt",
     "average cost of debt",
     "coût moyen de la dette"
   ],
   "KDN": [
+    "KDN",
+    "Coût net de la dette",
     "kdn",
     "net cost of debt",
     "after-tax cost of debt"
   ],
   "GND": [
+    "GND",
+    "Gain net sur dette",
     "net gain on debt",
     "gain net sur dette"
   ],
   "RPP": [
+    "RPP",
+    "Ratio prêteur-propriétaire",
     "lender owner ratio",
     "ratio prêteur propriétaire",
     "debt to owner wealth"
   ],
   "ELF": [
+    "ELF",
+    "Effet de levier financier",
     "financial leverage effect",
     "financial leverage",
     "effet de levier financier"
   ],
   "DPI.MOY": [
+    "DPI.MOY",
+    "Dettes porteuses d'intérêts moyennes",
     "average interest bearing debt",
     "average ibd"
   ],
   "TRA": [
+    "TRA",
+    "Taux de rendement annuel",
     "arr",
     "annual rate of return",
     "taux de rendement annuel"
   ],
   "NDA": [
+    "NDA",
+    "Nombre d'années",
     "noy",
     "number of years",
     "nombre d années"
   ],
   "NPPA": [
+    "NPPA",
+    "Nombre de périodes par an",
     "nppy",
     "ppy",
     "periods per year",
     "nombre de periodes par an"
   ],
   "RATE": [
+    "RATE",
+    "Taux d'actualisation périodique",
     "periodic rate of return",
     "periodic discount rate",
     "rate"
   ],
   "NPER": [
+    "NPER",
+    "Nombre de périodes",
     "number of periods",
     "nper"
   ],
   "PMT": [
+    "PMT",
+    "Annuité",
     "payment",
     "pmt",
     "annuité",
     "annuity payment"
   ],
   "PV": [
+    "PV",
+    "Valeur présente ou actualisée",
     "present value",
     "pv",
     "valeur actuelle",
     "valeur présente"
   ],
   "FV": [
+    "FV",
+    "Valeur future ou capitalisée",
     "future value",
     "fv",
     "valeur future"
   ],
   "TYPE": [
+    "TYPE",
+    "Moment de l'annuité",
     "type",
     "timing of payments",
     "annuity due",
     "ordinary annuity"
   ],
   "VAN": [
+    "VAN",
+    "Valeur actuelle nette",
     "npv",
     "net present value",
     "valeur actuelle nette"
   ],
   "TRI": [
+    "TRI",
+    "Taux de rendement interne",
     "irr",
     "internal rate of return",
     "taux de rendement interne"
   ],
   "PERP": [
+    "PERP",
+    "Perpétuité",
     "perpetuity",
     "perpétuité"
   ],
   "PCO": [
+    "PCO",
+    "Valeur actualisée d'une perpétuité constante",
     "pvcp",
     "present value of a constant perpetuity",
     "constant perpetuity"
   ],
   "G": [
+    "G",
+    "Taux de croissance",
     "g",
     "growth rate",
     "taux de croissance"
   ],
   "PCR": [
+    "PCR",
+    "Valeur actualisée d'une perpétuité croissante",
     "pvgp",
     "present value of a growing perpetuity",
     "growing perpetuity"
   ],
   "FT.INV": [
+    "FT.INV",
+    "Flux de trésorerie du projet",
     "cf_inv",
     "cash flows of a project",
     "project cash flows"
   ],
   "VA.INV": [
+    "VA.INV",
+    "Valeur actuelle du projet",
     "pv_inv",
     "present value of investment project"
   ],
   "INVEST": [
+    "INVEST",
+    "Investissement initial",
     "initial investment",
     "investissement initial"
   ],
   "VAN.INV": [
+    "VAN.INV",
+    "Valeur actuelle nette du projet",
     "npv_inv",
     "project npv",
     "net present value of investment project"
   ],
   "TRI.INV": [
+    "TRI.INV",
+    "Taux de rendement interne du projet",
     "irr_inv",
     "project irr",
     "internal rate of return of investment project"
   ],
   "FT.OBLI": [
+    "FT.OBLI",
+    "Flux de trésorerie de l'obligation",
     "cf_bond",
     "cash flows of a bond"
   ],
   "VA.OBLI": [
+    "VA.OBLI",
+    "Valeur actuelle de l'obligation",
     "pv_bond",
     "present value of a bond"
   ],
   "PO": [
+    "PO",
+    "Prix de l'obligation",
     "bp",
     "bond price",
     "prix de l obligation"
   ],
   "VAN.OBLI": [
+    "VAN.OBLI",
+    "Valeur actuelle nette de l'obligation",
     "npv_bond",
     "net present value of a bond"
   ],
   "RB": [
+    "RB",
+    "Rendement de l'obligation",
     "bond yield",
     "yield of a bond",
     "rb"
   ],
   "FT.ACT": [
+    "FT.ACT",
+    "Flux de trésorerie par action",
     "cf_share",
     "share cash flows",
     "cash flows of a share"
   ],
   "VA.ACT": [
+    "VA.ACT",
+    "Valeur actuelle d'une action",
     "pv_share",
     "present value of a share"
   ],
   "VA.DIV": [
+    "VA.DIV",
+    "Valeur actualisée des dividendes futurs",
     "pv_div",
     "present value of future dividends"
   ],
   "VA.FTD": [
+    "VA.FTD",
+    "Valeur actualisée des flux de trésorerie disponibles futurs",
     "pv_fcf",
     "present value of future free cash flows"
   ],
   "NAOC": [
+    "NAOC",
+    "Nombre d'actions ordinaires en circulation",
     "ncso",
     "number of common shares outstanding",
     "shares outstanding"
   ],
   "CDA": [
+    "CDA",
+    "Cours de l'action",
     "sp",
     "stock price",
     "share price",
     "cours de l action"
   ],
   "VAN.ACT": [
+    "VAN.ACT",
+    "Valeur actuelle nette de l'action",
     "npv_share",
     "net present value of a share"
   ],
   "RE": [
+    "RE",
+    "Rendement total de l'action",
     "share yield",
     "share's yield",
     "total shareholder return"

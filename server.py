@@ -9,7 +9,7 @@ from typing import Optional
 from fastapi import FastAPI, Header, HTTPException
 from fastapi.responses import HTMLResponse
 from rapidfuzz import fuzz
-
+from datetime import datetime, timedelta
 
 # =====================================================
 # 1. APP & CONFIG
@@ -101,14 +101,35 @@ def is_number(value) -> bool:
 
 def is_year(value) -> bool:
     try:
-        y = int(float(value))
+        y = to_year(value)
         return 1900 <= y <= 2100
     except Exception:
         return False
 
 
 def to_year(value) -> int:
-    return int(float(value))
+    if value is None:
+        raise ValueError("No year")
+
+    # Numeric year or Excel date serial
+    if isinstance(value, (int, float)):
+        if 1900 <= int(value) <= 2100:
+            return int(value)
+
+        # Excel serial date, e.g. 45291 = 2024-ish
+        if 20000 <= float(value) <= 60000:
+            excel_epoch = datetime(1899, 12, 30)
+            dt = excel_epoch + timedelta(days=float(value))
+            return dt.year
+
+    txt = str(value).strip()
+
+    # Simple year inside text
+    match = re.search(r"(19\d{2}|20\d{2}|21\d{2})", txt)
+    if match:
+        return int(match.group(1))
+
+    raise ValueError(f"Cannot extract year from {value}")
 
 
 # =====================================================
